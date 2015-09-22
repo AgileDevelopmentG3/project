@@ -1,0 +1,23 @@
+.slider {
+    margin-bottom: 50px; 
+}
+.slider-img {
+    height: calc( 75vh - 50px );
+    width: 100%;
+}
+#s-img-1 {
+    background: url('../img/doom-1.jpg') top left no-repeat;
+    background-size: cover;
+}
+#s-img-2 {
+    background: url('../img/doom-2.jpg') top left no-repeat;
+    background-size: cover;
+}
+#s-img-3 {
+    background: url('../img/doom-3.jpg') top left no-repeat;
+    background-size: cover;
+}
+
+.marketing .img-circle {
+    margin: 0 33.333333%;
+}
