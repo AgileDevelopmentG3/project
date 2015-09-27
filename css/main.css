@@ -1,3 +1,12 @@
+h3 {
+    margin-top: 0;
+}
+.top-spacer {
+    margin-top: 25px;
+}
+.bottom-spacer {
+    margin-bottom: 25px;
+}
 .slider {
     margin-bottom: 50px; 
 }
@@ -20,4 +29,32 @@
 
 .marketing .img-circle {
     margin: 0 33.333333%;
+}
+
+.placeholder-block-delete-and-add-image {
+    background: #777;
+    height: 150px;
+    width: 125px;
+}
+/*************************
+
+        FOOTER
+
+*************************/
+
+footer {
+    background: #2f2f2f;
+    color: #fff;
+    min-height: 300px;
+}
+
+/*************************
+
+        CART
+
+*************************/
+
+.cart--underline {
+    border-bottom: 1px solid #222;
+    margin-bottom: 15px;
 }
