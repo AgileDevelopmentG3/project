@@ -36,7 +36,90 @@
                 </div>
             </nav>
         </div>
-        <div class="container"> 
+        <div class="container bottom-spacer"> 
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Catalog</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="placeholder-block-delete-and-add-image center-block"></div>
+                    <h3>Comic Book Title</h3>
+                    <h4>Comic Book Sub TItle</h4>
+                    <cite>Comic Book Author</cite>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="container">
