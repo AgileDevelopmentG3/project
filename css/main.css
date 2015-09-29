@@ -36,6 +36,25 @@ h3 {
     height: 150px;
     width: 125px;
 }
+
+/*************************
+        
+        LOGIN
+
+*************************/
+
+.login {
+    height: 80%;
+    min-width: 320px;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+}
+.login.active {
+    opacity: 1;
+    z-index: 9999;
+}
+
 /*************************
 
         FOOTER
