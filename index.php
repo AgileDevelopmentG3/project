@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
-        <title>Carousel Template for Bootstrap</title>
+        <title>POWER HOUSE COMICS</title>
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="slick/slick/slick.css" rel="stylesheet">
         <link href="slick/slick/slick-theme.css">

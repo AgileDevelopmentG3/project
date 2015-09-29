@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
-        <title>Carousel Template for Bootstrap</title>
+        <title>OUR CATALOG</title>
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
     </head>
@@ -26,9 +26,9 @@
                     </div>
                     <div id="navbar" class="navbar-right navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="index.php">Home</a></li>
                             <li><a href="subscriptions.php">Subscriptions</a></li>
-                            <li><a href="catalog.php">Catalog</a></li>
+                            <li class="active"><a href="catalog.php">Catalog</a></li>
                             <li><a href="contact.php">Contact</a></li>
                             <li><a href="#">Login</a></li>
                         </ul>
