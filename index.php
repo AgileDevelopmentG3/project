@@ -32,7 +32,7 @@
                             <li><a href="subscriptions.php">Subscriptions</a></li>
                             <li><a href="catalog.php">Catalog</a></li>
                             <li><a href="contact.php">Contact</a></li>
-                            <li class="login__button"><a href="#">Login</a></li>
+                            <li class="login__button"><a>Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -49,10 +49,11 @@
                         <label for="login__password">Password</label>
                         <input class="form-control" id="login__password" name="login__username" type="text">
                     </div>
-                    <button>Login</button>
+                    <button class="btn btn-primary">Login</button>
                 </form>
             </div>
         </div>
+        <div class="overlay"></div>
         <div class="slider clearfix">
             <div class="slider-img" id="s-img-1"></div>
             <div class="slider-img" id="s-img-2"></div>
@@ -138,9 +139,6 @@
                     speed: 500,
                     fade: true,
                     cssEase: 'linear'
-                });
-                $(window).on('resize load', function() {
-                    $('body').css({"padding-top": $(".navbar").height() + "px"});
                 });
             });
         </script>
