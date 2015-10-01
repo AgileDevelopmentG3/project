@@ -32,12 +32,28 @@
                             <li><a href="subscriptions.php">Subscriptions</a></li>
                             <li><a href="catalog.php">Catalog</a></li>
                             <li><a href="contact.php">Contact</a></li>
-                            <li><a href="#">Login</a></li>
+                            <li class="login__button"><a>Login</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+        <div class="login">
+            <div class="login__innerwrapper">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="login__username">Username <span>(email address)</span></label>
+                        <input class="form-control" id="login__username" name="login__username" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="login__password">Password</label>
+                        <input class="form-control" id="login__password" name="login__username" type="text">
+                    </div>
+                    <button class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="overlay"></div>
         <div class="slider clearfix">
             <div class="slider-img" id="s-img-1"></div>
             <div class="slider-img" id="s-img-2"></div>
@@ -111,6 +127,7 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/site.js"></script>
         <script src="slick/slick/slick.js"></script>
         <script>
             $(document).ready(function(){
@@ -122,9 +139,6 @@
                     speed: 500,
                     fade: true,
                     cssEase: 'linear'
-                });
-                $(window).on('resize load', function() {
-                    $('body').css({"padding-top": $(".navbar").height() + "px"});
                 });
             });
         </script>
