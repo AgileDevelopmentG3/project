@@ -55,28 +55,30 @@
         </div>
         <div class="overlay"></div>
         <div class="slider clearfix">
-            <div class="slider-img" id="s-img-1"></div>
-            <div class="slider-img" id="s-img-2"></div>
-            <div class="slider-img" id="s-img-3"></div>
+            <div class="slider-img" id="s-img-1"><img src="img/PHCPano.jpg" width="100%"></div>
+            <div class="slider-img" id="s-img-2"><img src="img/DSCN0220.JPG" width="100%"></div>
+            <div class="slider-img" id="s-img-3"><img src="img/DSCN0218.JPG" width="100%"></div>
         </div>
         <div class="container marketing text-center">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <img src="img/DSCN0229.JPG" alt="Power House Comics" width="140" >
+                    <h2>Comic Storage Supplies</h2>
+                    <p>Stop in today to get your comic storage supplies! We have Modern, Current, and 
+Silver Age Bags and Boards as well as long and short boxes available. Some magazing
+storage supplies also available.</p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    <img src="img/MatureTitlesOpt.jpg" alt="Mature Titles" width="140">
+                    <h2>Mature Titles</h2>
+                    <p>In addition to titles for all ages we also have a large selection of titles for mature audiences</p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <img src="img/GraphicNovels.jpg" alt="Graphic Novels" width="140">
+                    <h2>Graphic Novels and More!</h2>
+                    <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
             </div>
@@ -85,8 +87,23 @@
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading"><span class="text-muted">It'll blow your mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading"><span class="text-muted">New Releases</span></h2>
+                    <p class="lead"><ul>
+    	<li>CONAN THE AVENGER #17</li>
+	<li>FIGHT CLUB 2 #4 MAIN MACK CVR</li>
+	<li>HALO ESCALATION #21</li>
+	<li>HELLBOY IN HELL #7</li>
+	<li>KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
+	<li>MULAN REVELATIONS #3</li>
+	<li>NEW MGMT #1 MAIN KINDT CVR</li>
+	<li>PASTAWAYS #6</li>
+	<li>UNDOWNERS TP VOL 02</li>
+	<li>TOMORROWS #2</li>
+	<li>USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
+	<li>USAGI YOJIMBO SAGA TP VOL 04</li>
+	<li>ZODIAC STARFORCE #1</li>
+	</ul>
+</p>
                 </div>
                 <div class="col-md-5">
                     <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
