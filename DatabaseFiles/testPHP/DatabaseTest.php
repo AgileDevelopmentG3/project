@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "us-cdbr-azure-central-a.cloudapp.net";
+$username = "b433d07cc3f105";
+$password = "9ebd4e78";
 
 
 /**
@@ -29,12 +29,13 @@ $dsn = 'mysql:host=localhost;dbname=phcdb';
 
 $db = new PDO($dsn, $username, $password);
 $Email = "e@mail.com";
-$password = "password";
-$query = "SELECT * FROM `tblcustomer` WHERE Email = :Email and Password = :password";
+$Userpassword = "password";
+$query = "SELECT * FROM `tblcustomer` WHERE Email = :Email and Password = :Userpassword";
+
 
 $statement = $db->prepare($query);
 $statement -> bindValue(':Email', $Email);
-$statement -> bindValue(':password', $password);
+$statement -> bindValue(':Userpassword', $Userpassword);
 $statement->execute();
 $Users = $statement->fetchAll();
 $statement->closeCursor();
