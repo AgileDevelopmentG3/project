@@ -40,7 +40,7 @@
         </div>
         <div class="login">
             <div class="login__innerwrapper">
-                <form role="form">
+                <form role="form" action="">
                     <div class="form-group">
                         <label for="login__username">Username <span>(email address)</span></label>
                         <input class="form-control" id="login__username" name="login__username" type="email">
