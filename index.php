@@ -40,14 +40,14 @@
         </div>
         <div class="login">
             <div class="login__innerwrapper">
-                <form role="form" action="">
+                <form role="form" action="login.php" method="post">
                     <div class="form-group">
-                        <label for="login__username">Username <span>(email address)</span></label>
-                        <input class="form-control" id="login__username" name="login__username" type="email">
+                        <label for="Email">Username <span>(email address)</span></label>
+                        <input class="form-control" id="Email" name="Email" type="email">
                     </div>
                     <div class="form-group">
-                        <label for="login__password">Password</label>
-                        <input class="form-control" id="login__password" name="login__username" type="text">
+                        <label for="Userpassword">Password</label>
+                        <input class="form-control" id="Userpassword" name="Userpassword" type="text">
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
