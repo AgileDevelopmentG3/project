@@ -59,7 +59,9 @@ h3 {
     transition: all 1s, ease-in;
     z-index: 9999;
 }
-
+.login__button {
+    cursor: pointer;
+}
 .overlay {
     background: #000;
     height: 100%;
