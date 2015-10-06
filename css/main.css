@@ -45,6 +45,7 @@ h3 {
 
 .login {
     background: #fff;
+    color: black;
     border: 1px solid #333;
     border-radius: 5px;
     height: 80%;
@@ -84,7 +85,7 @@ h3 {
 *************************/
 
 footer {
-    background: #2f2f2f;
+    background: #222;
     color: #fff;
     min-height: 300px;
 }
@@ -99,3 +100,51 @@ footer {
     border-bottom: 1px solid #222;
     margin-bottom: 15px;
 }
+/*************************
+
+        MAIN
+
+*************************/
+
+body {
+    background: #2f2f2f;
+    color: #eee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #eee;   
+}
+
+/*************************
+
+        NAV
+
+*************************/
+
+.navbar-inverse .navbar-brand {
+    color: #FFF139;
+}
+
+.navbar-right .navbar-collapse .collapse {
+    color: #6BA6FC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
