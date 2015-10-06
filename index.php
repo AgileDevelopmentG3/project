@@ -57,7 +57,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Userpassword">Password</label>
-                        <input class="form-control" id="Userpassword" name="Userpassword" type="text">
+                        <input class="form-control" id="Userpassword" name="Userpassword" type="password">
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>

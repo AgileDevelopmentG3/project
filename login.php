@@ -8,10 +8,15 @@ GLOBAL $Userpassword;
    if(isset($_POST['Userpassword'])) 
    	$Userpassword=$_POST['Userpassword'];
 
+$username = "bc81427516cc2c";
+$password = "451af133";
+$dsn = "mysql:host=us-cdbr-azure-northcentral-a.cleardb.com;dbname=AgileGroup3DB";
+
+/**
 $username = "root";
 $password = "";
 $dsn = 'mysql:host=localhost;dbname=phcdb';
-
+/**/
 $db = new PDO($dsn, $username, $password);
 
 $query = "SELECT * FROM `tblcustomer` WHERE Email = :Email and Password = :Userpassword";
@@ -26,7 +31,7 @@ $statement->execute();
 $Users = $statement->fetchAll();
 $statement->closeCursor();
 
-if (count($Users > 0))
+if (count($Users) > 0)
 {
 	foreach ($Users as $User)
 	{
@@ -35,6 +40,6 @@ if (count($Users > 0))
 }
 else 
 {	
-	echo("Login Failed");
+	echo("Invalid Email and/or Password");
 }
 ?>
