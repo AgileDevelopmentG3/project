@@ -14,6 +14,16 @@
         <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
+    <!--Facebook Embed Javascript Start -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--Facebook Embed Javascript End -->
         <div class="navbar-wrapper">
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container">
@@ -40,14 +50,14 @@
         </div>
         <div class="login">
             <div class="login__innerwrapper">
-                <form role="form">
+                <form role="form" action="login.php" method="post">
                     <div class="form-group">
-                        <label for="login__username">Username <span>(email address)</span></label>
-                        <input class="form-control" id="login__username" name="login__username" type="email">
+                        <label for="Email">Username <span>(email address)</span></label>
+                        <input class="form-control" id="Email" name="Email" type="email">
                     </div>
                     <div class="form-group">
-                        <label for="login__password">Password</label>
-                        <input class="form-control" id="login__password" name="login__username" type="text">
+                        <label for="Userpassword">Password</label>
+                        <input class="form-control" id="Userpassword" name="Userpassword" type="text">
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
@@ -107,7 +117,7 @@ storage supplies also available.</p>
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="img/Transition_alt.fw.png" alt="Generic placeholder image">
                 </div>
             </div>
 
@@ -115,11 +125,14 @@ storage supplies also available.</p>
 
             <div class="row featurette">
                 <div class="col-md-7 col-md-push-5">
-                    <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">Like us on Facebook, and check out our latest updates, specials, and events</h2>
+                    <p class="lead">
+                    <!--Facebook Embed Begin -->
+                    <div class="fb-page" data-href="https://www.facebook.com/powerhouse.comics" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics"><a href="https://www.facebook.com/powerhouse.comics">Power House Comics</a></blockquote></div></div></p>
+                	<!--Facebook Embed End -->
                 </div>
                 <div class="col-md-5 col-md-pull-7">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="img/Transition.fw.png" alt="Generic placeholder image">
                 </div>
             </div>
 
@@ -127,11 +140,11 @@ storage supplies also available.</p>
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">Check this out<span class="text-muted">Checkmate.</span></h2>
+                    <p class="lead">Take a quick virtual tour without even leaving your room!</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="img/Placeholder.fw.png" alt="Google Business View placeholder image">
                 </div>
             </div>
             <hr class="featurette-divider">
