@@ -8,8 +8,8 @@ GLOBAL $Userpassword;
    if(isset($_POST['Userpassword'])) 
    	$Userpassword=$_POST['Userpassword'];
 
-$username = "bc81427516cc2c";
-$password = "451af133";
+$username = "b433d07cc3f105";
+$password = "9ebd4e78";
 $dsn = "mysql:host=us-cdbr-azure-northcentral-a.cleardb.com;dbname=AgileGroup3DB";
 
 /**
