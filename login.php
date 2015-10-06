@@ -10,7 +10,9 @@ GLOBAL $Userpassword;
 
 $username = "b433d07cc3f105";
 $password = "9ebd4e78";
-$dsn = "mysql:host=us-cdbr-azure-northcentral-a.cleardb.com;dbname=AgileGroup3DB";
+$dsn = "mysql:host=http://jq1kzb1a60.database.windows.net/;dbname=AgileGroup3DB";
+
+//$db2= new PDO ( \"sqlsrv:server = tcp:jq1kzb1a60.database.windows.net,1433; Database = AgileGroup3DB\", \"AgileGroup3\", \"\");
 
 /**
 $username = "root";
