@@ -7,11 +7,15 @@ GLOBAL $Userpassword;
    
    if(isset($_POST['Userpassword'])) 
    	$Userpassword=$_POST['Userpassword'];
-
+   
+/**
 $username = "b433d07cc3f105";
 $password = "9ebd4e78";
 $dsn = "mysql:host=http://jq1kzb1a60.database.windows.net/;dbname=AgileGroup3DB";
-
+/**
+$username = "root";
+$password = "";
+$dsn = "mysql:host=localhost;dbname=phcdb";
 //$db2= new PDO ( \"sqlsrv:server = tcp:jq1kzb1a60.database.windows.net,1433; Database = AgileGroup3DB\", \"AgileGroup3\", \"\");
 
 /**
@@ -19,6 +23,12 @@ $username = "root";
 $password = "";
 $dsn = 'mysql:host=localhost;dbname=phcdb';
 /**/
+
+$dsn = "mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=AgileGroup3DB";
+$username = "bc81427516cc2c";
+$password = "451af133";
+
+
 try	
 {
 	$db = new PDO($dsn, $username, $password);
