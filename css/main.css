@@ -7,12 +7,38 @@ h3 {
 .bottom-spacer {
     margin-bottom: 25px;
 }
+
+/**********************
+********* SLIDER STUFF 
+*********************/
+
 .slider {
+    height: calc( 75vh - 50px );
     margin-bottom: 50px; 
 }
+.slider .slick-list, 
+.slider .slick-track {
+    height: 100%;
+}
+.slick-initialized .slick-slide {
+    display: table;
+}
 .slider-img {
-    height: calc( 75vh - 50px );
     width: 100%;
+}
+.slider-img > div {
+    background: rgba(0,0,0,0.60);
+    color: #fff;
+    display: table-cell;
+    font-size: 72px;
+    text-align: center;
+    vertical-align: middle;
+}
+.slider-img > div > span {
+    display: inline-block;
+    height: 200px;
+    line-height: 200px;
+    width: 70%;
 }
 #s-img-1 {
     background: url('../img/PHCPano.jpg') top left no-repeat;
@@ -36,11 +62,9 @@ h3 {
     width: 125px;
 }
 
-/*************************
-        
-        LOGIN
-
-*************************/
+/************************  
+*******************LOGIN
+***********************/
 
 .login {
     background: #fff;
