@@ -17,29 +17,36 @@ $username = "root";
 $password = "";
 $dsn = 'mysql:host=localhost;dbname=phcdb';
 /**/
-$db = new PDO($dsn, $username, $password);
-
-$query = "SELECT * FROM `tblcustomer` WHERE Email = :Email and Password = :Userpassword";
-
-$Email = $_POST['Email'];
-$Userpassword = $_POST['Userpassword'];
-
-$statement = $db->prepare($query);
-$statement -> bindValue(':Email', $Email);
-$statement -> bindValue(':Userpassword', $Userpassword);
-$statement->execute();
-$Users = $statement->fetchAll();
-$statement->closeCursor();
-
-if (count($Users) > 0)
+try	
 {
-	foreach ($Users as $User)
+	$db = new PDO($dsn, $username, $password);
+	
+	$query = "SELECT * FROM `tblcustomer` WHERE Email = :Email and Password = :Userpassword";
+	
+	$Email = $_POST['Email'];
+	$Userpassword = $_POST['Userpassword'];
+	
+	$statement = $db->prepare($query);
+	$statement -> bindValue(':Email', $Email);
+	$statement -> bindValue(':Userpassword', $Userpassword);
+	$statement->execute();
+	$Users = $statement->fetchAll();
+	$statement->closeCursor();
+
+	if (count($Users) > 0)
 	{
-		echo 'Welcome, ' .  $User['FirstName'] . '!';
+		foreach ($Users as $User)
+		{
+			echo 'Welcome, ' .  $User['FirstName'] . '!';
+		}
+	}
+	else 
+	{	
+		echo("Invalid Email and/or Password");
 	}
 }
-else 
-{	
-	echo("Invalid Email and/or Password");
+catch(PDOException $e)
+{
+	echo 'ERROR: ' . $e->getMessage();
 }
 ?>
