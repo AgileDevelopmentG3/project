@@ -65,9 +65,21 @@
         </div>
         <div class="overlay"></div>
         <div class="slider clearfix">
-            <div class="slider-img" id="s-img-1"></div>
-            <div class="slider-img" id="s-img-2"></div>
-            <div class="slider-img" id="s-img-3"></div>
+            <div class="slider-img" id="s-img-1">
+                <div>
+                    <span>OOOHHH Call to action</span>
+                </div>
+            </div>
+            <div class="slider-img" id="s-img-2">
+                <div>
+                    <span>Superheros love candy</span>
+                </div>
+            </div>
+            <div class="slider-img" id="s-img-3">
+                <div>
+                    <span>Punch pow boom</span>
+                </div>
+            </div>
         </div>
         <div class="container marketing text-center">
             <div class="row">
@@ -96,28 +108,45 @@ storage supplies also available.</p>
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <h2 class="featurette-heading"><span class="text-muted">New Releases</span></h2>
                     <p class="lead">
-                        <ul>
-                            <li>CONAN THE AVENGER #17</li>
-                            <li>FIGHT CLUB 2 #4 MAIN MACK CVR</li>
-                            <li>HALO ESCALATION #21</li>
-                            <li>HELLBOY IN HELL #7</li>
-                            <li>KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
-                            <li>MULAN REVELATIONS #3</li>
-                            <li>NEW MGMT #1 MAIN KINDT CVR</li>
-                            <li>PASTAWAYS #6</li>
-                            <li>UNDOWNERS TP VOL 02</li>
-                            <li>TOMORROWS #2</li>
-                            <li>USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
-                            <li>USAGI YOJIMBO SAGA TP VOL 04</li>
-                            <li>ZODIAC STARFORCE #1</li>
+                        <ul class="list-group">
+                            <li class="list-group-item">CONAN THE AVENGER #17</li>
+                            <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
+                            <li class="list-group-item">HALO ESCALATION #21</li>
+                            <li class="list-group-item">HELLBOY IN HELL #7</li>
+                            <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
+                            <li class="list-group-item">MULAN REVELATIONS #3</li>
+                            <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
+                            <li class="list-group-item">PASTAWAYS #6</li>
+                            <li class="list-group-item">UNDOWNERS TP VOL 02</li>
+                            <li class="list-group-item">TOMORROWS #2</li>
+                            <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
+                            <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
+                            <li class="list-group-item">ZODIAC STARFORCE #1</li>
 	                   </ul>
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" src="img/Transition_alt.fw.png" alt="Generic placeholder image">
+                <div class="col-md-6">
+                    <h2 class="featurette-heading"><span class="text-muted">New Releases</span></h2>
+                    <p class="lead">
+                        <ul class="list-group">
+                            <li class="list-group-item">CONAN THE AVENGER #17</li>
+                            <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
+                            <li class="list-group-item">HALO ESCALATION #21</li>
+                            <li class="list-group-item">HELLBOY IN HELL #7</li>
+                            <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
+                            <li class="list-group-item">MULAN REVELATIONS #3</li>
+                            <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
+                            <li class="list-group-item">PASTAWAYS #6</li>
+                            <li class="list-group-item">UNDOWNERS TP VOL 02</li>
+                            <li class="list-group-item">TOMORROWS #2</li>
+                            <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
+                            <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
+                            <li class="list-group-item">ZODIAC STARFORCE #1</li>
+	                   </ul>
+                    </p>
                 </div>
             </div>
 
