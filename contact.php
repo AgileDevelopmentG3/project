@@ -100,7 +100,7 @@
                             <span class="input-group-addon"></span>
                         </div>
                     </div>
-                    <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                    <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-contact pull-right">
                 </div>
                 <div class="col-md-6">
                     <div id="map"></div>

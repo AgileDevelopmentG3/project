@@ -1,13 +1,3 @@
-h3 {
-    margin-top: 0;
-}
-.top-spacer {
-    margin-top: 25px;
-}
-.bottom-spacer {
-    margin-bottom: 25px;
-}
-
 /**********************
 ********* SLIDER STUFF 
 *********************/
@@ -62,6 +52,7 @@ h3 {
     width: 125px;
 }
 
+
 /************************  
 *******************LOGIN
 ***********************/
@@ -103,11 +94,11 @@ h3 {
     transition: all 1s, ease-in;
     z-index: 1000;
 }
-/*************************
 
-        FOOTER
 
-*************************/
+/************************  
+*******************FOOTER
+***********************/
 
 footer {
     background: #222;
@@ -115,60 +106,83 @@ footer {
     min-height: 300px;
 }
 
-/*************************
 
-        CART
-
-*************************/
+/************************  
+*********************CART
+***********************/
 
 .cart--underline {
     border-bottom: 1px solid #222;
     margin-bottom: 15px;
 }
-/*************************
 
-        MAIN
 
-*************************/
+/************************  
+*********************MAIN
+***********************/
 
 body {
     background: #2f2f2f;
     color: #eee;
 }
-
 h1, h2, h3, h4, h5, h6 {
     color: #eee;   
 }
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.top-spacer {
+    margin-top: 25px;
+}
+.bottom-spacer {
+    margin-bottom: 25px;
+}
+/* adds vertical space between
+catalog entries - keeps spacing
+uniform as the viewport shrinks */
+.catalog-spacer {
+    margin-bottom: 20px;
+}
 
-/*************************
 
-        NAV
-
-*************************/
+/************************  
+**********************NAV
+***********************/
 
 .navbar-inverse .navbar-brand {
     color: #FFF139;
 }
-
 .navbar-inverse .navbar-nav > li > a {
     color: #6BA6FC;
 }
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #FFF139;
+    background-color: #000;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #FFF139;
+}
 
 
+/************************  
+******************CONTACT
+***********************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* changed background color
+to match color scheme */
+.btn-contact {
+    color: #fff;
+    background-color: #6BA6FC;
+    /**border-color: #867072;**/
+}
 
 
 
