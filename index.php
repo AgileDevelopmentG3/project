@@ -89,19 +89,17 @@
                     <p>Stop in today to get your comic storage supplies! We have Modern, Current, and 
 Silver Age Bags and Boards as well as long and short boxes available. Some magazing
 storage supplies also available.</p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                   
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img src="img/MatureTitlesOpt.jpg" alt="Mature Titles" width="140">
                     <h2>Mature Titles</h2>
                     <p>In addition to titles for all ages we also have a large selection of titles for mature audiences</p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img src="img/GraphicNovels.jpg" alt="Graphic Novels" width="140">
                     <h2>Graphic Novels and More!</h2>
                     <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
             </div>
 
@@ -109,7 +107,7 @@ storage supplies also available.</p>
 
             <div class="row featurette">
                 <div class="col-md-6">
-                    <h2 class="featurette-heading"><span class="text-muted">New Releases</span></h2>
+                    <h2 class="featurette-heading">New Releases All Ages</h2>
                     <p class="lead">
                         <ul class="list-group">
                             <li class="list-group-item">CONAN THE AVENGER #17</li>
@@ -129,7 +127,7 @@ storage supplies also available.</p>
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="featurette-heading"><span class="text-muted">New Releases</span></h2>
+                    <h2 class="featurette-heading">New Releases Mature Titles</h2>
                     <p class="lead">
                         <ul class="list-group">
                             <li class="list-group-item">CONAN THE AVENGER #17</li>
@@ -161,7 +159,41 @@ storage supplies also available.</p>
                 	<!--Facebook Embed End -->
                 </div>
                 <div class="col-md-5 col-md-pull-7">
-                    <img class="featurette-image img-responsive center-block" src="img/Transition.fw.png" alt="Generic placeholder image">
+                    <h2 class="featurette-heading">Location</h2>
+                    <p>807 W College Ave, Appleton, WI 54914</p>
+                    <h2 class="featurette-heading">Hours</h2>
+                    <table width="350" border="0">
+  <tr>
+    <td>Monday</td>
+    <td>Closed</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>12&#58;00 &#45; 7&#58;00 pm</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td>12&#58;00 &#45; 7&#58;00 pm</td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td>12&#58;00 &#45; 7&#58;00 pm</td>
+  </tr>
+  <tr>
+    <td>Friday</td>
+    <td>12&#58;00 &#45; 7&#58;00 pm</td>
+  </tr>
+  <tr>
+    <td>Saturday</td>
+    <td>12&#58;00 &#45; 6&#58;00 pm</td>
+  </tr>
+  <tr>
+    <td>Sunday</td>
+    <td>Closed</td>
+  </tr>
+</table>
+<h2 class="featurette-heading">Phone Number</h2>
+<p>920&#45;733&#45;9339</p>
                 </div>
             </div>
 
@@ -169,7 +201,7 @@ storage supplies also available.</p>
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">Check this out<span class="text-muted">Checkmate.</span></h2>
+                    <h2 class="featurette-heading">Google Business View</h2>
                     <p class="lead">Take a quick virtual tour without even leaving your room!</p>
                 </div>
                 <div class="col-md-5">
@@ -181,7 +213,7 @@ storage supplies also available.</p>
         <footer>
             <div class="container">
                 <div class="row">
-                    <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                    <p>&copy; 2015 Power House Comics &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
                 </div>
             </div>
         </footer>

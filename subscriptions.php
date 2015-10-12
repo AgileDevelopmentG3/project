@@ -60,7 +60,9 @@
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et sodales nisl. Nullam nisi purus, rhoncus a metus vel, luctus blandit ligula. Nunc ultrices vulputate lorem vitae maximus. Fusce leo purus, molestie vitae neque sed, consectetur tincidunt erat. Pellentesque tristique magna odio, id consequat sapien interdum et. Vestibulum interdum sem eu turpis pellentesque, eu fermentum ligula condimentum. Aenean tempor, massa a consectetur egestas, ex nibh ultricies mauris, sed varius ipsum mauris id elit. Aenean nunc metus, sagittis a porttitor id, tincidunt ut ligula. Nullam semper lorem ac risus pretium, sed posuere ipsum feugiat.</p>
+                    <p>Tired of trying to get to the comic shop before anybody else, just so you can get a particular title&#63; Take the hassle out of comic collecting and open up a subscription box today&#33; Subscribed to three or more titles a week and get a 10&#37 discount&#33;</p>
+                    <h3 class="featurette-heading">Current Subscribers</h3>
+                    <p>Forget what titles you&#39;re subscribed to&#63 Just want to check if your subscribed to a upcoming title&#63 Check the titles below&#44; if your number is next to a title you are subscribed&#33;</p>
                 </div>
             </div>
             <div class="row">

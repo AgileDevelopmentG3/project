@@ -56,6 +56,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h1>Catalog</h1>
+                    <p>Many more titles are available...</p>
                 </div>
             </div>
             <div class="row text-center">
