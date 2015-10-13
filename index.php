@@ -83,21 +83,25 @@
         </div>
         <div class="container marketing text-center">
             <div class="row">
+                <div class="col-xs-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nulla quis aliquet fringilla. Proin commodo, sem vel accumsan dictum, leo nibh dictum risus, et euismod eros urna nec tortor. Nullam viverra tortor eget metus rhoncus vulputate. Aliquam lacinia vulputate volutpat. Sed porta nibh velit. Curabitur non tincidunt turpis. Ut rutrum nulla a nunc congue, a sodales orci maximus. Praesent nec mi ante. Duis sit amet purus quis augue bibendum blandit.</p>
+                </div>
+            </div>
+            <div class="row top__general">
                 <div class="col-lg-4">
-                    <img src="img/DSCN0229.JPG" alt="Power House Comics" width="140" >
+                    <img src="img/DSCN0229.JPG" alt="Power House Comics">
                     <h2>Comic Storage Supplies</h2>
                     <p>Stop in today to get your comic storage supplies! We have Modern, Current, and 
 Silver Age Bags and Boards as well as long and short boxes available. Some magazing
 storage supplies also available.</p>
-                   
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="img/MatureTitlesOpt.jpg" alt="Mature Titles" width="140">
+                    <img src="img/MatureTitlesOpt.jpg" alt="Mature Titles">
                     <h2>Mature Titles</h2>
                     <p>In addition to titles for all ages we also have a large selection of titles for mature audiences</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="img/GraphicNovels.jpg" alt="Graphic Novels" width="140">
+                    <img src="img/GraphicNovels.jpg" alt="Graphic Novels">
                     <h2>Graphic Novels and More!</h2>
                     <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
                 </div>
@@ -151,47 +155,47 @@ storage supplies also available.</p>
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7 col-md-push-5">
+                <div class="col-md-6">
                     <h2 class="featurette-heading">Like us on Facebook, and check out our latest updates, specials, and events</h2>
                     <p class="lead">
                     <!--Facebook Embed Begin -->
                     <div class="fb-page" data-href="https://www.facebook.com/powerhouse.comics" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics"><a href="https://www.facebook.com/powerhouse.comics">Power House Comics</a></blockquote></div></div></p>
                 	<!--Facebook Embed End -->
                 </div>
-                <div class="col-md-5 col-md-pull-7">
+                <div class="col-md-6">
                     <h2 class="featurette-heading">Location</h2>
                     <p>807 W College Ave, Appleton, WI 54914</p>
                     <h2 class="featurette-heading">Hours</h2>
-                    <table width="350" border="0">
-  <tr>
-    <td>Monday</td>
-    <td>Closed</td>
-  </tr>
-  <tr>
-    <td>Tuesday</td>
-    <td>12&#58;00 &#45; 7&#58;00 pm</td>
-  </tr>
-  <tr>
-    <td>Wednesday</td>
-    <td>12&#58;00 &#45; 7&#58;00 pm</td>
-  </tr>
-  <tr>
-    <td>Thursday</td>
-    <td>12&#58;00 &#45; 7&#58;00 pm</td>
-  </tr>
-  <tr>
-    <td>Friday</td>
-    <td>12&#58;00 &#45; 7&#58;00 pm</td>
-  </tr>
-  <tr>
-    <td>Saturday</td>
-    <td>12&#58;00 &#45; 6&#58;00 pm</td>
-  </tr>
-  <tr>
-    <td>Sunday</td>
-    <td>Closed</td>
-  </tr>
-</table>
+                    <table class="table">
+                      <tr>
+                        <td>Monday</td>
+                        <td>Closed</td>
+                      </tr>
+                      <tr>
+                        <td>Tuesday</td>
+                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
+                      </tr>
+                      <tr>
+                        <td>Wednesday</td>
+                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
+                      </tr>
+                      <tr>
+                        <td>Thursday</td>
+                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
+                      </tr>
+                      <tr>
+                        <td>Friday</td>
+                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
+                      </tr>
+                      <tr>
+                        <td>Saturday</td>
+                        <td>12&#58;00 &#45; 6&#58;00 pm</td>
+                      </tr>
+                      <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                      </tr>
+                    </table>
 <h2 class="featurette-heading">Phone Number</h2>
 <p>920&#45;733&#45;9339</p>
                 </div>

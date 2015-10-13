@@ -1,6 +1,110 @@
-/**********************
-********* SLIDER STUFF 
-*********************/
+/*------------------------------------
+
+            DEFAULT STYLES 
+
+-------------------------------------*/
+
+body {
+    background: #2f2f2f;
+    color: #eee;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #eee;   
+}
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.top-spacer {
+    margin-top: 25px;
+}
+.bottom-spacer {
+    margin-bottom: 25px;
+}
+/* adds vertical space between
+catalog entries - keeps spacing
+uniform as the viewport shrinks */
+.catalog-spacer {
+    margin-bottom: 20px;
+}
+
+
+/*------------------------------------
+
+                 NAV 
+
+-------------------------------------*/
+
+.navbar-inverse .navbar-brand {
+    color: #FFF139;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #6BA6FC;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #E51837;
+    background-color: #000;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #FFF139;
+}
+
+/*------------------------------------
+
+                LOGIN
+
+-------------------------------------*/
+
+.login {
+    background: #2f2f2f;
+    color: #eee;
+    border: 1px solid #333;
+    border-radius: 5px;
+    height: 80%;
+    padding: 25px;
+    position: fixed;
+        right: -330px;
+    transition: all 1s, ease-out;
+    width: 320px;
+    z-index: 0;
+}
+.login.active {
+        right: 0;
+    transition: all 1s, ease-in;
+    z-index: 9999;
+}
+.login__button {
+    cursor: pointer;
+}
+.overlay {
+    background: #000;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+        left: 0;
+        top: 0;
+    transition: all 1s,ease-out;
+    width: 100%;
+    z-index: 0;
+}
+.overlay.active {
+    opacity: .75;
+    transition: all 1s, ease-in;
+    z-index: 1000;
+}
+
+/*------------------------------------
+
+                SLIDER 
+
+-------------------------------------*/
 
 .slider {
     height: calc( 75vh - 50px );
@@ -52,131 +156,19 @@
     width: 125px;
 }
 
+/*------------------------------------
 
-/************************  
-*******************LOGIN
-***********************/
+                 BODY 
 
-.login {
-    background: #2f2f2f;
-    color: #eee;
-    border: 1px solid #333;
-    border-radius: 5px;
-    height: 80%;
-    padding: 25px;
-    position: fixed;
-        right: -330px;
-    transition: all 1s, ease-out;
-    width: 320px;
-    z-index: 0;
-}
-.login.active {
-        right: 0;
-    transition: all 1s, ease-in;
-    z-index: 9999;
-}
-.login__button {
-    cursor: pointer;
-}
-.overlay {
-    background: #000;
-    height: 100%;
-    opacity: 0;
-    position: fixed;
-        left: 0;
-        top: 0;
-    transition: all 1s,ease-out;
-    width: 100%;
-    z-index: 0;
-}
-.overlay.active {
-    opacity: .75;
-    transition: all 1s, ease-in;
-    z-index: 1000;
+-------------------------------------*/
+
+.top__general img {   
+    height: 190px;
+    width: 140px;
 }
 
-
-/************************  
-*******************FOOTER
-***********************/
-
-footer {
-    background: #222;
-    color: #fff;
-    min-height: 300px;
-}
-
-
-/************************  
-*********************CART
-***********************/
-
-.cart--underline {
-    border-bottom: 1px solid #222;
-    margin-bottom: 15px;
-}
-
-
-/************************  
-*********************MAIN
-***********************/
-
-body {
-    background: #2f2f2f;
-    color: #eee;
-}
-h1, h2, h3, h4, h5, h6 {
-    color: #eee;   
-}
-h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-h4 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.top-spacer {
-    margin-top: 25px;
-}
-.bottom-spacer {
-    margin-bottom: 25px;
-}
-
-
-/* adds vertical space between
-catalog entries - keeps spacing
-uniform as the viewport shrinks */
-.catalog-spacer {
-    margin-bottom: 20px;
-}
-
-
-/************************  
-**********************NAV
-***********************/
-
-.navbar-inverse .navbar-brand {
-    color: #FFF139;
-}
-.navbar-inverse .navbar-nav > li > a {
-    color: #6BA6FC;
-}
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>.active>a:hover {
-    color: #E51837;
-    background-color: #000;
-}
-.navbar-inverse .navbar-nav>li>a:focus,
-.navbar-inverse .navbar-nav>li>a:hover {
-    color: #FFF139;
-}
-
-
-/************************  
-******************CONTACT
-***********************/
+/*---------------------- 
+        CONTACT*/
 
 /* changed background color
 to match color scheme */
@@ -186,13 +178,31 @@ to match color scheme */
     /**border-color: #867072;**/
 }
 
-/************************  
-******************NEW RELEASES
-***********************/
+/*--------------------- 
+      NEW RELEASES*/
 
 .list-group-item {
 	color:#FFF;
 	background-color: #2f2f2f;
-
 }
 
+/*---------------------
+       CART*/
+
+.cart--underline {
+    border-bottom: 1px solid #222;
+    margin-bottom: 15px;
+}
+
+
+/*------------------------------------
+
+                 FOOTER 
+
+-------------------------------------*/
+
+footer {
+    background: #222;
+    color: #fff;
+    min-height: 300px;
+}
