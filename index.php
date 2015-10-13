@@ -12,6 +12,7 @@
         <link href="slick/slick/slick.css" rel="stylesheet">
         <link href="slick/slick/slick-theme.css">
         <link href="css/main.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
     <!--Facebook Embed Javascript Start -->
@@ -64,29 +65,44 @@
             </div>
         </div>
         <div class="overlay"></div>
-        <div class="slider clearfix">
-            <div class="slider-img" id="s-img-1">
-                <div>
-                    <span>OOOHHH Call to action</span>
+        <div class="slider__wrapper">
+            <div class="slider clearfix">
+                <div class="slider-img" id="s-img-1">
+                    <div>
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-            <div class="slider-img" id="s-img-2">
-                <div>
-                    <span>Superheros love candy</span>
+                <div class="slider-img" id="s-img-2">
+                    <div>
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-            <div class="slider-img" id="s-img-3">
-                <div>
-                    <span>Punch pow boom</span>
+                <div class="slider-img" id="s-img-3">
+                    <div>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container marketing text-center">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nulla quis aliquet fringilla. Proin commodo, sem vel accumsan dictum, leo nibh dictum risus, et euismod eros urna nec tortor. Nullam viverra tortor eget metus rhoncus vulputate. Aliquam lacinia vulputate volutpat. Sed porta nibh velit. Curabitur non tincidunt turpis. Ut rutrum nulla a nunc congue, a sodales orci maximus. Praesent nec mi ante. Duis sit amet purus quis augue bibendum blandit.</p>
+        <div class="underslider--white text-center">
+            <div class="container text-center">
+                <div class="row underslider__text">
+                    <div class="col-xs-12">
+                        <h1>POWERHOUSE COMICS</h1>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="underslider--red text-center">
+            <div class="container">
+                <div class="row underslider__text bottom-spacer">
+                    <div class="col-xs-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nulla quis aliquet fringilla. Proin commodo, sem vel accumsan dictum, leo nibh dictum risus, et euismod eros urna nec tortor. Nullam viverra tortor eget metus rhoncus vulputate. Aliquam lacinia vulputate volutpat. Sed porta nibh velit. Curabitur non tincidunt turpis. Ut rutrum nulla a nunc congue, a sodales orci maximus. Praesent nec mi ante. Duis sit amet purus quis augue bibendum blandit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center top-spacer">
             <div class="row top__general">
                 <div class="col-lg-4">
                     <img src="img/DSCN0229.JPG" alt="Power House Comics">
@@ -232,7 +248,7 @@ storage supplies also available.</p>
                     autoplay: true,
                     infinity: true,
                     pauseOnHover: false,
-                    speed: 500,
+                    speed: 1000,
                     fade: true,
                     cssEase: 'linear'
                 });

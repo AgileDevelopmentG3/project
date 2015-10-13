@@ -5,8 +5,10 @@
 -------------------------------------*/
 
 body {
-    background: #2f2f2f;
+    background: #000;
     color: #eee;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #eee;   
@@ -39,21 +41,34 @@ uniform as the viewport shrinks */
 
 -------------------------------------*/
 
-.navbar-inverse .navbar-brand {
-    color: #FFF139;
+.navbar::before {
+    background: url('../img/Spiderman-bw.jpg') no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
 }
+.navbar-inverse {
+    background: #000;
+    border: none;
+    margin-bottom: 0;
+}
+.navbar-inverse .navbar-brand, 
 .navbar-inverse .navbar-nav > li > a {
-    color: #6BA6FC;
+    color: #FFF;
+/*    opacity: .7;*/
+    transition: color 0.3s ease-out;
 }
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #FFF139;
+/*    opacity: 1;*/
+    transition: color 0.3s ease-in;
+} 
+
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #E51837;
-    background-color: #000;
-}
-.navbar-inverse .navbar-nav>li>a:focus,
-.navbar-inverse .navbar-nav>li>a:hover {
-    color: #FFF139;
+    background-color: #333;
 }
 
 /*------------------------------------
@@ -92,7 +107,7 @@ uniform as the viewport shrinks */
         top: 0;
     transition: all 1s,ease-out;
     width: 100%;
-    z-index: 0;
+    z-index: -1;
 }
 .overlay.active {
     opacity: .75;
@@ -105,10 +120,12 @@ uniform as the viewport shrinks */
                 SLIDER 
 
 -------------------------------------*/
-
+.slider__wrapper {
+    background: #FFF;
+    padding-top: 50px;
+}
 .slider {
-    height: calc( 75vh - 50px );
-    margin-bottom: 50px; 
+    height: calc( 50vh - 50px ); 
 }
 .slider .slick-list, 
 .slider .slick-track {
@@ -121,7 +138,6 @@ uniform as the viewport shrinks */
     width: 100%;
 }
 .slider-img > div {
-    background: rgba(0,0,0,0.60);
     color: #fff;
     display: table-cell;
     font-size: 72px;
@@ -161,6 +177,30 @@ uniform as the viewport shrinks */
                  BODY 
 
 -------------------------------------*/
+.underslider--white {
+    background: #FFF;
+    min-height: 25vh;
+    width: 100%;
+}
+.underslider--white h1 {
+    color: #000;
+    font-size: 76px;
+}
+.underslider--red {
+    background: #F33;
+    color: #FFF;
+    min-height: 25vh;
+    width: 100%;
+}
+.underslider--white .container,
+.underslider--red .container {
+    display: table;
+    min-height: 25vh;
+}
+.underslider__text {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 .top__general img {   
     height: 190px;
