@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
-        <title>OUR CATALOG</title>
+        <title>Premium Titles for Sale</title>
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
     </head>
@@ -28,7 +28,7 @@
                         <ul class="nav navbar-nav">
                             <li><a href="index.php">Home</a></li>
                             <li><a href="subscriptions.php">Subscriptions</a></li>
-                            <li class="active"><a href="catalog.php">Catalog</a></li>
+                            <li class="active"><a href="catalog.php">Premium Titles</a></li>
                             <li><a href="contact.php">Contact</a></li>
                             <li class="login__button"><a>Login</a></li>
                         </ul>
@@ -55,8 +55,8 @@
         <div class="container bottom-spacer"> 
             <div class="row">
                 <div class="col-xs-12">
-                    <h1>Catalog</h1>
-                    <p>Many more titles are available...</p>
+                    <h1>Premium Titles for Sale</h1>
+                    <p>Call or email us to inquire about other titles</p>
                 </div>
             </div>
             <div class="row text-center">

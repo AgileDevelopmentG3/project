@@ -41,7 +41,7 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="index.php">Home</a></li>
                             <li><a href="subscriptions.php">Subscriptions</a></li>
-                            <li><a href="catalog.php">Catalog</a></li>
+                            <li><a href="catalog.php">Premium Titles</a></li>
                             <li><a href="contact.php">Contact</a></li>
                             <li class="login__button"><a>Login</a></li>
                         </ul>
