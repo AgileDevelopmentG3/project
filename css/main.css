@@ -144,7 +144,7 @@ uniform as the viewport shrinks */
     text-align: center;
     vertical-align: middle;
 }
-.slider-img > div > span {
+.slider-img > div > span {a
     display: inline-block;
     height: 200px;
     line-height: 200px;
