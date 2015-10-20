@@ -1,6 +1,6 @@
 <?php
-$email = $_POST['inputEmail'];
-$userPass = $_POST['inputPassword'];
+//$email = $_POST['inputEmail'];
+//$userPass = $_POST['inputPassword'];
 
 
 
@@ -22,7 +22,7 @@ try
 	
 	$statement = $db->prepare($query);
 	$statement -> bindValue(':Email', $Email);
-	$statement -> bindValue(':Userpassword', $Userpassword);
+	//$statement -> bindValue(':Userpassword', $Userpassword);
 	$statement->execute();
 	$Users = $statement->fetchAll();
 	$statement->closeCursor();
@@ -40,13 +40,13 @@ try
 	}
 	else 
 	{	
-		$query = "INSERT INTO tblcustomer (email, password) VALUES(:eEmail, :Userpassword)";
+		$query = "INSERT INTO tblcustomer (email, password) VALUES(:Email, :Userpassword)";
 		$statement = $db->prepare($query);
 		$statement -> bindValue(':Email', $Email);
 		$statement -> bindValue(':Userpassword', $Userpassword);
 		$statement->execute();
 		$statement->closeCursor();
-		echo("<h2> Account Created Successfully</h2>")
+		echo("<h2> Account Created Successfully</h2>");
 	}
 }
 catch(PDOException $e)
