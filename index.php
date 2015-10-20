@@ -93,8 +93,7 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-=======
+
         <div class="underslider--white text-center">
             <div class="container text-center">
                 <div class="row underslider__text">
@@ -104,7 +103,7 @@
                 </div>
             </div>
         </div>
->>>>>>> d6116686ab46de88ece617933e4f88a872ece8a3
+
         <div class="underslider--red text-center">
             <div class="container">
                 <div class="row underslider__text bottom-spacer">
