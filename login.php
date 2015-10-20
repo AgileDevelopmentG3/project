@@ -2,11 +2,11 @@
 GLOBAL $Email;
 GLOBAL $Userpassword;
 
-   if(isset($_POST['Email'])) 
-   	$Email=$_POST['Email'];
+   if(isset($_POST['txtEmail'])) 
+   	$Email=$_POST['txtEmail'];
    
-   if(isset($_POST['Userpassword'])) 
-   	$Userpassword=$_POST['Userpassword'];
+   if(isset($_POST['txtUserPassword'])) 
+   	$Userpassword=$_POST['txtUserPassword'];
    
 /**
 $username = "b433d07cc3f105";
@@ -35,8 +35,8 @@ try
 	
 	$query = "SELECT * FROM `tblcustomer` WHERE Email = :Email and Password = :Userpassword";
 	
-	$Email = $_POST['Email'];
-	$Userpassword = $_POST['Userpassword'];
+	$Email = $_POST['txtEmail'];
+	$Userpassword = $_POST['txtUserPassword'];
 	
 	$statement = $db->prepare($query);
 	$statement -> bindValue(':Email', $Email);
