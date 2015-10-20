@@ -65,6 +65,15 @@
             </div>
         </div>
         <div class="overlay"></div>
+        <div class="underslider--white text-center">
+            <div class="container text-center">
+                <div class="row underslider__text">
+                    <div class="col-xs-12">
+                        <h1>POWERHOUSE COMICS</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="slider__wrapper">
             <div class="slider clearfix">
                 <div class="slider-img" id="s-img-1">
@@ -84,15 +93,6 @@
                 </div>
             </div>
         </div>
-        <div class="underslider--white text-center">
-            <div class="container text-center">
-                <div class="row underslider__text">
-                    <div class="col-xs-12">
-                        <h1>POWERHOUSE COMICS</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="underslider--red text-center">
             <div class="container">
                 <div class="row underslider__text bottom-spacer">
@@ -105,19 +105,19 @@
         <div class="container text-center top-spacer">
             <div class="row top__general">
                 <div class="col-lg-4">
-                    <img src="img/DSCN0229.JPG" alt="Power House Comics">
+                    <img src="img/DSCN0229-sm.JPG" alt="Power House Comics">
                     <h2>Comic Storage Supplies</h2>
                     <p>Stop in today to get your comic storage supplies! We have Modern, Current, and 
 Silver Age Bags and Boards as well as long and short boxes available. Some magazing
 storage supplies also available.</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="img/MatureTitlesOpt.jpg" alt="Mature Titles">
+                    <img src="img/MatureTitlesOpt-sm.jpg" alt="Mature Titles">
                     <h2>Mature Titles</h2>
                     <p>In addition to titles for all ages we also have a large selection of titles for mature audiences</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img src="img/GraphicNovels.jpg" alt="Graphic Novels">
+                    <img src="img/GraphicNovels-sm.jpg" alt="Graphic Novels">
                     <h2>Graphic Novels and More!</h2>
                     <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
                 </div>

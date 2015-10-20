@@ -5,8 +5,8 @@
 -------------------------------------*/
 
 body {
-    background: #000;
-    color: #eee;
+    background: #FFF;
+    color: #222;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2rem;
 }
@@ -202,8 +202,9 @@ uniform as the viewport shrinks */
     vertical-align: middle;
 }
 
-.top__general img {   
-    height: 190px;
+.top__general img {  
+    border-radius: 50%;
+    height: 140px;
     width: 140px;
 }
 
