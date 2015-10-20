@@ -49,6 +49,9 @@
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
+                <div class="sign-up">
+                    <a href="createprofile.php">Sign Up</a>
+                </div>
             </div>
         </div>
         <div class="overlay"></div>

@@ -11,7 +11,7 @@ body {
     font-size: 2rem;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #eee;   
+    color: #000;   
 }
 h3 {
     margin-top: 5px;
@@ -82,8 +82,8 @@ uniform as the viewport shrinks */
 -------------------------------------*/
 
 .login {
-    background: #2f2f2f;
-    color: #eee;
+    background: #fff;
+    color: #000;
     border: 1px solid #333;
     border-radius: 5px;
     height: 80%;

@@ -62,14 +62,17 @@
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
+                <div class="sign-up">
+                    <a href="createprofile.php">Sign Up</a>
+                </div>
             </div>
         </div>
         <div class="overlay"></div>
         <div class="underslider--white text-center">
             <div class="container text-center">
                 <div class="row underslider__text">
-                    <div class="col-xs-12">
-                        <h1>POWERHOUSE COMICS</h1>
+                    <div class="col-xs-12 logo-main">
+                        <img src="img/phlogo.jpg">
                     </div>
                 </div>
             </div>
@@ -94,15 +97,7 @@
             </div>
         </div>
 
-        <div class="underslider--white text-center">
-            <div class="container text-center">
-                <div class="row underslider__text">
-                    <div class="col-xs-12 logo-main">
-                        <img src="img/phlogo.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
+       
 
         <div class="underslider--red text-center">
             <div class="container">
