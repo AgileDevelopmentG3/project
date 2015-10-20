@@ -35,7 +35,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Power House Comics</a>
+                        <a class="navbar-brand" href="#"><img class="img-responsive" src="img/ph-comics.png" alt="Power House Comics"></a>
                     </div>
                     <div id="navbar" class="navbar-right navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -68,11 +68,12 @@
             </div>
         </div>
         <div class="overlay"></div>
-        <div class="underslider--white text-center">
-            <div class="container text-center">
-                <div class="row underslider__text">
-                    <div class="col-xs-12 logo-main">
-                        <img src="img/phlogo.jpg">
+
+        <div class="underslider--red text-center">
+            <div class="container">
+                <div class="row underslider__text bottom-spacer">
+                    <div class="col-xs-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nulla quis aliquet fringilla. Proin commodo, sem vel accumsan dictum, leo nibh dictum risus, et euismod eros urna nec tortor. Nullam viverra tortor eget metus rhoncus vulputate. Aliquam lacinia vulputate volutpat. Sed porta nibh velit. Curabitur non tincidunt turpis. Ut rutrum nulla a nunc congue, a sodales orci maximus. Praesent nec mi ante. Duis sit amet purus quis augue bibendum blandit.</p>
                     </div>
                 </div>
             </div>
@@ -92,18 +93,6 @@
                 <div class="slider-img" id="s-img-3">
                     <div>
                         <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-       
-
-        <div class="underslider--red text-center">
-            <div class="container">
-                <div class="row underslider__text bottom-spacer">
-                    <div class="col-xs-12">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nulla quis aliquet fringilla. Proin commodo, sem vel accumsan dictum, leo nibh dictum risus, et euismod eros urna nec tortor. Nullam viverra tortor eget metus rhoncus vulputate. Aliquam lacinia vulputate volutpat. Sed porta nibh velit. Curabitur non tincidunt turpis. Ut rutrum nulla a nunc congue, a sodales orci maximus. Praesent nec mi ante. Duis sit amet purus quis augue bibendum blandit.</p>
                     </div>
                 </div>
             </div>

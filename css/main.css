@@ -59,8 +59,11 @@ uniform as the viewport shrinks */
 .navbar-inverse .navbar-brand, 
 .navbar-inverse .navbar-nav > li > a {
     color: #FFF;
-/*    opacity: .7;*/
     transition: color 0.3s ease-out;
+}
+.navbar-brand img {
+    max-width: 360px;
+    width: 100%;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -126,7 +129,6 @@ uniform as the viewport shrinks */
 -------------------------------------*/
 .slider__wrapper {
     background: #FFF;
-    padding-top: 50px;
 }
 .slider {
     height: calc( 50vh - 50px ); 
