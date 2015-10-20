@@ -94,15 +94,7 @@
             </div>
         </div>
 
-        <div class="underslider--white text-center">
-            <div class="container text-center">
-                <div class="row underslider__text">
-                    
-                        
-                    
-                </div>
-            </div>
-        </div>
+       
 
         <div class="underslider--red text-center">
             <div class="container">
