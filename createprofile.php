@@ -56,44 +56,226 @@
             </div>
         </div>
         <div class="overlay"></div>
-            <div class="container">
-            	   <div class="panel-body">
-			    		<form role="form">
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
-			    					</div>
-			    				</div>
-			    			</div>
+        <div class="container">
+           <form class="form-horizontal">
+            <fieldset>
 
-			    			<div class="form-group">
-			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
-			    			</div>
+            <!-- Form Name -->
+            <h1>Sign Up</h1>
 
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
-			    					</div>
-			    				</div>
-			    			</div>
-			    			
-			    			<input type="submit" value="Register" class="btn btn-info btn-block">
-			    		
-			    		</form>
-			    	</div>
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="fn">First name</label>  
+              <div class="col-md-4">
+              <input id="fn" name="fn" type="text" placeholder="first name" class="form-control input-md" required="">
+
+              </div>
             </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="ln">Last name</label>  
+              <div class="col-md-4">
+              <input id="ln" name="ln" type="text" placeholder="last name" class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="email">Email</label>  
+              <div class="col-md-4">
+              <input id="email" name="email" type="text" placeholder="email" class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="add1">Address 1</label>  
+              <div class="col-md-4">
+              <input id="add1" name="add1" type="text" placeholder="" class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="add2">Address 2</label>  
+              <div class="col-md-4">
+              <input id="add2" name="add2" type="text" placeholder="" class="form-control input-md">
+
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="city">City</label>  
+              <div class="col-md-4">
+              <input id="city" name="city" type="text" placeholder="city" class="form-control input-md" required="">
+
+              </div>
+            </div>
+                
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="selectbasic">State</label>
+              <div class="col-md-4">
+                <select id="selectbasic" name="selectbasic" class="form-control input-md">
+                   
+                    <option value="AL">Alabama</option>
+
+                    <option value="AK">Alaska</option>
+
+                    <option value="AZ">Arizona</option>
+
+                    <option value="AR">Arkansas</option>    
+
+                    <option value="CA">California</option>    
+
+                    <option value="CO">Colorado</option>    
+
+                    <option value="CT">Connecticut</option>    
+
+                    <option value="DE">Delaware</option>    
+
+                    <option value="DC">District Of Columbia</option>    
+
+                    <option value="FL">Florida</option>    
+
+                    <option value="GA">Georgia</option>    
+
+                    <option value="HI">Hawaii</option>    
+
+                    <option value="ID">Idaho</option>    
+
+                    <option value="IL">Illinois</option>    
+
+                    <option value="IN">Indiana</option>    
+
+                    <option value="IA">Iowa</option>    
+
+                    <option value="KS">Kansas</option>    
+
+                    <option value="KY">Kentucky</option>    
+
+                    <option value="LA">Louisiana</option>    
+
+                    <option value="ME">Maine</option>
+
+                    <option value="MD">Maryland</option>
+
+                    <option value="MA">Massachusetts</option>
+
+                    <option value="MI">Michigan</option>
+
+                    <option value="MN">Minnesota</option>
+
+                    <option value="MS">Mississippi</option>
+
+                    <option value="MO">Missouri</option>
+
+                    <option value="MT">Montana</option>
+
+                    <option value="NE">Nebraska</option>    
+
+                    <option value="NV">Nevada</option>    
+
+                    <option value="NH">New Hampshire</option>    
+
+                    <option value="NJ">New Jersey</option>    
+
+                    <option value="NM">New Mexico</option>
+
+                    <option value="NY">New York</option>    
+
+                    <option value="NC">North Carolina</option>
+
+                    <option value="ND">North Dakota</option>
+
+                    <option value="OH">Ohio</option>    
+
+                    <option value="OK">Oklahoma</option>
+
+                    <option value="OR">Oregon</option>
+
+                    <option value="PA">Pennsylvania</option>
+
+                    <option value="RI">Rhode Island</option>
+
+                    <option value="SC">South Carolina</option>
+
+                    <option value="SD">South Dakota</option>
+
+                    <option value="TN">Tennessee</option>
+
+                    <option value="TX">Texas</option>
+
+                    <option value="UT">Utah</option>
+
+                    <option value="VT">Vermont</option>    
+
+                    <option value="VA">Virginia</option>
+
+                    <option value="WA">Washington</option>    
+
+                    <option value="WV">West Virginia</option>    
+
+                    <option value="WI">Wisconsin</option>
+
+                    <option value="WY">Wyoming</option>
+                    
+                </select>
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="zip">Zip Code</label>  
+              <div class="col-md-4">
+              <input id="zip" name="zip" type="text" placeholder="Zip Code" class="form-control input-md" required="">
+
+              </div>
+            </div>
+
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="phone">Phone Number</label>  
+              <div class="col-md-4">
+              <input id="phone" name="phone" type="text" placeholder="Phone#" class="form-control input-md" required="">
+
+              </div>
+            </div>
+                
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="phone">Password</label>  
+              <div class="col-md-4">
+              <input id="password" name="password" type="text" placeholder="password" class="form-control input-md" required>
+
+              </div>
+            </div>
+                
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="phone">Re-enter Password</label>  
+              <div class="col-md-4">
+              <input id="re-password" name="re-password" type="text" placeholder="password" class="form-control input-md" required>
+
+              </div>
+            </div>
+
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="submit"></label>
+              <div class="col-md-4">
+                <button id="submit" name="submit" class="btn btn-primary">SUBMIT</button>
+              </div>
+            </div>
+
+            </fieldset>
+            </form>
+
+        </div>
         <footer>
             <div class="container">
                 <div class="row">
