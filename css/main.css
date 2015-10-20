@@ -33,6 +33,10 @@ uniform as the viewport shrinks */
 .catalog-spacer {
     margin-bottom: 20px;
 }
+.comic-book-cover img {
+    width: auto;
+    height: 200px;
+}
 
 
 /*------------------------------------
@@ -205,6 +209,11 @@ uniform as the viewport shrinks */
 .top__general img {   
     height: 190px;
     width: 140px;
+}
+.logo-main img {
+    width: 80%;
+    padding-bottom: 20px;
+    
 }
 
 /*---------------------- 
