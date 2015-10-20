@@ -57,7 +57,7 @@
         </div>
         <div class="overlay"></div>
         <div class="container">
-           <form class="form-horizontal">
+           <form class="form-horizontal" action="newAccount.php" method="post">
             <fieldset>
 
             <!-- Form Name -->
@@ -67,7 +67,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="fn">First name</label>  
               <div class="col-md-4">
-              <input id="fn" name="fn" type="text" placeholder="first name" class="form-control input-md" required="">
+              <input id="fn" name="first-name" type="text" placeholder="first name" class="form-control input-md" required="">
 
               </div>
             </div>
@@ -76,7 +76,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="ln">Last name</label>  
               <div class="col-md-4">
-              <input id="ln" name="ln" type="text" placeholder="last name" class="form-control input-md" required="">
+              <input id="ln" name="last-name" type="text" placeholder="last name" class="form-control input-md" required="">
 
               </div>
             </div>
@@ -94,7 +94,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="add1">Address 1</label>  
               <div class="col-md-4">
-              <input id="add1" name="add1" type="text" placeholder="" class="form-control input-md" required="">
+              <input id="add1" name="address1" type="text" placeholder="" class="form-control input-md" required="">
 
               </div>
             </div>
@@ -103,7 +103,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="add2">Address 2</label>  
               <div class="col-md-4">
-              <input id="add2" name="add2" type="text" placeholder="" class="form-control input-md">
+              <input id="add2" name="address2" type="text" placeholder="" class="form-control input-md">
 
               </div>
             </div>
@@ -120,7 +120,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="selectbasic">State</label>
               <div class="col-md-4">
-                <select id="selectbasic" name="selectbasic" class="form-control input-md">
+                <select id="selectbasic" name="state" class="form-control input-md">
                    
                     <option value="AL">Alabama</option>
 
@@ -250,7 +250,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="phone">Password</label>  
               <div class="col-md-4">
-              <input id="password" name="password" type="text" placeholder="password" class="form-control input-md" required>
+              <input id="password" name="password" type="password" placeholder="password" class="form-control input-md" required>
 
               </div>
             </div>
@@ -258,7 +258,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="phone">Re-enter Password</label>  
               <div class="col-md-4">
-              <input id="re-password" name="re-password" type="text" placeholder="password" class="form-control input-md" required>
+              <input id="re-password" name="re-password" type="password" placeholder="password" class="form-control input-md" required>
 
               </div>
             </div>
