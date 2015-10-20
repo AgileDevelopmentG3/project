@@ -33,6 +33,10 @@ uniform as the viewport shrinks */
 .catalog-spacer {
     margin-bottom: 20px;
 }
+.comic-book-cover img {
+    width: auto;
+    height: 200px;
+}
 
 
 /*------------------------------------
@@ -144,7 +148,7 @@ uniform as the viewport shrinks */
     text-align: center;
     vertical-align: middle;
 }
-.slider-img > div > span {
+.slider-img > div > span {a
     display: inline-block;
     height: 200px;
     line-height: 200px;
@@ -206,6 +210,11 @@ uniform as the viewport shrinks */
     border-radius: 50%;
     height: 140px;
     width: 140px;
+}
+.logo-main img {
+    width: 80%;
+    padding-bottom: 20px;
+    
 }
 
 /*---------------------- 

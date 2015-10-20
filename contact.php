@@ -10,6 +10,7 @@
         <title>CONTACT US</title>
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
         <style>
             #map {
                 width: 500px;
@@ -47,7 +48,7 @@
                         <ul class="nav navbar-nav">
                             <li><a href="index.php">Home</a></li>
                             <li><a href="subscriptions.php">Subscriptions</a></li>
-                            <li><a href="catalog.php">Catalog</a></li>
+                            <li><a href="catalog.php">Premium Titles</a></li>
                             <li class="active"><a href="contact.php">Contact</a></li>
                             <li class="login__button"><a>Login</a></li>
                         </ul>

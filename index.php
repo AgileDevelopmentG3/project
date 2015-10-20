@@ -41,7 +41,7 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="index.php">Home</a></li>
                             <li><a href="subscriptions.php">Subscriptions</a></li>
-                            <li><a href="catalog.php">Catalog</a></li>
+                            <li><a href="catalog.php">Premium Titles</a></li>
                             <li><a href="contact.php">Contact</a></li>
                             <li class="login__button"><a>Login</a></li>
                         </ul>
@@ -93,6 +93,18 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+        <div class="underslider--white text-center">
+            <div class="container text-center">
+                <div class="row underslider__text">
+                    <div class="col-xs-12 logo-main">
+                        <img src="img/phlogo.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+>>>>>>> d6116686ab46de88ece617933e4f88a872ece8a3
         <div class="underslider--red text-center">
             <div class="container">
                 <div class="row underslider__text bottom-spacer">
