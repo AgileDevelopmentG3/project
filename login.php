@@ -24,9 +24,9 @@ $password = "";
 $dsn = 'mysql:host=localhost;dbname=phcdb';
 /**/
 
-$dsn = "mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=AgileGroup3DB";
-$username = "bc81427516cc2c";
-$password = "451af133";
+$dsn = "mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=as_bf1259e0fe71a2a";
+$username = "bfdbdc3c11a396";
+$password = "1c82948e";
 
 
 try	
