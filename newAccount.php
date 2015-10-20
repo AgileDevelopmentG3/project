@@ -17,8 +17,8 @@ try
 	
 	$query = "SELECT * FROM `tblcustomer` WHERE Email = :Email";
 	
-	$Email = $_POST['inputEmail'];
-	$Userpassword = $_POST['inputPassword'];
+	$Email = $_POST['txtEmail'];
+	$Userpassword = $_POST['txtUserPassword'];
 	
 	$statement = $db->prepare($query);
 	$statement -> bindValue(':Email', $Email);

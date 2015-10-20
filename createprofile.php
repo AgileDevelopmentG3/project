@@ -39,13 +39,13 @@
         <div class="login">
             <div class="login__innerwrapper">
                 <form role="form">
-                    <div class="form-group">
+                    <div class="form-group"  action="login.php" method="post">
                         <label for="login__username">Username <span>(email address)</span></label>
-                        <input class="form-control" id="login__username" name="login__username" type="email">
+                        <input class="form-control" id="login__username" name="txtEmail" type="email">
                     </div>
                     <div class="form-group">
                         <label for="login__password">Password</label>
-                        <input class="form-control" id="login__password" name="login__username" type="text">
+                        <input class="form-control" id="login__password" name="txtUserPassword" type="text">
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
@@ -56,9 +56,9 @@
             <form class="form-signin" action="newAccount.php" method="post">
                 <h2 class="form-signin-heading">Please sign in</h2>
                 <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <input type="email" id="inputEmail" name="txtEmail" class="form-control" placeholder="Email address" required autofocus>
                 <label for="inputPassword" class="sr-only">Password</label>
-                <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
+                <input type="password" id="inputPassword" name="txtUserPassword" class="form-control" placeholder="Password" required>
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" value="remember-me"> Remember me

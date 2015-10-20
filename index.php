@@ -54,11 +54,11 @@
                 <form role="form" action="login.php" method="post">
                     <div class="form-group">
                         <label for="Email">Username <span>(email address)</span></label>
-                        <input class="form-control" id="Email" name="Email" type="email">
+                        <input class="form-control" id="Email" name="txtEmail" type="email">
                     </div>
                     <div class="form-group">
                         <label for="Userpassword">Password</label>
-                        <input class="form-control" id="Userpassword" name="Userpassword" type="password">
+                        <input class="form-control" id="Userpassword" name="txtUserPassword" type="password">
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>

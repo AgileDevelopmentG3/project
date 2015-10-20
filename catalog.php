@@ -39,14 +39,14 @@
         </div>
         <div class="login">
             <div class="login__innerwrapper">
-                <form role="form">
+                <form role="form"  action="login.php" method="post">
                     <div class="form-group">
                         <label for="login__username">Username <span>(email address)</span></label>
-                        <input class="form-control" id="login__username" name="login__username" type="email">
+                        <input class="form-control" id="login__username" name="txtEmail" type="email">
                     </div>
                     <div class="form-group">
                         <label for="login__password">Password</label>
-                        <input class="form-control" id="login__password" name="login__username" type="text">
+                        <input class="form-control" id="login__password" name="txtUserPassword" type="text">
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
