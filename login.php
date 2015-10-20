@@ -1,6 +1,8 @@
 <?php
 GLOBAL $Email;
 GLOBAL $Userpassword;
+                                        //if(isset($_GET['FirstName'])){echo $_GET['FirstName'];}
+										//else {echo("Login");} Used to pull first name into HTML (on other forms)
 
    if(isset($_POST['txtEmail'])) 
    	$Email=$_POST['txtEmail'];
@@ -49,12 +51,14 @@ try
 	{
 		foreach ($Users as $User)
 		{
-			echo 'Welcome, ' .  $User['FirstName'] . '!';
+			$FirstName = $User['FirstName'];
+			echo 'Welcome, ' .  $FirstName . '!';
+			header( "refresh:5;url=index.php?FirstName=$FirstName" );
 		}
 	}
 	else 
 	{	
-		echo("Invalid Email and/or Password");
+		header( "refresh:1;url=createprofile.php" );
 	}
 }
 catch(PDOException $e)
