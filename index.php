@@ -15,18 +15,28 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
-    <!--Facebook Embed Javascript Start -->
+<!--                                         Facebook Embed Javascript Start                                     -->
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!--Facebook Embed Javascript End -->
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<!--                                          Facebook Embed Javascript End                                      -->
+        <div class="aboveslider--red">
+            <div class="container">
+                <div class="row aboveslider__text bottom-spacer">
+                    <div class="col-xs-12 text-center">
+<!--                            Place eye catchers in p tag below, such as sales, promos, dates                  -->
+                        <p>!! Major Marvel Sale 10/25 !!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="navbar-wrapper">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar navbar-inverse">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -68,17 +78,6 @@
             </div>
         </div>
         <div class="overlay"></div>
-    
-            <div class="aboveslider--red">
-                <div class="container">
-                    <div class="row aboveslider__text bottom-spacer">
-                        <div class="col-xs-12 text-center">
-<!--                            Place eye catchers in p tag below, such as sales, promos, dates                  -->
-                            <p>!! Major Marvel Sale 10/25 !!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         
         <div class="slider__wrapper">
             <div class="slider clearfix">
