@@ -188,10 +188,18 @@ uniform as the viewport shrinks */
 -------------------------------------*/
 
 .aboveslider--red {
-    background: #F33;
+    background: #F00;
     color: #FFF;
     display: none;
+    position: static;
+    bottom: -55px;
     width: 100%;
+}
+.aboveslider--red.bottom {
+    position: fixed;
+        bottom: 0;
+    transition: bottom .5s ease-in;
+    z-index: 9999;
 }
 .aboveslider--red .container {
     display: table;
