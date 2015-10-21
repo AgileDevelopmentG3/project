@@ -14,4 +14,12 @@ $(document).ready(function(){
         $('.login, .overlay').toggleClass('active');
     });
     $('.login').css('top', navHeight + 10 + 'px');
+    $(window).load(function(){
+        setTimeout(function(){
+            $('.aboveslider--red').slideDown('slow');
+            setTimeout(function(){
+                $('.aboveslider__text p').fadeIn('slow');    
+            }, 500);
+        }, 2500);
+    });
 })

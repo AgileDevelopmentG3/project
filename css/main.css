@@ -21,6 +21,9 @@ h4 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+p {
+    margin: 0;
+}
 .top-spacer {
     margin-top: 25px;
 }
@@ -183,31 +186,25 @@ uniform as the viewport shrinks */
                  BODY 
 
 -------------------------------------*/
-.underslider--white {
-    background: #FFF;
-    min-height: 25vh;
-    width: 100%;
-}
-.underslider--white h1 {
-    color: #000;
-    font-size: 76px;
-}
-.underslider--red {
+
+.aboveslider--red {
     background: #F33;
     color: #FFF;
-    min-height: 25vh;
+    display: none;
     width: 100%;
 }
-.underslider--white .container,
-.underslider--red .container {
+.aboveslider--red .container {
     display: table;
-    min-height: 25vh;
+    min-height: 45px
 }
-.underslider__text {
+.aboveslider__text {
     display: table-cell;
     vertical-align: middle;
 }
-
+.aboveslider__text p {
+    display: none;
+    font-size: 14px;
+}
 .top__general img {  
     border-radius: 50%;
     height: 140px;

@@ -68,16 +68,18 @@
             </div>
         </div>
         <div class="overlay"></div>
-
-        <div class="underslider--red text-center">
-            <div class="container">
-                <div class="row underslider__text bottom-spacer">
-                    <div class="col-xs-12">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nulla quis aliquet fringilla. Proin commodo, sem vel accumsan dictum, leo nibh dictum risus, et euismod eros urna nec tortor. Nullam viverra tortor eget metus rhoncus vulputate. Aliquam lacinia vulputate volutpat. Sed porta nibh velit. Curabitur non tincidunt turpis. Ut rutrum nulla a nunc congue, a sodales orci maximus. Praesent nec mi ante. Duis sit amet purus quis augue bibendum blandit.</p>
+    
+            <div class="aboveslider--red">
+                <div class="container">
+                    <div class="row aboveslider__text bottom-spacer">
+                        <div class="col-xs-12 text-center">
+<!--                            Place eye catchers in p tag below, such as sales, promos, dates                  -->
+                            <p>!! Major Marvel Sale 10/25 !!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        
         <div class="slider__wrapper">
             <div class="slider clearfix">
                 <div class="slider-img" id="s-img-1">
