@@ -26,9 +26,11 @@ $(document).ready(function(){
     $(window).scroll(function() {
         if($(window).scrollTop() >= 44){
             $('nav').addClass('navbar-fixed-top');
+            $('nav').removeClass('navbar-static-top');
         }
         else if($(window).scrollTop() <= 43) {
             $('nav').removeClass('navbar-fixed-top');
+            $('nav').addClass('navbar-static-top');
         }
     });
     
