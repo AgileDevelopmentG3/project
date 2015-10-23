@@ -10,6 +10,7 @@
         <title>YOUR CART</title>
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     </head>
     <body>
         <div class="navbar-wrapper">
