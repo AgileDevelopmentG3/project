@@ -217,13 +217,12 @@ storage supplies also available.</p>
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Google Business View</h2>
-                    <p class="lead">Take a quick virtual tour without even leaving your room!</p>
+                
+                	<div class="text-center">
+                    <h2 class="featurette-heading">About Power House Comics</h2>
+                    <p class="lead">Vestibulum maximus non erat et iaculis. Phasellus ullamcorper euismod felis, non vestibulum lacus consequat at. Praesent at dictum dui. Nam mollis lorem eu lacus suscipit aliquam. Vivamus eu est eros. Praesent ut lorem magna. Etiam elit sapien, semper ut tempor id, pharetra porta libero. Vestibulum pretium a nunc id efficitur.</p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" src="img/Placeholder.fw.png" alt="Google Business View placeholder image">
-                </div>
+   				
             </div>
             <hr class="featurette-divider">
         </div>
