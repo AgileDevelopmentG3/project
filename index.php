@@ -31,7 +31,7 @@
                 <div class="row aboveslider__text bottom-spacer">
                     <div class="col-xs-12 text-center">
 <!--                            Place eye catchers in p tag below, such as sales, promos, dates                  -->
-                        <p>!! Major Marvel Sale 10/25 !!</p>
+                        <p>!! DC Sale 10/25 !!</p>
                     </div>
                 </div>
             </div>
