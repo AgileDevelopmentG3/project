@@ -38,8 +38,8 @@ uniform as the viewport shrinks */
     margin-bottom: 20px;
 }
 .comic-book-cover img {
-    width: auto;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -161,15 +161,15 @@ uniform as the viewport shrinks */
     width: 70%;
 }
 #s-img-1 {
-    background: url('../img/PHCPano.jpg') top left no-repeat;
+    background: url('../img/PHCPanoEDIT.jpg') top left no-repeat;
     background-size: cover;
 }
 #s-img-2 {
-    background: url('../img/DSCN0220.JPG') top left no-repeat;
+    background: url('../img/DSCN0220EDIT.JPG') top left no-repeat;
     background-size: cover;
 }
 #s-img-3 {
-    background: url('../img/DSCN0218.JPG') top left no-repeat;
+    background: url('../img/DSCN0218EDIT.JPG') top left no-repeat;
     background-size: cover;
 }
 .marketing .img-circle {

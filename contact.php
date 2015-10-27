@@ -43,7 +43,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Power House Comics</a>
+                        <a class="navbar-brand" href="#"><img class="img-responsive" src="img/ph-comics.png" alt="Power House Comics"></a>
                     </div>
                     <div id="navbar" class="navbar-right navbar-collapse collapse">
                         <ul class="nav navbar-nav">
