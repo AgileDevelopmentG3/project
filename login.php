@@ -1,3 +1,4 @@
+
 <?php
 GLOBAL $Email;
 GLOBAL $Userpassword;
@@ -57,8 +58,10 @@ try
 		}
 	}
 	else 
-	{	
-		header( "refresh:1;url=createprofile.php" );
+	{
+		echo("Login Failed, Wrong Password or account does not exist. </br>");
+		echo('<a href="index.php">Return to home page</a> or <a href="createprofile.php">Sign Up</a>');
+		//header( "refresh:1;url=createprofile.php" );
 	}
 }
 catch(PDOException $e)
