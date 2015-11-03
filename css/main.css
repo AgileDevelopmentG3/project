@@ -200,6 +200,19 @@ uniform as the viewport shrinks */
     width: 100%;
     z-index: 9999;
 }
+.aboveslider--red > button.close {
+    color: #fff;
+    opacity: .6;
+    position: absolute;
+        top: 7px;
+        right: 21px;
+    text-shadow: none;
+    transition: all 0.3s ease-out;
+}
+.aboveslider--red > button.close:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
 .aboveslider--red.bottom {
     position: fixed;
         bottom: 0;
@@ -208,7 +221,7 @@ uniform as the viewport shrinks */
 }
 .aboveslider--red .container {
     display: table;
-    min-height: 45px
+    min-height: 35px;
 }
 .aboveslider__text {
     display: table-cell;

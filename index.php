@@ -35,6 +35,7 @@
                     </div>
                 </div>
             </div>
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&#10005;</span></button>
         </div>
         <div class="navbar-wrapper">
             <nav class="navbar navbar-inverse navbar-static-top">
@@ -99,6 +100,14 @@
                 </div>
             </div>
         </div>
+        <div class="container"> 
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center">About Power House Comics</h2>
+                    <p class="lead">Vestibulum maximus non erat et iaculis. Phasellus ullamcorper euismod felis, non vestibulum lacus consequat at. Praesent at dictum dui. Nam mollis lorem eu lacus suscipit aliquam. Vivamus eu est eros. Praesent ut lorem magna. Etiam elit sapien, semper ut tempor id, pharetra porta libero. Vestibulum pretium a nunc id efficitur.</p>
+                </div>
+            </div>
+        </div>
         <div class="container text-center top-spacer">
             <div class="row top__general">
                 <div class="col-lg-4">
@@ -119,9 +128,6 @@ storage supplies also available.</p>
                     <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
                 </div>
             </div>
-
-            <hr class="featurette-divider">
-
             <div class="row featurette">
                 <div class="col-md-6">
                     <h2 class="featurette-heading">New Releases All Ages</h2>
@@ -213,18 +219,6 @@ storage supplies also available.</p>
 <p>920&#45;733&#45;9339</p>
                 </div>
             </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                
-                	<div class="text-center">
-                    <h2 class="featurette-heading">About Power House Comics</h2>
-                    <p class="lead">Vestibulum maximus non erat et iaculis. Phasellus ullamcorper euismod felis, non vestibulum lacus consequat at. Praesent at dictum dui. Nam mollis lorem eu lacus suscipit aliquam. Vivamus eu est eros. Praesent ut lorem magna. Etiam elit sapien, semper ut tempor id, pharetra porta libero. Vestibulum pretium a nunc id efficitur.</p>
-                </div>
-   				
-            </div>
-            <hr class="featurette-divider">
         </div>
         <footer>
             <div class="container">
