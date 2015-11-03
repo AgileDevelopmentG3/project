@@ -11,7 +11,7 @@ $(document).ready(function(){
         };
         $('.login, .overlay').toggleClass('active');
     });
-    $('.login').css('top', navHeight + 10 + 'px');
+    $('.login').css('top', navHeight + 40 + 'px');
     $(window).load(function(){
         setTimeout(function(){
             $('.aboveslider--red').slideDown('slow');
