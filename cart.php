@@ -10,10 +10,11 @@
         <title>YOUR CART</title>
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     </head>
     <body>
         <div class="navbar-wrapper">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar navbar-inverse navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,17 +39,20 @@
         </div>
         <div class="login">
             <div class="login__innerwrapper">
-                <form role="form">
+                <form role="form"  action="login.php" method="post">
                     <div class="form-group">
                         <label for="login__username">Username <span>(email address)</span></label>
-                        <input class="form-control" id="login__username" name="login__username" type="email">
+                        <input class="form-control" id="login__username" name="txtEmail" type="email">
                     </div>
                     <div class="form-group">
                         <label for="login__password">Password</label>
-                        <input class="form-control" id="login__password" name="login__username" type="text">
+                        <input class="form-control" id="login__password" name="txtUserPassword" type="password">
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
+                <div class="sign-up">
+                    <a href="createprofile.php">Sign Up</a>
+                </div>
             </div>
         </div>
         <div class="overlay"></div>

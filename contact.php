@@ -11,6 +11,7 @@
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+            <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <style>
             #map {
                 width: 500px;
@@ -33,7 +34,7 @@
     </head>
     <body>
         <div class="navbar-wrapper">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar navbar-inverse navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -42,7 +43,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Power House Comics</a>
+                        <a class="navbar-brand" href="#"><img class="img-responsive" src="img/ph-comics.png" alt="Power House Comics"></a>
                     </div>
                     <div id="navbar" class="navbar-right navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -58,17 +59,20 @@
         </div>
         <div class="login">
             <div class="login__innerwrapper">
-                <form role="form">
+                <form role="form"  action="login.php" method="post">
                     <div class="form-group">
                         <label for="login__username">Username <span>(email address)</span></label>
-                        <input class="form-control" id="login__username" name="login__username" type="email">
+                        <input class="form-control" id="login__username" name="txtEmail" type="email">
                     </div>
                     <div class="form-group">
                         <label for="login__password">Password</label>
-                        <input class="form-control" id="login__password" name="login__username" type="text">
+                        <input class="form-control" id="login__password" name="txtUserPassword" type="text">
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
+                <div class="sign-up">
+                    <a href="createprofile.php">Sign Up</a>
+                </div>
             </div>
         </div>
         <div class="overlay"></div>

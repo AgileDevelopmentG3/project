@@ -13,20 +13,31 @@
         <link href="slick/slick/slick-theme.css">
         <link href="css/main.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+            <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     </head>
     <body>
-    <!--Facebook Embed Javascript Start -->
+<!--                                         Facebook Embed Javascript Start                                     -->
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!--Facebook Embed Javascript End -->
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<!--                                          Facebook Embed Javascript End                                      -->
+        <div class="aboveslider--red">
+            <div class="container">
+                <div class="row aboveslider__text bottom-spacer">
+                    <div class="col-xs-12 text-center">
+<!--                            Place eye catchers in p tag below, such as sales, promos, dates                  -->
+                        <p>!! DC Sale 10/25 !!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="navbar-wrapper">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar navbar-inverse navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -35,7 +46,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Power House Comics</a>
+                        <a class="navbar-brand" href="#"><img class="img-responsive" src="img/ph-comics.png" alt="Power House Comics"></a>
                     </div>
                     <div id="navbar" class="navbar-right navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -54,26 +65,21 @@
                 <form role="form" action="login.php" method="post">
                     <div class="form-group">
                         <label for="Email">Username <span>(email address)</span></label>
-                        <input class="form-control" id="Email" name="Email" type="email">
+                        <input class="form-control" id="Email" name="txtEmail" type="email">
                     </div>
                     <div class="form-group">
                         <label for="Userpassword">Password</label>
-                        <input class="form-control" id="Userpassword" name="Userpassword" type="password">
+                        <input class="form-control" id="Userpassword" name="txtUserPassword" type="password">
                     </div>
                     <button class="btn btn-primary">Login</button>
                 </form>
-            </div>
-        </div>
-        <div class="overlay"></div>
-        <div class="underslider--white text-center">
-            <div class="container text-center">
-                <div class="row underslider__text">
-                    <div class="col-xs-12">
-                        <h1>POWERHOUSE COMICS</h1>
-                    </div>
+                <div class="sign-up">
+                    <a href="createprofile.php">Sign Up</a>
                 </div>
             </div>
         </div>
+        <div class="overlay"></div>
+        
         <div class="slider__wrapper">
             <div class="slider clearfix">
                 <div class="slider-img" id="s-img-1">
@@ -89,27 +95,6 @@
                 <div class="slider-img" id="s-img-3">
                     <div>
                         <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-<<<<<<< HEAD
-=======
-        <div class="underslider--white text-center">
-            <div class="container text-center">
-                <div class="row underslider__text">
-                    <div class="col-xs-12 logo-main">
-                        <img src="img/phlogo.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
->>>>>>> d6116686ab46de88ece617933e4f88a872ece8a3
-        <div class="underslider--red text-center">
-            <div class="container">
-                <div class="row underslider__text bottom-spacer">
-                    <div class="col-xs-12">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nulla quis aliquet fringilla. Proin commodo, sem vel accumsan dictum, leo nibh dictum risus, et euismod eros urna nec tortor. Nullam viverra tortor eget metus rhoncus vulputate. Aliquam lacinia vulputate volutpat. Sed porta nibh velit. Curabitur non tincidunt turpis. Ut rutrum nulla a nunc congue, a sodales orci maximus. Praesent nec mi ante. Duis sit amet purus quis augue bibendum blandit.</p>
                     </div>
                 </div>
             </div>
@@ -232,13 +217,12 @@ storage supplies also available.</p>
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Google Business View</h2>
-                    <p class="lead">Take a quick virtual tour without even leaving your room!</p>
+                
+                	<div class="text-center">
+                    <h2 class="featurette-heading">About Power House Comics</h2>
+                    <p class="lead">Vestibulum maximus non erat et iaculis. Phasellus ullamcorper euismod felis, non vestibulum lacus consequat at. Praesent at dictum dui. Nam mollis lorem eu lacus suscipit aliquam. Vivamus eu est eros. Praesent ut lorem magna. Etiam elit sapien, semper ut tempor id, pharetra porta libero. Vestibulum pretium a nunc id efficitur.</p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" src="img/Placeholder.fw.png" alt="Google Business View placeholder image">
-                </div>
+   				
             </div>
             <hr class="featurette-divider">
         </div>

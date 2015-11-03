@@ -11,7 +11,7 @@ body {
     font-size: 2rem;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #eee;   
+    color: #000;   
 }
 h3 {
     margin-top: 5px;
@@ -21,12 +21,16 @@ h4 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+p {
+    margin: 0;
+}
 .top-spacer {
     margin-top: 25px;
 }
 .bottom-spacer {
     margin-bottom: 25px;
 }
+
 /* adds vertical space between
 catalog entries - keeps spacing
 uniform as the viewport shrinks */
@@ -34,8 +38,8 @@ uniform as the viewport shrinks */
     margin-bottom: 20px;
 }
 .comic-book-cover img {
-    width: auto;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -59,8 +63,11 @@ uniform as the viewport shrinks */
 .navbar-inverse .navbar-brand, 
 .navbar-inverse .navbar-nav > li > a {
     color: #FFF;
-/*    opacity: .7;*/
     transition: color 0.3s ease-out;
+}
+.navbar-brand img {
+    max-width: 360px;
+    width: 100%;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -74,6 +81,9 @@ uniform as the viewport shrinks */
 .navbar-inverse .navbar-nav>.active>a:hover {
     background-color: #333;
 }
+.navbar-static-top {
+    z-index: 9999;
+}
 
 /*------------------------------------
 
@@ -82,8 +92,8 @@ uniform as the viewport shrinks */
 -------------------------------------*/
 
 .login {
-    background: #2f2f2f;
-    color: #eee;
+    background: #fff;
+    color: #000;
     border: 1px solid #333;
     border-radius: 5px;
     height: 80%;
@@ -97,7 +107,7 @@ uniform as the viewport shrinks */
 .login.active {
         right: 0;
     transition: all 1s, ease-in;
-    z-index: 9999;
+    z-index: 9998;
 }
 .login__button {
     cursor: pointer;
@@ -126,7 +136,6 @@ uniform as the viewport shrinks */
 -------------------------------------*/
 .slider__wrapper {
     background: #FFF;
-    padding-top: 50px;
 }
 .slider {
     height: calc( 50vh - 50px ); 
@@ -155,15 +164,15 @@ uniform as the viewport shrinks */
     width: 70%;
 }
 #s-img-1 {
-    background: url('../img/PHCPano.jpg') top left no-repeat;
+    background: url('../img/PHCPanoEDIT.jpg') top left no-repeat;
     background-size: cover;
 }
 #s-img-2 {
-    background: url('../img/DSCN0220.JPG') top left no-repeat;
+    background: url('../img/DSCN0220EDIT.JPG') top left no-repeat;
     background-size: cover;
 }
 #s-img-3 {
-    background: url('../img/DSCN0218.JPG') top left no-repeat;
+    background: url('../img/DSCN0218EDIT.JPG') top left no-repeat;
     background-size: cover;
 }
 .marketing .img-circle {
@@ -181,31 +190,34 @@ uniform as the viewport shrinks */
                  BODY 
 
 -------------------------------------*/
-.underslider--white {
-    background: #FFF;
-    min-height: 25vh;
-    width: 100%;
-}
-.underslider--white h1 {
-    color: #000;
-    font-size: 76px;
-}
-.underslider--red {
-    background: #F33;
+
+.aboveslider--red {
+    background: #F00;
     color: #FFF;
-    min-height: 25vh;
+    display: none;
+    position: static;
+    bottom: -55px;
     width: 100%;
+    z-index: 9999;
 }
-.underslider--white .container,
-.underslider--red .container {
+.aboveslider--red.bottom {
+    position: fixed;
+        bottom: 0;
+    transition: bottom .5s ease-in;
+    z-index: 9999;
+}
+.aboveslider--red .container {
     display: table;
-    min-height: 25vh;
+    min-height: 45px
 }
-.underslider__text {
+.aboveslider__text {
     display: table-cell;
     vertical-align: middle;
 }
-
+.aboveslider__text p {
+    display: none;
+    font-size: 14px;
+}
 .top__general img {  
     border-radius: 50%;
     height: 140px;

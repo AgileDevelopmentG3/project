@@ -1,12 +1,15 @@
+
 <?php
 GLOBAL $Email;
 GLOBAL $Userpassword;
+                                        //if(isset($_GET['FirstName'])){echo $_GET['FirstName'];}
+										//else {echo("Login");} Used to pull first name into HTML (on other forms)
 
-   if(isset($_POST['Email'])) 
-   	$Email=$_POST['Email'];
+   if(isset($_POST['txtEmail'])) 
+   	$Email=$_POST['txtEmail'];
    
-   if(isset($_POST['Userpassword'])) 
-   	$Userpassword=$_POST['Userpassword'];
+   if(isset($_POST['txtUserPassword'])) 
+   	$Userpassword=$_POST['txtUserPassword'];
    
 /**
 $username = "b433d07cc3f105";
@@ -35,8 +38,8 @@ try
 	
 	$query = "SELECT * FROM `tblcustomer` WHERE Email = :Email and Password = :Userpassword";
 	
-	$Email = $_POST['Email'];
-	$Userpassword = $_POST['Userpassword'];
+	$Email = $_POST['txtEmail'];
+	$Userpassword = $_POST['txtUserPassword'];
 	
 	$statement = $db->prepare($query);
 	$statement -> bindValue(':Email', $Email);
@@ -49,12 +52,16 @@ try
 	{
 		foreach ($Users as $User)
 		{
-			echo 'Welcome, ' .  $User['FirstName'] . '!';
+			$FirstName = $User['FirstName'];
+			echo 'Welcome, ' .  $FirstName . '!';
+			header( "refresh:5;url=index.php?FirstName=$FirstName" );
 		}
 	}
 	else 
-	{	
-		echo("Invalid Email and/or Password");
+	{
+		echo("Login Failed, Wrong Password or account does not exist. </br>");
+		echo('<a href="index.php">Return to home page</a> or <a href="createprofile.php">Sign Up</a>');
+		//header( "refresh:1;url=createprofile.php" );
 	}
 }
 catch(PDOException $e)
