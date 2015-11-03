@@ -69,25 +69,25 @@
                     <div class="comic-book-cover center-block"><img src="img/comicBookIMages/batman163.jpg"></div>
                     <h3>Batman #163</h3>
                     <h4>Estimated Grade: VG</h4>
-                    <cite>Price: $30</cite>
+                    <h4>Price: $30</h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
                     <div class="comic-book-cover center-block"><img src="img/comicBookIMages/amazingAdventures1.jpg"></div>
                     <h3>Amazing Adventures #1</h3>
                     <h4>Estimated Grade: VF</h4>
-                    <cite>Price: $46</cite>
+                    <h4>Price: $46</h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/superman42.jpg"></div>
+                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/superman.jpg"></div>
                     <h3>Superman #42</h3>
                     <h4>Estimated Grade: VG+</h4>
-                    <cite>Price: $250</cite>
+                    <h4>Price: $250</h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/challengers3.jpg"></div>
+                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/challengers.jpg"></div>
                     <h3>Challengers of the Unknown #3</h3>
                     <h4>Estimated Grade: GD+</h4>
-                    <cite>Price: $70</cite>
+                    <h4>Price: $70</h4>
                 </div>
             </div>
             <div class="row text-center">
@@ -101,19 +101,19 @@
                     <div class="comic-book-cover center-block"><img src="img/comicBookIMages/strange209.jpg"></div>
                     <h3>Strange Adventures #209</h3>
                     <h4>Estimated Grade: VG</h4>
-                    <cite>Price: $18</cite>
+                    <h4>Price: $18</h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
                     <div class="comic-book-cover center-block"><img src="img/comicBookIMages/disney9.jpg"></div>
                     <h3>Walt Disney's Comics and Stories #9</h3>
                     <h4>Estimated Grade: FN-</h4>
-                    <cite>Price: $400</cite>
+                    <h4>Price: $400</h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
                     <div class="comic-book-cover center-block"><img src="img/comicBookIMages/journey84.jpg"></div>
                     <h3>Journey Into Mystery #84</h3>
                     <h4>Estimated Grade: VG+</h4>
-                    <cite>Price: $500</cite>
+                    <h4>Price: $500</h4>
                 </div>
             </div>
             <div class="row text-center">
@@ -121,25 +121,25 @@
                     <div class="placeholder-block-delete-and-add-image center-block"></div>
                     <h3>Comic Book Title</h3>
                     <h4>Estimated Grade: -</h4>
-                    <cite>Price: $-</cite>
+                    <h4>Price: $-</h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
                     <div class="placeholder-block-delete-and-add-image center-block"></div>
                     <h3>Comic Book Title</h3>
                     <h4>Estimated Grade: -</h4>
-                    <cite>Price: $-</cite>
+                    <h4>Price: $-</h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
                     <div class="placeholder-block-delete-and-add-image center-block"></div>
                     <h3>Comic Book Title</h3>
                     <h4>Estimated Grade: -</h4>
-                    <cite>Price: $-</cite>
+                    <h4>Price: $-</h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
                     <div class="placeholder-block-delete-and-add-image center-block"></div>
                     <h3>Comic Book Title</h3>
                     <h4>Estimated Grade: -</h4>
-                    <cite>Price: $-</cite>
+                    <h4>Price: $-</h4>
                 </div>
             </div>
         </div>
