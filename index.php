@@ -35,6 +35,7 @@
                     </div>
                 </div>
             </div>
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&#10005;</span></button>
         </div>
         <div class="navbar-wrapper">
             <nav class="navbar navbar-inverse navbar-static-top">
@@ -99,7 +100,6 @@
                 </div>
             </div>
         </div>
-        
         
         <!-- MAIN CONTENT AREA -->
         

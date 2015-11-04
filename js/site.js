@@ -20,6 +20,9 @@ $(document).ready(function(){
             }, 500);
         }, 2500);
     });
+    $('.aboveslider--red > button.close').click(function(){
+        $('.aboveslider--red').css('display','none');
+    })
     $(window).scroll(function() {
         if($(window).scrollTop() >= 44){
             $('nav').addClass('navbar-fixed-top');
