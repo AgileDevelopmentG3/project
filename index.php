@@ -185,51 +185,20 @@ storage supplies also available.</p>
         </div> <!-- END FLUID CONTAINER -->
     
         <div class="container container-spacer">
-            <div class="row featurette">
-                <div class="col-md-6">
-                    <h2 class="featurette-heading">Like us on Facebook, and check out our latest updates, specials, and events</h2>
+            <div class="row featurette center-row">
+                <div class="col-md-6 center">
                     <p class="lead">
                     <!--Facebook Embed Begin -->
                     <div class="fb-page" data-href="https://www.facebook.com/powerhouse.comics" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics"><a href="https://www.facebook.com/powerhouse.comics">Power House Comics</a></blockquote></div></div></p>
                 	<!--Facebook Embed End -->
                 </div>
             
-                <div class="col-md-6">
-                    <h2 class="featurette-heading">Location</h2>
-                    <p>807 W College Ave, Appleton, WI 54914</p>
-                    <h2 class="featurette-heading">Hours</h2>
-                    <table class="table">
-                      <tr>
-                        <td>Monday</td>
-                        <td>Closed</td>
-                      </tr>
-                      <tr>
-                        <td>Tuesday</td>
-                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Wednesday</td>
-                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Thursday</td>
-                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Friday</td>
-                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Saturday</td>
-                        <td>12&#58;00 &#45; 6&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Sunday</td>
-                        <td>Closed</td>
-                      </tr>
-                    </table>
-                    <h2 class="featurette-heading">Phone Number</h2>
-                    <p>920&#45;733&#45;9339</p>
+                <div class="col-md-pull-6 center">
+                    <div>
+                        <h2 class="featurette-heading bold-heading">Like us on Facebook</h2>
+                        <h2>Check out our latest updates, specials, and events.</h2>
+                        <img src="img/facebook_thumb.png" alt="facebook logo" width="125px" height="125px" />
+                    </div>
                 </div>
             </div>
         </div> <!-- END CONTAINER -->
@@ -237,7 +206,36 @@ storage supplies also available.</p>
         <footer>
             <div class="container">
                 <div class="row">
-                    <p>&copy; 2015 Power House Comics &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                    <div class="col-sm-3">
+                        <div>
+                            <p>&copy; 2015 Power House Comics &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div>
+                            <h3>Location</h3>
+                            <p>807 W College Ave.</p>
+                            <p>Appleton, WI 54914</p>
+                            </br>
+                            <h3>Phone</h3>
+                            <p>920&#45;733&#45;9339</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Tuesday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Wednesday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Thursday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Friday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Saturday: 12&#58;00 &#45; 6&#58;00 pm</p>
+                            <p>Sunday: Closed</p>
+                            <p>Monday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div></div>
+                    </div>
                 </div>
             </div>
         </footer>

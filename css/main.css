@@ -258,7 +258,16 @@ uniform as the viewport shrinks */
 .logo-main img {
     width: 80%;
     padding-bottom: 20px;
-    
+}
+.center-row {
+    display: table;
+    width: 100%;
+}
+.center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    float: none;
 }
 
 /*---------------------- 
