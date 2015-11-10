@@ -28,7 +28,7 @@ $(document).ready(function(){
             $('nav').addClass('navbar-fixed-top');
             $('nav').removeClass('navbar-static-top');
             $('.aboveslider--red').addClass('bottom');
-            $('body').css({'padding-top': navHeight + 44 + 'px'});
+            $('body').css({'padding-top': navHeight + 'px'});
         }
         else if($(window).scrollTop() <= 43) {
             $('nav').removeClass('navbar-fixed-top');

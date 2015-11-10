@@ -39,6 +39,11 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.panel-body {
+	background-color:#C6222D;
+}
+
 /* adds vertical space between
 catalog entries - keeps spacing
 uniform as the viewport shrinks */
@@ -71,6 +76,7 @@ uniform as the viewport shrinks */
     background: url('../img/Spiderman-bw.jpg') no-repeat;
     background-size: cover;
     height: 100px;
+    transition: all 0.5s ease-in;
     width: 100%;
 }
 .navbar-inverse {
@@ -91,7 +97,7 @@ uniform as the viewport shrinks */
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #FFF139;
 /*    opacity: 1;*/
-    transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in-out;
 } 
 
 .navbar-inverse .navbar-nav>.active>a,
@@ -102,7 +108,10 @@ uniform as the viewport shrinks */
 .navbar-static-top {
     z-index: 9999;
 }
-
+.navbar-fixed-top.navbar::before {
+    height: 0px;
+    transition: all 0.5s ease-in-out;
+}
 /*------------------------------------
 
                 LOGIN
@@ -153,7 +162,7 @@ uniform as the viewport shrinks */
 
 -------------------------------------*/
 .slider__wrapper {
-    background: #FFF;
+    background: #000;
     border-bottom: 50px solid black;
 }
 .slider {
@@ -211,7 +220,7 @@ uniform as the viewport shrinks */
 -------------------------------------*/
 
 .aboveslider--red {
-    background: #F00;
+    background: #6BA6FC;
     color: #FFF;
     display: none;
     position: static;
