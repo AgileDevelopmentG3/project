@@ -153,7 +153,7 @@ uniform as the viewport shrinks */
 
 -------------------------------------*/
 .slider__wrapper {
-    background: #FFF;
+    background: #000;
     border-bottom: 50px solid black;
 }
 .slider {
