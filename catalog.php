@@ -116,32 +116,6 @@
                     <h4>Price: $500</h4>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="placeholder-block-delete-and-add-image center-block"></div>
-                    <h3>Comic Book Title</h3>
-                    <h4>Estimated Grade: -</h4>
-                    <h4>Price: $-</h4>
-                </div>
-                <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="placeholder-block-delete-and-add-image center-block"></div>
-                    <h3>Comic Book Title</h3>
-                    <h4>Estimated Grade: -</h4>
-                    <h4>Price: $-</h4>
-                </div>
-                <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="placeholder-block-delete-and-add-image center-block"></div>
-                    <h3>Comic Book Title</h3>
-                    <h4>Estimated Grade: -</h4>
-                    <h4>Price: $-</h4>
-                </div>
-                <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="placeholder-block-delete-and-add-image center-block"></div>
-                    <h3>Comic Book Title</h3>
-                    <h4>Estimated Grade: -</h4>
-                    <h4>Price: $-</h4>
-                </div>
-            </div>
         </div>
         <footer>
             <div class="container">
