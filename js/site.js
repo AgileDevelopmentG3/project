@@ -27,13 +27,11 @@ $(document).ready(function(){
         if($(window).scrollTop() >= 44){
             $('nav').addClass('navbar-fixed-top');
             $('nav').removeClass('navbar-static-top');
-            $('.aboveslider--red').addClass('bottom');
             $('body').css({'padding-top': navHeight + 'px'});
         }
         else if($(window).scrollTop() <= 43) {
             $('nav').removeClass('navbar-fixed-top');
             $('nav').addClass('navbar-static-top');
-            $('.aboveslider--red').removeClass('bottom');
             $('body').css({'padding-top': '0px'});
         }
     });
