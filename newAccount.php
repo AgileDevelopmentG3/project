@@ -3,8 +3,149 @@
 //$userPass = $_POST['inputPassword'];
 
 
+$PhonePattern = "/^\(\d\d\d\)\d\d\d-\d\d\d\d$/";
+include ('StateArray.php');
 
+if(empty($_POST['first-name'])==TRUE)
+{
+	echo("<h1>Error In First Name Field<h1>");
+	//header('Location:createprofile.php');
+	exit();	
+}
+else 
+{
+$FirstName = $_POST['first-name'];
+}
 
+if(empty($_POST['last-name'])==TRUE)
+{
+	echo("<h1>Error In Last Name Field<h1>");
+	exit();		
+}
+else 
+{
+$LastName = $_POST['last-name'];	
+}
+
+if(empty($_POST['email'])==TRUE)
+{
+	echo("<h1>Error In Email Field<h1>");
+	exit();		
+}
+else if (strpos($_POST['email'],'@')===false)
+{
+	echo("<h1>Error In Email Field<h1>");
+	exit();		
+}
+else if (strpos($_POST['email'],'.')===false)
+{
+	echo("<h1>Error In Email Field<h1>");
+	exit();		
+}
+else 
+{
+$Email = $_POST['email'];
+}
+
+if(empty($_POST['phone'])==TRUE)
+{
+	echo("<h1>Error In Phone Field<h1>");
+	exit();		
+}
+else if(!preg_match($PhonePattern,  $_POST['phone'])) // RegEx /^\d\d\d\d\d\d\d\d\d\d$/
+{
+	echo("<h1>Error in Phone Field<h1>");
+	//header('Location:createprofile.php');
+	exit();		
+}
+else 
+{
+$Phone = $_POST['phone'];
+}
+
+if(empty($_POST['address1'])==TRUE)
+{
+	echo("<h1>Error In Address1 Field<h1>");
+	exit();		
+}
+else 
+{
+$Address1 = $_POST['address1'];
+}
+
+if(empty($_POST['city'])==TRUE)
+{
+	echo("<h1>Error In City Field<h1>");
+	exit();		
+}
+else 
+{
+$City = $_POST['city'];
+}
+
+if(empty($_POST['state'])==TRUE)
+{
+	echo("<h1>Error In state Field<h1>");
+	exit();		
+}
+else if(!in_array($_POST['state'], $StateCodes))
+{
+	echo("<h1>Error In state Field<h1>");
+	exit();	
+}
+else 
+{
+$State = $_POST['state'];
+}
+
+if(empty($_POST['zip'])==TRUE)
+{
+	echo("<h1>Error In Zip Code Field<h1>");
+	exit();		
+}
+else if(!is_numeric($_POST['zip']))
+{
+	echo("<h1>Error In Zip Code Field<h1>");
+	exit();		
+}
+else if(strlen($_POST['zip']) != 5)
+{
+	echo("<h1>Error In Zip Code Field<h1>");
+	exit();		
+}
+else 
+{
+$Zip = $_POST['zip'];
+}
+
+if(empty($_POST['password'])==TRUE)
+{
+	echo("<h1>Error In Password Field<h1>");
+	exit();		
+}
+else 
+{
+$Userpassword = $_POST['password'];
+}
+
+if(empty($_POST['re-password'])==TRUE)
+{
+	echo("<h1>Error In Re-Password Field<h1>");
+	exit();		
+}
+else if($_POST['password'] !== $_POST['re-password'])
+{	
+	echo("<h1>Error with Password and Re-Password Fields<h1>");
+	exit();	
+}
+else 
+{
+$ReUserpassword = $_POST['re-password'];
+}
+
+$Address2 = $_POST['address2'];
+
+/***********************************************************************************/
 
 $dsn = "mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=as_bf1259e0fe71a2a";
 $username = "bfdbdc3c11a396";
@@ -16,7 +157,7 @@ try
 	$db = new PDO($dsn, $username, $password);
 	
 	$query = "SELECT * FROM `tblcustomer` WHERE Email = :Email";
-	
+	/**
 	$Email = $_POST['email'];
 	$FirstName = $_POST['first-name'];
 	$LastName = $_POST['last-name'];
@@ -28,7 +169,7 @@ try
 	$Zip = $_POST['zip'];
 	$Userpassword = $_POST['password'];
 	$ReUserpassword = $_POST['re-password'];
-	
+	/**/
 	$statement = $db->prepare($query);
 	$statement -> bindValue(':Email', $Email);
 	//$statement -> bindValue(':Userpassword', $Userpassword);

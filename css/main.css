@@ -39,6 +39,11 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.panel-body {
+	background-color:#C6222D;
+}
+
 /* adds vertical space between
 catalog entries - keeps spacing
 uniform as the viewport shrinks */
@@ -153,7 +158,7 @@ uniform as the viewport shrinks */
 
 -------------------------------------*/
 .slider__wrapper {
-    background: #FFF;
+    background: #000;
     border-bottom: 50px solid black;
 }
 .slider {
@@ -262,7 +267,6 @@ uniform as the viewport shrinks */
 .center-row {
     display: table;
     width: 100%;
-    background-color: green;
 }
 .center {
     display: table-cell;
