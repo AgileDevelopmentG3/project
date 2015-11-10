@@ -146,7 +146,7 @@ storage supplies also available.</p>
                 <div class="row featurette container-spacer">
                     <div class="text-center"><h2 class="featurette-heading bold-heading">New Releases</h2></div>
                     <div class="col-md-5">
-                      <div class="text-center"><h2 class="featurette-heading bold-heading">All Ages Titles</h2></div>
+                      <div class="text-center"><h2 class="featurette-heading">All Ages Titles</h2></div>
                         <p class="lead">
                             <ul class="list-group">
                                 <li class="list-group-item">CONAN THE AVENGER #17</li>
@@ -166,7 +166,7 @@ storage supplies also available.</p>
                         </p>
                     </div>
                     <div class="col-md-5 col-md-offset-2">
-                        <div class="text-center"><h2 class="featurette-heading bold-heading">Mature Titles</h2></div>
+                        <div class="text-center"><h2 class="featurette-heading">Mature Titles</h2></div>
                         <p class="lead">
                             <ul class="list-group">
                                 <li class="list-group-item">CONAN THE AVENGER #17</li>
