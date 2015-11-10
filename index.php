@@ -140,7 +140,7 @@ storage supplies also available.</p>
         <div class="container-fluid background-image">
             <div class="container">
                 <div class="row featurette container-spacer">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <h2 class="featurette-heading bold-heading">New Releases All Ages</h2>
                         <p class="lead">
                             <ul class="list-group">
@@ -160,7 +160,7 @@ storage supplies also available.</p>
 	                       </ul>
                         </p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5 col-md-offset-2">
                         <h2 class="featurette-heading bold-heading">New Releases Mature Titles</h2>
                         <p class="lead">
                             <ul class="list-group">
