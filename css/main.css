@@ -76,7 +76,7 @@ uniform as the viewport shrinks */
     background: url('../img/Spiderman-bw.jpg') no-repeat;
     background-size: cover;
     height: 100px;
-    transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in-out;
     width: 100%;
 }
 .navbar-inverse {
@@ -89,14 +89,18 @@ uniform as the viewport shrinks */
     color: #FFF;
     transition: color 0.3s ease-out;
 }
+.navbar-brand {
+    transition: all 0.5s ease-in-out;
+    width: initial;
+}
 .navbar-brand img {
     max-width: 360px;
     width: 100%;
+    transition: all 0.5s ease-in-out;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #FFF139;
-/*    opacity: 1;*/
     transition: color 0.3s ease-in-out;
 } 
 
@@ -106,7 +110,17 @@ uniform as the viewport shrinks */
     background-color: #333;
 }
 .navbar-static-top {
+    font-size: inherit;
+    transition: all 0.5s ease-in-out;
     z-index: 9999;
+}
+.navbar-fixed-top.navbar {
+    font-size: 1.8rem;
+    transition: all 0.5s ease-in-out;
+}
+.navbar-fixed-top .navbar-brand img {
+    transition: all 0.5s ease-in-out;
+    width: 90%;
 }
 .navbar-fixed-top.navbar::before {
     height: 0px;
