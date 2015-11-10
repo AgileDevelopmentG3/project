@@ -115,6 +115,8 @@
         <div class="container-fluid text-center background-red">
             <div class="container">
                 <div class="row top__general top-spacer container-spacer">
+                <div class="panel panel-default">
+                		<div class="panel-body">
                     <div class="col-lg-4">
                         <img src="img/DSCN0229-sm.JPG" alt="Power House Comics">
                         <h2>Comic Storage Supplies</h2>
@@ -132,6 +134,8 @@ storage supplies also available.</p>
                         <h2>Graphic Novels and More!</h2>
                         <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
                     </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
@@ -141,7 +145,8 @@ storage supplies also available.</p>
             <div class="container">
                 <div class="row featurette container-spacer">
                     <div class="col-md-6">
-                        <h2 class="featurette-heading bold-heading">New Releases All Ages</h2>
+                    <div class="text-center"><h2 class="featurette-heading bold-heading">New Releases</h2></div>
+                        <h2 class="featurette-heading bold-heading">All Ages Titles</h2>
                         <p class="lead">
                             <ul class="list-group">
                                 <li class="list-group-item">CONAN THE AVENGER #17</li>
@@ -161,7 +166,7 @@ storage supplies also available.</p>
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <h2 class="featurette-heading bold-heading">New Releases Mature Titles</h2>
+                        <h2 class="featurette-heading bold-heading">Mature Titles</h2>
                         <p class="lead">
                             <ul class="list-group">
                                 <li class="list-group-item">CONAN THE AVENGER #17</li>
