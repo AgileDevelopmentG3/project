@@ -262,6 +262,7 @@ uniform as the viewport shrinks */
 .center-row {
     display: table;
     width: 100%;
+    background-color: green;
 }
 .center {
     display: table-cell;
