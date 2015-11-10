@@ -10,9 +10,14 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2rem;
 }
+.bold-heading {
+    font-weight: bold;
+}
+/*
 h1, h2, h3, h4, h5, h6 {
     color: #000;   
 }
+*/
 h3 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -30,7 +35,10 @@ p {
 .bottom-spacer {
     margin-bottom: 25px;
 }
-
+.container-spacer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 /* adds vertical space between
 catalog entries - keeps spacing
 uniform as the viewport shrinks */
@@ -40,6 +48,16 @@ uniform as the viewport shrinks */
 .comic-book-cover img {
     max-width: 100%;
     height: auto;
+}
+.background-image {
+    /*background-color: #222;*/
+    background: url('../img/fadedComics1.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.background-red {
+    background-color: #c6222d;
+    color: #fff;
 }
 
 
@@ -136,6 +154,7 @@ uniform as the viewport shrinks */
 -------------------------------------*/
 .slider__wrapper {
     background: #FFF;
+    border-bottom: 50px solid black;
 }
 .slider {
     height: calc( 50vh - 50px ); 
@@ -200,6 +219,19 @@ uniform as the viewport shrinks */
     width: 100%;
     z-index: 9999;
 }
+.aboveslider--red > button.close {
+    color: #fff;
+    opacity: .6;
+    position: absolute;
+        top: 7px;
+        right: 21px;
+    text-shadow: none;
+    transition: all 0.3s ease-out;
+}
+.aboveslider--red > button.close:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
 .aboveslider--red.bottom {
     position: fixed;
         bottom: 0;
@@ -208,7 +240,7 @@ uniform as the viewport shrinks */
 }
 .aboveslider--red .container {
     display: table;
-    min-height: 45px
+    min-height: 35px;
 }
 .aboveslider__text {
     display: table-cell;
@@ -226,7 +258,17 @@ uniform as the viewport shrinks */
 .logo-main img {
     width: 80%;
     padding-bottom: 20px;
-    
+}
+.center-row {
+    display: table;
+    width: 100%;
+    background-color: green;
+}
+.center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    float: none;
 }
 
 /*---------------------- 

@@ -35,6 +35,7 @@
                     </div>
                 </div>
             </div>
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&#10005;</span></button>
         </div>
         <div class="navbar-wrapper">
             <nav class="navbar navbar-inverse navbar-static-top">
@@ -99,137 +100,142 @@
                 </div>
             </div>
         </div>
-        <div class="container text-center top-spacer">
-            <div class="row top__general">
-                <div class="col-lg-4">
-                    <img src="img/DSCN0229-sm.JPG" alt="Power House Comics">
-                    <h2>Comic Storage Supplies</h2>
-                    <p>Stop in today to get your comic storage supplies! We have Modern, Current, and 
+        
+        <!-- MAIN CONTENT AREA -->
+        
+        <div class="container-fluid text-center">
+            <div class="container container-spacer">
+                <div class="text-center">
+                    <h2 class="featurette-heading bold-heading">About Power House Comics</h2>
+                    <p class="lead">Vestibulum maximus non erat et iaculis. Phasellus ullamcorper euismod felis, non vestibulum lacus consequat at. Praesent at dictum dui. Nam mollis lorem eu lacus suscipit aliquam. Vivamus eu est eros. Praesent ut lorem magna. Etiam elit sapien, semper ut tempor id, pharetra porta libero. Vestibulum pretium a nunc id efficitur.</p>
+                </div>
+            </div>
+        </div> <!-- END FLUID CONTAINER -->
+        
+        <div class="container-fluid text-center background-red">
+            <div class="container">
+                <div class="row top__general top-spacer container-spacer">
+                    <div class="col-lg-4">
+                        <img src="img/DSCN0229-sm.JPG" alt="Power House Comics">
+                        <h2>Comic Storage Supplies</h2>
+                        <p>Stop in today to get your comic storage supplies! We have Modern, Current, and 
 Silver Age Bags and Boards as well as long and short boxes available. Some magazing
 storage supplies also available.</p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img src="img/MatureTitlesOpt-sm.jpg" alt="Mature Titles">
-                    <h2>Mature Titles</h2>
-                    <p>In addition to titles for all ages we also have a large selection of titles for mature audiences</p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img src="img/GraphicNovels-sm.jpg" alt="Graphic Novels">
-                    <h2>Graphic Novels and More!</h2>
-                    <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img src="img/MatureTitlesOpt-sm.jpg" alt="Mature Titles">
+                        <h2>Mature Titles</h2>
+                        <p>In addition to titles for all ages we also have a large selection of titles for mature audiences</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img src="img/GraphicNovels-sm.jpg" alt="Graphic Novels">
+                        <h2>Graphic Novels and More!</h2>
+                        <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
+                    </div>
                 </div>
             </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-6">
-                    <h2 class="featurette-heading">New Releases All Ages</h2>
-                    <p class="lead">
-                        <ul class="list-group">
-                            <li class="list-group-item">CONAN THE AVENGER #17</li>
-                            <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
-                            <li class="list-group-item">HALO ESCALATION #21</li>
-                            <li class="list-group-item">HELLBOY IN HELL #7</li>
-                            <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
-                            <li class="list-group-item">MULAN REVELATIONS #3</li>
-                            <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
-                            <li class="list-group-item">PASTAWAYS #6</li>
-                            <li class="list-group-item">UNDOWNERS TP VOL 02</li>
-                            <li class="list-group-item">TOMORROWS #2</li>
-                            <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
-                            <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
-                            <li class="list-group-item">ZODIAC STARFORCE #1</li>
-	                   </ul>
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="featurette-heading">New Releases Mature Titles</h2>
-                    <p class="lead">
-                        <ul class="list-group">
-                            <li class="list-group-item">CONAN THE AVENGER #17</li>
-                            <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
-                            <li class="list-group-item">HALO ESCALATION #21</li>
-                            <li class="list-group-item">HELLBOY IN HELL #7</li>
-                            <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
-                            <li class="list-group-item">MULAN REVELATIONS #3</li>
-                            <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
-                            <li class="list-group-item">PASTAWAYS #6</li>
-                            <li class="list-group-item">UNDOWNERS TP VOL 02</li>
-                            <li class="list-group-item">TOMORROWS #2</li>
-                            <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
-                            <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
-                            <li class="list-group-item">ZODIAC STARFORCE #1</li>
-	                   </ul>
-                    </p>
+        </div> <!-- END FLUID CONTAINER -->
+        
+        
+        <div class="container-fluid background-image">
+            <div class="container">
+                <div class="row featurette container-spacer">
+                    <div class="col-md-6">
+                        <h2 class="featurette-heading bold-heading">New Releases All Ages</h2>
+                        <p class="lead">
+                            <ul class="list-group">
+                                <li class="list-group-item">CONAN THE AVENGER #17</li>
+                                <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
+                                <li class="list-group-item">HALO ESCALATION #21</li>
+                                <li class="list-group-item">HELLBOY IN HELL #7</li>
+                                <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
+                                <li class="list-group-item">MULAN REVELATIONS #3</li>
+                                <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
+                                <li class="list-group-item">PASTAWAYS #6</li>
+                                <li class="list-group-item">UNDOWNERS TP VOL 02</li>
+                                <li class="list-group-item">TOMORROWS #2</li>
+                                <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
+                                <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
+                                <li class="list-group-item">ZODIAC STARFORCE #1</li>
+	                       </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="featurette-heading bold-heading">New Releases Mature Titles</h2>
+                        <p class="lead">
+                            <ul class="list-group">
+                                <li class="list-group-item">CONAN THE AVENGER #17</li>
+                                <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
+                                <li class="list-group-item">HALO ESCALATION #21</li>
+                                <li class="list-group-item">HELLBOY IN HELL #7</li>
+                                <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
+                                <li class="list-group-item">MULAN REVELATIONS #3</li>
+                                <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
+                                <li class="list-group-item">PASTAWAYS #6</li>
+                                <li class="list-group-item">UNDOWNERS TP VOL 02</li>
+                                <li class="list-group-item">TOMORROWS #2</li>
+                                <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
+                                <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
+                                <li class="list-group-item">ZODIAC STARFORCE #1</li>
+	                       </ul>
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-6">
-                    <h2 class="featurette-heading">Like us on Facebook, and check out our latest updates, specials, and events</h2>
+        </div> <!-- END FLUID CONTAINER -->
+    
+        <div class="container container-spacer">
+            <div class="row featurette center-row">
+                <div class="col-md-6 center">
                     <p class="lead">
                     <!--Facebook Embed Begin -->
                     <div class="fb-page" data-href="https://www.facebook.com/powerhouse.comics" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics"><a href="https://www.facebook.com/powerhouse.comics">Power House Comics</a></blockquote></div></div></p>
                 	<!--Facebook Embed End -->
                 </div>
-                <div class="col-md-6">
-                    <h2 class="featurette-heading">Location</h2>
-                    <p>807 W College Ave, Appleton, WI 54914</p>
-                    <h2 class="featurette-heading">Hours</h2>
-                    <table class="table">
-                      <tr>
-                        <td>Monday</td>
-                        <td>Closed</td>
-                      </tr>
-                      <tr>
-                        <td>Tuesday</td>
-                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Wednesday</td>
-                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Thursday</td>
-                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Friday</td>
-                        <td>12&#58;00 &#45; 7&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Saturday</td>
-                        <td>12&#58;00 &#45; 6&#58;00 pm</td>
-                      </tr>
-                      <tr>
-                        <td>Sunday</td>
-                        <td>Closed</td>
-                      </tr>
-                    </table>
-<h2 class="featurette-heading">Phone Number</h2>
-<p>920&#45;733&#45;9339</p>
+            
+                <div class="col-md-pull-6 center">
+                    <div>
+                        <h2 class="featurette-heading bold-heading">Like us on Facebook</h2>
+                        <h2>Check out our latest updates, specials, and events.</h2>
+                        <img src="img/facebook_thumb.png" alt="facebook logo" width="125px" height="125px" />
+                    </div>
                 </div>
             </div>
+        </div> <!-- END CONTAINER -->
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                
-                	<div class="text-center">
-                    <h2 class="featurette-heading">About Power House Comics</h2>
-                    <p class="lead">Vestibulum maximus non erat et iaculis. Phasellus ullamcorper euismod felis, non vestibulum lacus consequat at. Praesent at dictum dui. Nam mollis lorem eu lacus suscipit aliquam. Vivamus eu est eros. Praesent ut lorem magna. Etiam elit sapien, semper ut tempor id, pharetra porta libero. Vestibulum pretium a nunc id efficitur.</p>
-                </div>
-   				
-            </div>
-            <hr class="featurette-divider">
-        </div>
         <footer>
             <div class="container">
                 <div class="row">
-                    <p>&copy; 2015 Power House Comics &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                    <div class="col-sm-3">
+                        <div>
+                            <p>&copy; 2015 Power House Comics &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div>
+                            <h3>Location</h3>
+                            <p>807 W College Ave.</p>
+                            <p>Appleton, WI 54914</p>
+                            </br>
+                            <h3>Phone</h3>
+                            <p>920&#45;733&#45;9339</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Tuesday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Wednesday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Thursday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Friday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Saturday: 12&#58;00 &#45; 6&#58;00 pm</p>
+                            <p>Sunday: Closed</p>
+                            <p>Monday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div></div>
+                    </div>
                 </div>
             </div>
         </footer>
