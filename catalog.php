@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-xs-12 bottom-spacer">
                     <h1>Premium Titles for Sale</h1>
-                    <p>Call or email us to inquire about other titles</p>
+                    <p>Please note that stock pictures have been used. <a href="tel:920-733-9339" alt="Click here to call us!">Call</a> or <a href="mailto:powerhousecomics@gmail.com">email</a> us if additional pictures are needed or to inquire about other titles.</p>
                 </div>
             </div>
             <div class="row text-center">
