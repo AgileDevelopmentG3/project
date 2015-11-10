@@ -39,6 +39,11 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.panel-body {
+	background-color:#C6222D;
+}
+
 /* adds vertical space between
 catalog entries - keeps spacing
 uniform as the viewport shrinks */
