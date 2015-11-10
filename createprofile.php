@@ -243,7 +243,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="phone">Phone Number</label>  
               <div class="col-md-4">
-              <input id="phone" name="phone" type="text" placeholder="Phone#" class="form-control input-md" required="">
+              <input id="phone" name="phone" type="text" placeholder="(xxx)xxx-xxxx" class="form-control input-md" required="">
 
               </div>
             </div>
@@ -259,7 +259,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="phone">Re-enter Password</label>  
               <div class="col-md-4">
-              <input id="re-password" name="re-password" type="password" placeholder="password" class="form-control input-md" required>
+              <input id="re-password" name="re-password" type="password" placeholder="verify password" 				class="form-control input-md" required>
 
               </div>
             </div>
