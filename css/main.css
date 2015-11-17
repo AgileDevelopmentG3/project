@@ -190,7 +190,7 @@ uniform as the viewport shrinks */
     border-bottom: 24px solid black;
 }
 .slider {
-    height: calc( 50vh - 50px ); 
+    height: calc( 75vh - 50px ); 
 }
 .slider .slick-list, 
 .slider .slick-track {

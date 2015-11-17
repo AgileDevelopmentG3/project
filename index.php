@@ -14,18 +14,26 @@
         <link href="css/main.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
             <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+        function initialize() {
+            var phcLocation = new google.maps.LatLng(44.2616169,-88.41994);
+            var mapProp = {
+                center:new google.maps.LatLng(44.2616169,-88.41994),
+                zoom:18,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("map"), mapProp);
+            var marker=new google.maps.Marker({
+                position:phcLocation,
+            });
+
+            marker.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head>
     <body>
-<!--                                         Facebook Embed Javascript Start                                     -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-<!--                                          Facebook Embed Javascript End                                      -->
         <div class="aboveslider--red">
             <div class="container">
                 <div class="row aboveslider__text bottom-spacer">
@@ -206,28 +214,12 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div> <!-- END FLUID CONTAINER -->
-    
-        <div class="container container-spacer">
-            <div class="row featurette center-row">
-                <div class="col-md-6 center">
-                    <p class="lead">
-                    <!--Facebook Embed Begin -->
-                    <div class="fb-page" data-href="https://www.facebook.com/powerhouse.comics" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics"><a href="https://www.facebook.com/powerhouse.comics">Power House Comics</a></blockquote></div></div></p>
-                	<!--Facebook Embed End -->
-                </div>
+        
+        <div id="map" class="map" style="height: 60vh; width: 100%;">
             
-                <div class="col-md-pull-6 center">
-                    <div>
-                        <h2 class="featurette-heading bold-heading">Like us on Facebook</h2>
-                        <h2>Check out our latest updates, specials, and events.</h2>
-                        <img src="img/facebook_thumb.png" alt="facebook logo" width="125px" height="125px" />
-                    </div>
-                </div>
-            </div>
-        </div> <!-- END CONTAINER -->
-
+        </div>    
+    
         <footer>
             <div class="container">
                 <div class="row">
