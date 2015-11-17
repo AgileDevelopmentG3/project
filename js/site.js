@@ -14,15 +14,12 @@ $(document).ready(function(){
     $('.login').css('top', navHeight + 40 + 'px');
     $(window).load(function(){
         setTimeout(function(){
-            $('.aboveslider--red').slideDown('slow');
+            $('.aboveslider--red').addClass('on');
             setTimeout(function(){
-                $('.aboveslider__text p').fadeIn('slow');    
+                $('.aboveslider__text p').addClass('active');    
             }, 500);
         }, 2500);
     });
-    $('.aboveslider--red > button.close').click(function(){
-        $('.aboveslider--red').css('display','none');
-    })
     $(window).scroll(function() {
         if($(window).scrollTop() >= 44){
             $('nav').addClass('navbar-fixed-top');
@@ -34,6 +31,15 @@ $(document).ready(function(){
             $('nav').addClass('navbar-static-top');
             $('body').css({'padding-top': '0px'});
         }
+    });
+    $('.aboveslider--red > button.close').click(function(){
+        $('.aboveslider--red').removeClass('on');
+    });
+    $('.comic-book-cover > img').click(function(){
+        $(this).parent().addClass('display');
+        $('.comic-overlay').css('display' , 'table');
+        var dispImg = $('.comic-book-cover.display > img');
+        $('comic-overlay #comic-img').append('.comic-book-cover.display > img');
     });
     
 });

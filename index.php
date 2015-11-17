@@ -26,7 +26,7 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 <!--                                          Facebook Embed Javascript End                                      -->
-        <div class="aboveslider--red bottom">
+        <div class="aboveslider--red">
             <div class="container">
                 <div class="row aboveslider__text bottom-spacer">
                     <div class="col-xs-12 text-center">

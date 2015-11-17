@@ -57,6 +57,12 @@
             </div>
         </div>
         <div class="overlay"></div>
+        <div class="comic-overlay">
+            <div id="comic-image"></div>
+            <div id="comic-desc"></div>
+            <div id="comic-id"></div>
+            <button type="button" class="btn btn-default">BUY NOW</button>
+        </div>
         <div class="container bottom-spacer"> 
             <div class="row">
                 <div class="col-xs-12 bottom-spacer">
@@ -95,7 +101,7 @@
                     <div class="comic-book-cover center-block"><img src="img/comicBookIMages/daredevil4.jpg"></div>
                     <h3>Daredevil #4</h3>
                     <h4>Estimated Grade: VG</h4>
-                    <cite>Price: $75</cite>
+                    <h4>Price: $75</h4>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
                     <div class="comic-book-cover center-block"><img src="img/comicBookIMages/strange209.jpg"></div>
