@@ -98,6 +98,26 @@
                         <span></span>
                     </div>
                 </div>
+                <div class="slider-img" id="s-img-4">
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="slider-img" id="s-img-5">
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="slider-img" id="s-img-6">
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="slider-img" id="s-img-7">
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -115,8 +135,7 @@
         <div class="container-fluid text-center background-red">
             <div class="container">
                 <div class="row top__general top-spacer container-spacer">
-                <div class="panel panel-default">
-                		<div class="panel-body">
+                
                     <div class="col-lg-4">
                         <img src="img/DSCN0229-sm.JPG" alt="Power House Comics">
                         <h2>Comic Storage Supplies</h2>
@@ -134,8 +153,7 @@ storage supplies also available.</p>
                         <h2>Graphic Novels and More!</h2>
                         <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
                     </div>
-                    </div>
-                    </div>
+                    
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
@@ -143,6 +161,11 @@ storage supplies also available.</p>
         
         <div class="container-fluid background-image">
             <div class="container">
+           
+           <div class="panel panel-primary panel-transparent">
+  
+  <div class="panel-body">
+
                 <div class="row featurette container-spacer">
                     <div class="text-center"><h2 class="featurette-heading bold-heading">New Releases</h2></div>
                     <div class="col-md-5">
@@ -186,6 +209,8 @@ storage supplies also available.</p>
                         </p>
                     </div>
                 </div>
+            </div>
+            </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
     
