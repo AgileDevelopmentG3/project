@@ -165,12 +165,12 @@
         
         
         <div class="container-fluid background-image">
-            <div class="container">
+            
            
            <div class="panel panel-primary panel-transparent">
   
   <div class="panel-body">
-
+<div class="container">
                 <div class="row featurette container-spacer">
                     <div class="text-center"><h2 class="featurette-heading bold-heading">New Releases</h2></div>
                     <div class="col-md-5">
