@@ -343,6 +343,9 @@ uniform as the viewport shrinks */
     opacity: 1;
     transition: all 0.3s ease-out;
 }
+.comic-book-cover ~ .description {
+    display: none;
+}
 
 /*---------------------- 
         CONTACT*/

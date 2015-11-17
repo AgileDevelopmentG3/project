@@ -38,8 +38,11 @@ $(document).ready(function(){
     $('.comic-book-cover > img').click(function(){
         $(this).parent().addClass('display');
         $('.comic-overlay').css('display' , 'table');
-        var dispImg = $('.comic-book-cover.display > img');
-        $('comic-overlay #comic-img').append('.comic-book-cover.display > img');
+        var dispImg = $('.comic-book-cover.display > img').attr('src');
+        var dispId = $('.comic-book-cover.display + .info').text();
+        $('.comic-overlay #comic-image img').attr('src',dispImg);
+        $('.comic-overlay #comic-id').text(dispId);
+        $('.comic-overlay #comic-desc').text(dispText);
     });
     
 });
