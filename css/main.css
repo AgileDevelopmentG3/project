@@ -44,7 +44,7 @@ p {
 }
 .panel-transparent {
         background: none;
-		margin-top:10px;
+		margin-top:20px;
 		min-width:100%;
 }
 .panel-transparent .panel-body {
@@ -218,7 +218,7 @@ uniform as the viewport shrinks */
     background-size: cover;
 }
 #s-img-2 {
-    background: url('../img/Pano02') top left no-repeat;
+    background: url('../img/Pano02.jpg') top left no-repeat;
     background-size: cover;
 }
 #s-img-3 {
