@@ -358,6 +358,10 @@ uniform as the viewport shrinks */
     opacity: 1;
     transition: all 0.2s ease-in;
 }
+.map-overlay.deactive {
+    opacity: 0;
+    z-index: -1;
+}
 /*----------------------
         PREMIUM*/
 
