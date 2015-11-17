@@ -49,4 +49,8 @@ $(document).ready(function(){
         $('.comic-overlay #comic-price').text(dispPrice);
         $('.comic-overlay #comic-desc').text(dispText);
     });
+    $('.comic-overlay .close').click(function(){
+        $(this).parent().removeClass('display');
+        $('.comic-overlay').css('display' , 'none');
+    })
 });

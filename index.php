@@ -123,7 +123,7 @@
         
         <!-- MAIN CONTENT AREA -->
         
-        <div class="container-fluid text-center">
+        <div class="text-center">
             <div class="container container-spacer">
                 <div class="text-center">
                     <h2 class="featurette-heading bold-heading">About Power House Comics</h2>
@@ -132,91 +132,81 @@
             </div>
         </div> <!-- END FLUID CONTAINER -->
         
-        <div class="container-fluid background-red">
+        <div class="background-red">
             <div class="container">
                 <div class="top-spacer container-spacer">
-                
-                    <div class="col-md-3">
-                        <div>
+                    <div class="row">
+                        <div class="col-md-3">
                             <div>
-                                <img class="img-responsive" src="img/novels.jpg" alt="graphic novels and more">
-                                <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                                <div>
+                                    <img class="img-responsive" src="img/novels.jpg" alt="graphic novels and more">
+                                    <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div>
-                        <img class="img-responsive" src="img/storage.jpg" alt="comic book storage supplies">
-                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                        <div class="col-md-3">
+                            <div>
+                            <img class="img-responsive" src="img/storage.jpg" alt="comic book storage supplies">
+                            <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="img/mature.jpg" alt="mature titles">
+                            <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="img/funko.jpg" alt="funko pop">
+                            <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="img/mature.jpg" alt="mature titles">
-                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
-                    </div>
-                    <div class="col-md-3">
-                        <img class="img-responsive" src="img/funko.jpg" alt="funko pop">
-                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
-                    </div>
-                    
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
         
         
-        <div class="container-fluid background-image">
-            
-           
-           <div class="panel panel-primary panel-transparent">
-  
-  <div class="panel-body">
-<div class="container">
-                <div class="row featurette container-spacer">
-                    <div class="text-center"><h2 class="featurette-heading bold-heading">New Releases</h2></div>
-                    <div class="col-md-5">
-                      <div class="text-center"><h2 class="featurette-heading">All Ages Titles</h2></div>
-                        <p class="lead">
-                            <ul class="list-group">
-                                <li class="list-group-item">CONAN THE AVENGER #17</li>
-                                <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
-                                <li class="list-group-item">HALO ESCALATION #21</li>
-                                <li class="list-group-item">HELLBOY IN HELL #7</li>
-                                <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
-                                <li class="list-group-item">MULAN REVELATIONS #3</li>
-                                <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
-                                <li class="list-group-item">PASTAWAYS #6</li>
-                                <li class="list-group-item">UNDOWNERS TP VOL 02</li>
-                                <li class="list-group-item">TOMORROWS #2</li>
-                                <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
-                                <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
-                                <li class="list-group-item">ZODIAC STARFORCE #1</li>
-	                       </ul>
-                        </p>
+        <div class="background-image">
+            <div class="container">
+                <div class="row container-spacer home__titles">
+                    <div class="text-center"><h2 class="bold-heading">New Releases</h2></div>
+                    <div class="col-md-6">
+                      <div class="text-center"><h2>All Ages Titles</h2></div>
+                        <ul class="list-group">
+                            <li class="list-group-item">CONAN THE AVENGER #17</li>
+                            <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
+                            <li class="list-group-item">HALO ESCALATION #21</li>
+                            <li class="list-group-item">HELLBOY IN HELL #7</li>
+                            <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
+                            <li class="list-group-item">MULAN REVELATIONS #3</li>
+                            <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
+                            <li class="list-group-item">PASTAWAYS #6</li>
+                            <li class="list-group-item">UNDOWNERS TP VOL 02</li>
+                            <li class="list-group-item">TOMORROWS #2</li>
+                            <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
+                            <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
+                            <li class="list-group-item">ZODIAC STARFORCE #1</li>
+                       </ul>
                     </div>
-                    <div class="col-md-5 col-md-offset-2">
-                        <div class="text-center"><h2 class="featurette-heading">Mature Titles</h2></div>
-                        <p class="lead">
-                            <ul class="list-group">
-                                <li class="list-group-item">CONAN THE AVENGER #17</li>
-                                <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
-                                <li class="list-group-item">HALO ESCALATION #21</li>
-                                <li class="list-group-item">HELLBOY IN HELL #7</li>
-                                <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
-                                <li class="list-group-item">MULAN REVELATIONS #3</li>
-                                <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
-                                <li class="list-group-item">PASTAWAYS #6</li>
-                                <li class="list-group-item">UNDOWNERS TP VOL 02</li>
-                                <li class="list-group-item">TOMORROWS #2</li>
-                                <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
-                                <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
-                                <li class="list-group-item">ZODIAC STARFORCE #1</li>
-	                       </ul>
-                        </p>
+                    <div class="col-md-6">
+                        <div class="text-center"><h2>Mature Titles</h2></div>
+                        <ul class="list-group">
+                            <li class="list-group-item">CONAN THE AVENGER #17</li>
+                            <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
+                            <li class="list-group-item">HALO ESCALATION #21</li>
+                            <li class="list-group-item">HELLBOY IN HELL #7</li>
+                            <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
+                            <li class="list-group-item">MULAN REVELATIONS #3</li>
+                            <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
+                            <li class="list-group-item">PASTAWAYS #6</li>
+                            <li class="list-group-item">UNDOWNERS TP VOL 02</li>
+                            <li class="list-group-item">TOMORROWS #2</li>
+                            <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
+                            <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
+                            <li class="list-group-item">ZODIAC STARFORCE #1</li>
+                       </ul>
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
+        </div>
         </div> <!-- END FLUID CONTAINER -->
     
         <div class="container container-spacer">

@@ -321,6 +321,10 @@ uniform as the viewport shrinks */
     vertical-align: middle;
     float: none;
 }
+.home__titles .list-group {
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 10px #000;
+}
 /*----------------------
         PREMIUM*/
 
@@ -368,8 +372,9 @@ to match color scheme */
       NEW RELEASES*/
 
 .list-group-item {
-	color:#FFF;
-	background-color: #2f2f2f;
+	background-color: black;
+    border: none;
+    color:#FFF;
 }
 
 /*---------------------

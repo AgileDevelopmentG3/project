@@ -65,6 +65,7 @@
                 <div id="comic-price"></div>
                 <div id="comic-desc"></div>
             </div>
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&#10005;</span></button>
         </div>
         <div class="container bottom-spacer"> 
             <div class="row">
