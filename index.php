@@ -132,26 +132,31 @@
             </div>
         </div> <!-- END FLUID CONTAINER -->
         
-        <div class="container-fluid text-center background-red">
+        <div class="container-fluid background-red">
             <div class="container">
-                <div class="row top__general top-spacer container-spacer">
+                <div class="top-spacer container-spacer">
                 
-                    <div class="col-lg-4">
-                        <img src="img/DSCN0229-sm.JPG" alt="Power House Comics">
-                        <h2>Comic Storage Supplies</h2>
-                        <p>Stop in today to get your comic storage supplies! We have Modern, Current, and 
-Silver Age Bags and Boards as well as long and short boxes available. Some magazing
-storage supplies also available.</p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img src="img/MatureTitlesOpt-sm.jpg" alt="Mature Titles">
-                        <h2>Mature Titles</h2>
-                        <p>In addition to titles for all ages we also have a large selection of titles for mature audiences</p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img src="img/GraphicNovels-sm.jpg" alt="Graphic Novels">
-                        <h2>Graphic Novels and More!</h2>
-                        <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
+                    <div class="col-md-3">
+                        <div>
+                            <div>
+                                <img class="img-responsive" src="img/novels.jpg" alt="graphic novels and more">
+                                <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div>
+                        <img class="img-responsive" src="img/storage.jpg" alt="comic book storage supplies">
+                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="img/mature.jpg" alt="mature titles">
+                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                    </div>
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="img/funko.jpg" alt="funko pop">
+                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
                     </div>
                     
                 </div>
