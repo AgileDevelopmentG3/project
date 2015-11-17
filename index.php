@@ -215,11 +215,15 @@
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
-        
-        <div id="map" class="map" style="height: 60vh; width: 100%;">
-            
-        </div>    
-    
+        <div class="map-container">
+            <div class="map-overlay">
+                <div>
+                    <p>Click to activate map</p> 
+                </div>
+            </div>
+            <div id="map" class="map" style="height: 60vh; width: 100%;">
+            </div>   
+        </div>
         <footer>
             <div class="container">
                 <div class="row">
