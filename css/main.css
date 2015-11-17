@@ -42,6 +42,19 @@ p {
 .panel-body {
 	background-color:#C6222D;
 }
+.panel-transparent {
+        background: none;
+		margin-top:10px;
+		min-width:100%;
+}
+.panel-transparent .panel-body {
+        background: rgba(46, 51, 56, 0.2)!important;
+}
+
+/* adds vertical space between
+catalog entries - keeps spacing
+uniform as the viewport shrinks */
+
 .catalog-spacer {
     margin-bottom: 20px;
 }
@@ -205,10 +218,26 @@ p {
     background-size: cover;
 }
 #s-img-2 {
-    background: url('../img/DSCN0220EDIT.JPG') top left no-repeat;
+    background: url('../img/Pano02') top left no-repeat;
     background-size: cover;
 }
 #s-img-3 {
+    background: url('../img/DSCN0365.JPG') top left no-repeat;
+    background-size: cover;
+}
+#s-img-4 {
+    background: url('../img/TradePaperBacks.JPG') top left no-repeat;
+    background-size: cover;
+}
+#s-img-5 {
+    background: url('../img/DSCN0366.JPG') top left no-repeat;
+    background-size: cover;
+}
+#s-img-6 {
+    background: url('../img/Marvel-DC-Indie-Spread.JPG') top left no-repeat;
+    background-size: cover;
+}
+#s-img-7 {
     background: url('../img/DSCN0218EDIT.JPG') top left no-repeat;
     background-size: cover;
 }
