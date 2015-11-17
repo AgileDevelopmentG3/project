@@ -39,10 +39,14 @@ $(document).ready(function(){
         $(this).parent().addClass('display');
         $('.comic-overlay').css('display' , 'table');
         var dispImg = $('.comic-book-cover.display > img').attr('src');
-        var dispId = $('.comic-book-cover.display + .info').text();
+        var dispTitle = $('.comic-book-cover.display + .info .title').text();
+        var dispGrade = $('.comic-book-cover.display + .info .grade').text();
+        var dispPrice = $('.comic-book-cover.display + .info .price').text();
+        var dispText = $('.comic-book-cover.display + .info .description').text();
         $('.comic-overlay #comic-image img').attr('src',dispImg);
-        $('.comic-overlay #comic-id').text(dispId);
+        $('.comic-overlay #comic-title').text(dispTitle);
+        $('.comic-overlay #comic-grade').text(dispGrade);
+        $('.comic-overlay #comic-price').text(dispPrice);
         $('.comic-overlay #comic-desc').text(dispText);
     });
-    
 });

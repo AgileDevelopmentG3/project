@@ -324,6 +324,7 @@ uniform as the viewport shrinks */
 
 .comic-overlay {
     background: rgba(0,0,0,0.8);
+    color: #fff;
     display: none;
     height: 100%;
     position: fixed;
@@ -331,6 +332,9 @@ uniform as the viewport shrinks */
         left: 0;
     width: 100%;
     z-index: 99999;
+}
+.comic-overlay > div {
+    padding: 0 400px;
 }
 .comic-book-cover > img {
     box-shadow: 1px 1px 5px #000;
@@ -343,7 +347,7 @@ uniform as the viewport shrinks */
     opacity: 1;
     transition: all 0.3s ease-out;
 }
-.comic-book-cover ~ .description {
+.description {
     display: none;
 }
 
