@@ -52,5 +52,8 @@ $(document).ready(function(){
     $('.comic-overlay .close').click(function(){
         $(this).parent().removeClass('display');
         $('.comic-overlay').css('display' , 'none');
+    });
+    $('.map-overlay').click(function(){
+        $(this).addClass('deactive');
     })
 });

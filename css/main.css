@@ -190,7 +190,7 @@ uniform as the viewport shrinks */
     border-bottom: 24px solid black;
 }
 .slider {
-    height: calc( 50vh - 50px ); 
+    height: calc( 75vh - 50px ); 
 }
 .slider .slick-list, 
 .slider .slick-track {
@@ -344,6 +344,43 @@ uniform as the viewport shrinks */
 .home__titles .list-group {
     border: 5px solid #fff;
     box-shadow: 5px 5px 10px #000;
+}
+.map-container {
+    position: relative;
+}
+.map-overlay {
+    display: table;
+    height: 60vh;
+    position: absolute;
+        left: 0;
+        top: 0;
+    transition: all 0.3s ease-out;
+    width: 100%;
+    z-index: 100;
+}
+.map-overlay > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+.map-overlay p {
+    color: #fff;
+    font-size: 46px;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.3s ease-out;
+}
+.map-overlay:hover {
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.map-overlay:hover p {
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+.map-overlay.deactive {
+    opacity: 0;
+    z-index: -1;
 }
 /*----------------------
         PREMIUM*/
