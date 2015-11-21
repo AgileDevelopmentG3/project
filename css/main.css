@@ -215,6 +215,26 @@ uniform as the viewport shrinks */
     line-height: 200px;
     width: 70%;
 }
+
+.text-hover-outer {
+    display: table;
+}
+.text-hover {
+    width: 100%;
+}
+.text-hover > div {
+    color: #fff;
+    display: table-cell;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+.text-hover > div > span {
+    display: inline-block;
+    height: inherit;
+    width: 90%;
+}
+
 #s-img-1 {
     background: url('../img/PHCPanoEDIT.jpg') top left no-repeat;
     background-size: cover;

@@ -136,14 +136,18 @@
             <div class="container">
                 <div class="top-spacer container-spacer">
                     <div class="row">
+                        
                         <div class="col-md-3">
-                            <div>
-                                <div>
+                            <div class="text-hover-outer">
+                                <div class="text-hover">
+                                    <div>
                                     <img class="img-responsive" src="img/novels.jpg" alt="graphic novels and more">
                                     <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
                                 </div>
                             </div>
                         </div>
+                        </div>
+                        
                         <div class="col-md-3">
                             <div>
                             <img class="img-responsive" src="img/storage.jpg" alt="comic book storage supplies">
