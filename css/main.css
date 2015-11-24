@@ -216,25 +216,6 @@ uniform as the viewport shrinks */
     width: 70%;
 }
 
-.text-hover-outer {
-    display: table;
-}
-.text-hover {
-    width: 100%;
-}
-.text-hover > div {
-    color: #fff;
-    display: table-cell;
-    font-size: 14px;
-    text-align: center;
-    vertical-align: middle;
-}
-.text-hover > div > span {
-    display: inline-block;
-    height: inherit;
-    width: 90%;
-}
-
 #s-img-1 {
     background: url('../img/PHCPanoEDIT.jpg') top left no-repeat;
     background-size: cover;
@@ -334,12 +315,40 @@ uniform as the viewport shrinks */
 .center-row {
     display: table;
     width: 100%;
+
 }
 .center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     float: none;
+}
+
+.feature-outer {
+    width: 231px;
+    height: 275px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+.feature-inner {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    display: table;
+    width: 231px;
+    height: 275px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+}
+.feature-inner > span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.feature-inner:hover {
+    opacity: 1;
 }
 .home__titles .list-group {
     border: 5px solid #fff;
