@@ -25,11 +25,13 @@ $(document).ready(function(){
             $('nav').addClass('navbar-fixed-top');
             $('nav').removeClass('navbar-static-top');
             $('body').css({'padding-top': navHeight + 'px'});
+            $('.login').css('top', '75px');
         }
         else if($(window).scrollTop() <= 43) {
             $('nav').removeClass('navbar-fixed-top');
             $('nav').addClass('navbar-static-top');
             $('body').css({'padding-top': '0px'});
+            $('.login').css('top', navHeight + 40 + 'px');
         }
     });
     $('.aboveslider--red > button.close').click(function(){
