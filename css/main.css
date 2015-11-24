@@ -344,10 +344,14 @@ uniform as the viewport shrinks */
     opacity: 0;
     transition: all 0.3s ease-in;
 }
-.feature-inner > span {
+.feature-inner > div {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+}
+.feature-inner > div > span {
+    display: inline-block;
+    width: 90%;
 }
 .feature-inner:hover {
     opacity: 1;

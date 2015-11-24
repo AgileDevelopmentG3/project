@@ -148,7 +148,10 @@
                        <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="feature-outer">
                                 <img src="img/GraphicNovesMore.jpg">
-                                <div class="feature-inner">                                    <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                                <div class="feature-inner">
+                                    <div>
+                                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +159,10 @@
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="feature-outer">
                                 <img src="img/storageSupplies.jpg">
-                                <div class="feature-inner">                                    <span>Stop in today to get your comic storage supplies! We have Modern, Current, and Silver Age Bags and Boards as well as long and short boxes available. Some magazing storage supplies also available.</span>
+                                <div class="feature-inner"> 
+                                    <div>
+                                        <span>Stop in today to get your comic storage supplies! We have Modern, Current, and Silver Age Bags and Boards as well as long and short boxes available. Some magazing storage supplies also available.</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +170,10 @@
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="feature-outer">
                                 <img src="img/MatureTitlesBooks.jpg">
-                                <div class="feature-inner">                                    <span>In addition to titles for all ages we also have a large selection of titles for mature audiences.</span>
+                                <div class="feature-inner">     
+                                    <div>
+                                        <span>In addition to titles for all ages we also have a large selection of titles for mature audiences.</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +181,10 @@
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="feature-outer">
                                 <img src="img/funkoPop.jpg">
-                                <div class="feature-inner">                                    <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                                <div class="feature-inner">                                    
+                                    <div>
+                                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

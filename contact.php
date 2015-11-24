@@ -14,22 +14,28 @@
             <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <style>
             #map {
-                width: 500px;
-                height: 500px;
+                max-width: 1000px;
+                height: 350px;
+                width: 100%;
             }
         </style>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
-            function initialize() {
-                var mapCanvas = document.getElementById('map');
-                var mapOptions = {
-                    center: new google.maps.LatLng(44.2616131,-88.4177513,15),
-                    zoom: 12,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(mapCanvas, mapOptions)
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
+        function initialize() {
+            var phcLocation = new google.maps.LatLng(44.2616169,-88.41994);
+            var mapProp = {
+                center:new google.maps.LatLng(44.2616169,-88.41994),
+                zoom:18,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("map"), mapProp);
+            var marker=new google.maps.Marker({
+                position:phcLocation,
+            });
+
+            marker.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     </head>
     <body>
@@ -83,7 +89,7 @@
                 </div>
             </div>
             <form role="form" action="" method="post" >
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div class="form-group">
                         <label for="input-name">Your Name</label>
                         <div class="input-group">
@@ -107,7 +113,7 @@
                     </div>
                     <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-contact pull-right">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div id="map"></div>
                 </div>
             </form>
