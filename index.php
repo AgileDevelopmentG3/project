@@ -190,37 +190,67 @@
                     <div class="col-md-6">
                       <div class="text-center"><h2>All Ages Titles</h2></div>
                         <ul class="list-group">
-                            <li class="list-group-item">CONAN THE AVENGER #17</li>
-                            <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
-                            <li class="list-group-item">HALO ESCALATION #21</li>
-                            <li class="list-group-item">HELLBOY IN HELL #7</li>
-                            <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
-                            <li class="list-group-item">MULAN REVELATIONS #3</li>
-                            <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
-                            <li class="list-group-item">PASTAWAYS #6</li>
-                            <li class="list-group-item">UNDOWNERS TP VOL 02</li>
-                            <li class="list-group-item">TOMORROWS #2</li>
-                            <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
-                            <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
-                            <li class="list-group-item">ZODIAC STARFORCE #1</li>
+							<?php
+							$dsn = "mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=as_bf1259e0fe71a2a";
+							$username = "bfdbdc3c11a396";
+							$password = "1c82948e";		
+							$options = array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION);
+							
+							try
+							{								
+								$db = new PDO($dsn, $username, $password, $options);
+							
+								$query = "SELECT * FROM tblNewReleases WHERE Mature = 0 AND ReleaseDate BETWEEN 								DATE(DATE_SUB(NOW(), INTERVAL 7 DAY)) AND NOW()";
+								$statement = $db->prepare($query);
+								$statement->execute();
+								$new_Release =  $statement->fetch();
+								
+								while($new_Release != null)
+								{									
+									echo('<li class="list-group-item">'.$new_Release['Description'].'</li>');
+									$new_Release =  $statement->fetch();	
+								}		
+							$statement->closeCursor();
+							//$db=null;								
+							}			
+							catch(PDOException $e)
+							{
+								$error_message = $e->getMessage();
+								echo ("<p>Database error: $error_message </p>");	
+								$db=null;							
+							}
+							?>
                        </ul>
                     </div>
                     <div class="col-md-6">
                         <div class="text-center"><h2>Mature Titles</h2></div>
                         <ul class="list-group">
-                            <li class="list-group-item">CONAN THE AVENGER #17</li>
-                            <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
-                            <li class="list-group-item">HALO ESCALATION #21</li>
-                            <li class="list-group-item">HELLBOY IN HELL #7</li>
-                            <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
-                            <li class="list-group-item">MULAN REVELATIONS #3</li>
-                            <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
-                            <li class="list-group-item">PASTAWAYS #6</li>
-                            <li class="list-group-item">UNDOWNERS TP VOL 02</li>
-                            <li class="list-group-item">TOMORROWS #2</li>
-                            <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
-                            <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
-                            <li class="list-group-item">ZODIAC STARFORCE #1</li>
+						<?php 
+							try
+							{								
+								//$db = new PDO($dsn, $username, $password, $options);
+							
+								$query = "SELECT * FROM tblNewReleases WHERE Mature = 1 AND ReleaseDate BETWEEN 								DATE(DATE_SUB(NOW(), INTERVAL 7 DAY)) AND NOW()";
+								$statement = $db->prepare($query);
+								$statement->execute();
+								$new_Release =  $statement->fetch();
+								
+								while($new_Release != null)
+								{
+									$Title = $new_Release['Description'];
+									echo('<li class="list-group-item">'.$Title.'</li>');
+									$new_Release =  $statement->fetch();	
+								}		
+							$statement->closeCursor();
+							$db=null;								
+							}			
+							catch(PDOException $e)
+							{
+								$error_message = $e->getMessage();
+								echo ("<p>Database error: $error_message </p>");
+								$db=null;								
+							}
+						?>
                        </ul>
                     </div>
                 </div>

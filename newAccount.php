@@ -178,8 +178,7 @@ try
 	$statement->closeCursor();
 
 	if (count($Users) > 0)
-	{
-		
+	{		
 		echo("<h3>Email already registered.</h3>");
 		/**
 		 foreach ($Users as $User)
@@ -190,8 +189,7 @@ try
 	}
 	else if($Userpassword != $ReUserpassword)
 	{
-		echo("<h3>Passwords did not match.<h3>");
-	
+		echo("<h3>Passwords did not match.<h3>");	
 	}
 	else 
 	{	
