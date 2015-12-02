@@ -222,7 +222,7 @@
 							{								
 								$db = new PDO($dsn, $username, $password, $options);
 							
-								$query = "SELECT * FROM tblNewReleases WHERE Mature = 0 AND ReleaseDate BETWEEN 								DATE(DATE_SUB(NOW(), INTERVAL 7 DAY)) AND NOW()";
+								$query = "SELECT * FROM tblNewReleases WHERE Mature = 0 AND ReleaseDate BETWEEN DATE(DATE_SUB(NOW(), INTERVAL 7 DAY)) AND NOW()";
 								$statement = $db->prepare($query);
 								$statement->execute();
 								$new_Release =  $statement->fetch();
@@ -252,7 +252,7 @@
 							{								
 								//$db = new PDO($dsn, $username, $password, $options);
 							
-								$query = "SELECT * FROM tblNewReleases WHERE Mature = 1 AND ReleaseDate BETWEEN 								DATE(DATE_SUB(NOW(), INTERVAL 7 DAY)) AND NOW()";
+								$query = "SELECT * FROM tblNewReleases WHERE Mature = 1 AND ReleaseDate BETWEEN DATE(DATE_SUB(NOW(), INTERVAL 7 DAY)) AND NOW()";
 								$statement = $db->prepare($query);
 								$statement->execute();
 								$new_Release =  $statement->fetch();
