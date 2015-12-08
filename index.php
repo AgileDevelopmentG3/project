@@ -121,21 +121,6 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="slider-img" id="s-img-5">
-                    <div>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="slider-img" id="s-img-6">
-                    <div>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="slider-img" id="s-img-7">
-                    <div>
-                        <span></span>
-                    </div>
-                </div>
             </div>
         </div>
         
