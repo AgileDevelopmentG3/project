@@ -33,7 +33,7 @@ p {
     margin-top: 25px;
 }
 .bottom-spacer {
-    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
 .container-spacer {
     margin-top: 50px;
@@ -64,11 +64,14 @@ uniform as the viewport shrinks */
     max-width: 100%;
     height: auto;
 }
-.background-image {
-    /*background-color: #222;*/
+.newrelease-background-image {
     background: url('../img/fadedComics1.jpg') no-repeat;
     background-size: cover;
     color: #fff;
+}
+.contact-background-image {
+    background: url('../img/contact-background.jpg') no-repeat;
+    background-size: cover;
 }
 .background-red {
     background-color: #c6222d;
@@ -438,8 +441,27 @@ to match color scheme */
 .btn-contact {
     color: #fff;
     background-color: #6BA6FC;
-    /**border-color: #867072;**/
+    font-weight: 700;
 }
+.btn-contact:hover {
+    color: #fff;
+    background-color: #c6222d;
+}
+
+
+label {
+    font-weight: normal;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    border-color: rgba(107,166,252,0.8);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(107,166,252,.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(107,166,252,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(107,166,252,.6);
+}
+
+
+
 
 /*--------------------- 
       NEW RELEASES*/

@@ -205,7 +205,7 @@
         </div> <!-- END FLUID CONTAINER -->
         
         
-        <div class="background-image">
+        <div class="newrelease-background-image">
             <div class="container">
                 <div class="row container-spacer home__titles">
                     <div class="text-center"><h2 class="bold-heading">New Releases</h2></div>
@@ -279,7 +279,7 @@
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
-        <div class="background-image">
+        <div class="newrelease-background-image">
             <div class="container">
                 <div class="row container-spacer home__titles">
         <div class="col-md-6">
