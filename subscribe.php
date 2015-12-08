@@ -1,16 +1,18 @@
-<?php
-//$Comics = null;
-		if(isset($_GET['cboPublisher']))
-		{			
-			$PublisherName = $_GET['cboPublisher'];
-		}
+<?php	
+
+$Comics = null;
+		
+	if(isset($_GET['cboPublisher']))
+	{			
+		$PublisherID = $_GET['cboPublisher'];
+		$Comics = getComicByPublisher($PublisherID);
+	}
 
 	try	
 	{
 		$dsn = "mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=as_bf1259e0fe71a2a";
 		$username = "bfdbdc3c11a396";
 		$password = "1c82948e";
-
 		$db = new PDO($dsn, $username, $password);
 		
 		$query = "SELECT DISTINCT PublisherID, PublisherName FROM `tblSubComic`";
@@ -18,8 +20,7 @@
 		$statement = $db->prepare($query);
 		$statement->execute();
 		$Publishers = $statement->fetchAll();
-		$statement->closeCursor();	
-		
+		$statement->closeCursor();		
 	}
 	catch(PDOException $e)
 	{
@@ -29,20 +30,36 @@
 		exit();
 	}
 	
-function getComicByPublisher($Publisher)
+function getComicByPublisher($PublisherID)
 {
 	
 	try	
 	{
+		$dsn = "mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=as_bf1259e0fe71a2a";
+		$username = "bfdbdc3c11a396";
+		$password = "1c82948e";
 		$db = new PDO($dsn, $username, $password);
 		
-		$query = "SELECT * FROM `tblSubComic` WHERE PublisherName = :Publisher";
-		
-		$statement = $db->prepare($query);
-		$statement -> bindValue(':Publisher', $Publisher);
-		$statement->execute();
-		$Comics = $statement->fetchAll();
-		$statement->closeCursor();	
+		if(isset($_GET['chkMature']))
+		{			
+			//$query = "SELECT * FROM `tblSubComic` WHERE PublisherID = :PublisherID and IsMature = 1";	
+			$query = "SELECT * FROM `tblSubComic` WHERE PublisherID = :PublisherID";		
+			$statement = $db->prepare($query);
+			$statement -> bindValue(':PublisherID', $PublisherID);
+			$statement->execute();
+			return $statement->fetchAll();
+			$statement->closeCursor();	
+		}
+		else 
+		{
+			//$query = "SELECT * FROM `tblSubComic` WHERE PublisherID = :PublisherID and IsMature = 0";		
+			$query = "SELECT * FROM `tblSubComic` WHERE PublisherID = :PublisherID";		
+			$statement = $db->prepare($query);
+			$statement -> bindValue(':PublisherID', $PublisherID);
+			$statement->execute();
+			return $statement->fetchAll();
+			$statement->closeCursor();	
+		}
 		
 	}
 	catch(PDOException $e)
@@ -78,35 +95,43 @@ function getComicByPublisher($Publisher)
 				<div id="FormFields">
 					<div>
 						<label for="cboPublisher">Publisher</label>
-						<select id="cboPublisher" name="cboPublisher" onchange="SubForm.submit();
-							getComicByPublisher(<?=$PublisherName?>);">
+						<select id="cboPublisher" name="cboPublisher">
 							
 <?php 
 	if (count($Publishers) > 0)
 	{
 		foreach ($Publishers as $Publisher)
-		{ 
-			echo('<option value=<'.$Publisher['PublisherName']. '>'.$Publisher['PublisherName'] .'</option>');
+		{
+			//$ValueReplace = str_replace(" ", " ",  $Publisher['PublisherName']);
+			echo('<option value='.$Publisher['PublisherID'].'>'.$Publisher['PublisherName'].'</option>');
 		}
 	}
 ?>		
 </select>
+
+						<input type="submit" value="Filter"></input>
+
 					</div>
+						<label for="chkMature">Include Mature Titles</label>
+						<input type="checkbox" name="chkMature" id="chkMature">
 					<div>
 <?php					
-	if (isset($Comics) && count($Comics) > 0)
-	{
-
-		
+	if ($Comics != null && count($Comics) > 0)
+	{		
+		echo ('<select  size="15" multiple="multiple" >');
+	
 		foreach ($Comics as $Comic)
 		{
-						echo ('<label for="'.$Comic['Description']. '">'.$Comic['Description'].'</label>'); 
-						echo('<input type="checkbox" name="'.$Comic['Description']. '" id="'.$Comic['Description'].'" />');
-		}
+			echo('<option value='.$Comic['ComicID'].'>'.$Comic['Description'].'</option>');	
+			//echo('<input type="checkbox" name="'.$Comic['Description']. '" id="'.$Comic['Description'].'" />');			
+			//echo('<input type="checkbox" value="'.$Comic['Description'].'">'.$Comic['Description'].'</input>');
+			//echo "<br>";
+		}		
+		
+		echo("</select>");
 	}				
 ?>
-						<label for="lstComics">Comics</label>
-						<input type="checkbox" name="" id="" />
+
 						</div>
 				</div> <!--End of FormFields-->	
 				
