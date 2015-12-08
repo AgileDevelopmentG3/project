@@ -14,22 +14,28 @@
             <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <style>
             #map {
-                width: 500px;
-                height: 500px;
+                max-width: 1000px;
+                height: 350px;
+                width: 100%;
             }
         </style>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
-            function initialize() {
-                var mapCanvas = document.getElementById('map');
-                var mapOptions = {
-                    center: new google.maps.LatLng(44.2616131,-88.4177513,15),
-                    zoom: 12,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(mapCanvas, mapOptions)
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
+        function initialize() {
+            var phcLocation = new google.maps.LatLng(44.2616169,-88.41994);
+            var mapProp = {
+                center:new google.maps.LatLng(44.2616169,-88.41994),
+                zoom:18,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("map"), mapProp);
+            var marker=new google.maps.Marker({
+                position:phcLocation,
+            });
+
+            marker.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     </head>
     <body>
@@ -76,41 +82,43 @@
             </div>
         </div>
         <div class="overlay"></div>
+        
+        <div class="contact-background-image">
         <div class="container bottom-spacer">
             <div class="row">
                 <div class="col-xs-12">
                     <h1>Contact</h1>
                 </div>
             </div>
+            <div class="row">
             <form role="form" action="" method="post" >
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div class="form-group">
                         <label for="input-name">Your Name</label>
-                        <div class="input-group">
+                        <div class="input-group col-xs-12">
                             <input type="text" class="form-control" name="input-name" id="input-name" placeholder="Enter Name" required>
-                            <span class="input-group-addon"></span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="input-email">Your Email</label>
-                        <div class="input-group">
+                        <div class="input-group col-xs-12">
                             <input type="email" class="form-control" id="input-email" name="input-email" placeholder="Enter Email" required  >
-                            <span class="input-group-addon"></span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="input-message">Message</label>
-                        <div class="input-group">
+                        <div class="input-group col-xs-12">
                             <textarea name="input-message" id="input-message" class="form-control" rows="5" required></textarea>
-                            <span class="input-group-addon"></span>
                         </div>
                     </div>
                     <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-contact pull-right">
                 </div>
-                <div class="col-md-6">
+                </form>
+                <div class="col-md-7">
                     <div id="map"></div>
                 </div>
-            </form>
+        </div>
+        </div>
         </div>
         <footer>
             <div class="container">

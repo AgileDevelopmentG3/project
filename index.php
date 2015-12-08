@@ -14,18 +14,36 @@
         <link href="css/main.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
             <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+        function initialize() {
+            var phcLocation = new google.maps.LatLng(44.2616169,-88.41994);
+            var mapProp = {
+                center:new google.maps.LatLng(44.2616169,-88.41994),
+                zoom:18,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("map"), mapProp);
+            var marker=new google.maps.Marker({
+                position:phcLocation,
+            });
+
+            marker.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head>
     <body>
-<!--                                         Facebook Embed Javascript Start                                     -->
+    <!--FACEBOOK EMBED JAVASCRIPT BEGIN-->
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-<!--                                          Facebook Embed Javascript End                                      -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--FACEBOOK EMBED JAVASCRIPT END-->
         <div class="aboveslider--red">
             <div class="container">
                 <div class="row aboveslider__text bottom-spacer">
@@ -98,12 +116,32 @@
                         <span></span>
                     </div>
                 </div>
+                <div class="slider-img" id="s-img-4">
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="slider-img" id="s-img-5">
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="slider-img" id="s-img-6">
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="slider-img" id="s-img-7">
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
         
         <!-- MAIN CONTENT AREA -->
         
-        <div class="container-fluid text-center">
+        <div class="text-center">
             <div class="container container-spacer">
                 <div class="text-center">
                     <h2 class="featurette-heading bold-heading">About Power House Comics</h2>
@@ -112,102 +150,155 @@
             </div>
         </div> <!-- END FLUID CONTAINER -->
         
-        <div class="container-fluid text-center background-red">
+        <div class="background-red">
             <div class="container">
-                <div class="row top__general top-spacer container-spacer">
-                <div class="panel panel-default">
-                		<div class="panel-body">
-                    <div class="col-lg-4">
-                        <img src="img/DSCN0229-sm.JPG" alt="Power House Comics">
-                        <h2>Comic Storage Supplies</h2>
-                        <p>Stop in today to get your comic storage supplies! We have Modern, Current, and 
-Silver Age Bags and Boards as well as long and short boxes available. Some magazing
-storage supplies also available.</p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img src="img/MatureTitlesOpt-sm.jpg" alt="Mature Titles">
-                        <h2>Mature Titles</h2>
-                        <p>In addition to titles for all ages we also have a large selection of titles for mature audiences</p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img src="img/GraphicNovels-sm.jpg" alt="Graphic Novels">
-                        <h2>Graphic Novels and More!</h2>
-                        <p>We also have a wide selection of graphic novels, statues, busts and action figures</p>
-                    </div>
-                    </div>
+                <div class="top-spacer container-spacer">
+                    <div class="row">
+                        
+                       <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="feature-outer">
+                                <img src="img/GraphicNovesMore.jpg">
+                                <div class="feature-inner">
+                                    <div>
+                                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="feature-outer">
+                                <img src="img/storageSupplies.jpg">
+                                <div class="feature-inner"> 
+                                    <div>
+                                        <span>Stop in today to get your comic storage supplies! We have Modern, Current, and Silver Age Bags and Boards as well as long and short boxes available. Some magazing storage supplies also available.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="feature-outer">
+                                <img src="img/MatureTitlesBooks.jpg">
+                                <div class="feature-inner">     
+                                    <div>
+                                        <span>In addition to titles for all ages we also have a large selection of titles for mature audiences.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="feature-outer">
+                                <img src="img/funkoPop.jpg">
+                                <div class="feature-inner">                                    
+                                    <div>
+                                        <span>We also have a wide selection of graphic novels, statues, busts and action figures.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+  
                     </div>
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
         
         
-        <div class="container-fluid background-image">
+        <div class="newrelease-background-image">
             <div class="container">
-                <div class="row featurette container-spacer">
-                    <div class="text-center"><h2 class="featurette-heading bold-heading">New Releases</h2></div>
+                <div class="row container-spacer home__titles">
+                    <div class="text-center"><h2 class="bold-heading">New Releases</h2></div>
                     <div class="col-md-6">
-                      <div class="text-center"><h2 class="featurette-heading bold-heading">All Ages Titles</h2></div>
-                        <p class="lead">
-                            <ul class="list-group">
-                                <li class="list-group-item">CONAN THE AVENGER #17</li>
-                                <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
-                                <li class="list-group-item">HALO ESCALATION #21</li>
-                                <li class="list-group-item">HELLBOY IN HELL #7</li>
-                                <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
-                                <li class="list-group-item">MULAN REVELATIONS #3</li>
-                                <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
-                                <li class="list-group-item">PASTAWAYS #6</li>
-                                <li class="list-group-item">UNDOWNERS TP VOL 02</li>
-                                <li class="list-group-item">TOMORROWS #2</li>
-                                <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
-                                <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
-                                <li class="list-group-item">ZODIAC STARFORCE #1</li>
-	                       </ul>
-                        </p>
+                      <div class="text-center"><h2>All Ages Titles</h2></div>
+                        <ul class="list-group">
+							<?php
+							$dsn = "mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=as_bf1259e0fe71a2a";
+							$username = "bfdbdc3c11a396";
+							$password = "1c82948e";		
+							$options = array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION);
+							
+							try
+							{								
+								$db = new PDO($dsn, $username, $password, $options);
+							
+								$query = "SELECT * FROM tblNewReleases WHERE Mature = 0 AND ReleaseDate BETWEEN DATE(DATE_SUB(NOW(), INTERVAL 7 DAY)) AND NOW()";
+								$statement = $db->prepare($query);
+								$statement->execute();
+								$new_Release =  $statement->fetch();
+								
+								while($new_Release != null)
+								{									
+									echo('<li class="list-group-item">'.$new_Release['Description'].'</li>');
+									$new_Release =  $statement->fetch();	
+								}		
+							$statement->closeCursor();
+							//$db=null;								
+							}			
+							catch(PDOException $e)
+							{
+								$error_message = $e->getMessage();
+								echo ("<p>Database error: $error_message </p>");	
+								$db=null;							
+							}
+							?>
+                       </ul>
                     </div>
                     <div class="col-md-6">
-                        <div class="text-center"><h2 class="featurette-heading bold-heading">Mature Titles</h2></div>
-                        <p class="lead">
-                            <ul class="list-group">
-                                <li class="list-group-item">CONAN THE AVENGER #17</li>
-                                <li class="list-group-item">FIGHT CLUB 2 #4 MAIN MACK CVR</li>
-                                <li class="list-group-item">HALO ESCALATION #21</li>
-                                <li class="list-group-item">HELLBOY IN HELL #7</li>
-                                <li class="list-group-item">KUROSAGI CORPSE DELIVERY SERVICE OMNIBUS ED TP BOOK 01</li>
-                                <li class="list-group-item">MULAN REVELATIONS #3</li>
-                                <li class="list-group-item">NEW MGMT #1 MAIN KINDT CVR</li>
-                                <li class="list-group-item">PASTAWAYS #6</li>
-                                <li class="list-group-item">UNDOWNERS TP VOL 02</li>
-                                <li class="list-group-item">TOMORROWS #2</li>
-                                <li class="list-group-item">USAGI YOJIMBO SAGA LTD ED HC VOL 04</li>
-                                <li class="list-group-item">USAGI YOJIMBO SAGA TP VOL 04</li>
-                                <li class="list-group-item">ZODIAC STARFORCE #1</li>
-	                       </ul>
-                        </p>
+                        <div class="text-center"><h2>Mature Titles</h2></div>
+                        <ul class="list-group">
+						<?php 
+							try
+							{								
+								//$db = new PDO($dsn, $username, $password, $options);
+							
+								$query = "SELECT * FROM tblNewReleases WHERE Mature = 1 AND ReleaseDate BETWEEN DATE(DATE_SUB(NOW(), INTERVAL 7 DAY)) AND NOW()";
+								$statement = $db->prepare($query);
+								$statement->execute();
+								$new_Release =  $statement->fetch();
+								
+								while($new_Release != null)
+								{
+									$Title = $new_Release['Description'];
+									echo('<li class="list-group-item">'.$Title.'</li>');
+									$new_Release =  $statement->fetch();	
+								}		
+							$statement->closeCursor();
+							$db=null;								
+							}			
+							catch(PDOException $e)
+							{
+								$error_message = $e->getMessage();
+								echo ("<p>Database error: $error_message </p>");
+								$db=null;								
+							}
+						?>
+                       </ul>
                     </div>
+                    
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
-    
-        <div class="container container-spacer">
-            <div class="row featurette center-row">
-                <div class="col-md-6 center">
-                    <p class="lead">
-                    <!--Facebook Embed Begin -->
-                    <div class="fb-page" data-href="https://www.facebook.com/powerhouse.comics" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics"><a href="https://www.facebook.com/powerhouse.comics">Power House Comics</a></blockquote></div></div></p>
-                	<!--Facebook Embed End -->
-                </div>
-            
-                <div class="col-md-pull-6 center">
-                    <div>
-                        <h2 class="featurette-heading bold-heading">Like us on Facebook</h2>
-                        <h2>Check out our latest updates, specials, and events.</h2>
-                        <img src="img/facebook_thumb.png" alt="facebook logo" width="125px" height="125px" />
+        <div class="newrelease-background-image">
+            <div class="container">
+                <div class="row container-spacer home__titles">
+        <div class="col-md-6">
+                    <!--FACEBOOK EMBED BEGIN-->
+                    <div class="fb-page" data-href="https://www.facebook.com/powerhouse.comics/?fref=ts" data-width="500" data-height="350" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics/?fref=ts"><a href="https://www.facebook.com/powerhouse.comics/?fref=ts">Power House Comics</a></blockquote></div></div>
+                    <!--FACEBOOK EMBED END-->
                     </div>
+                    </div>
+                    </div>
+                    </div>
+        <div class="map-container">
+            <div class="map-overlay">
+                <div>
+                    <p>Click to activate map</p> 
                 </div>
             </div>
-        </div> <!-- END CONTAINER -->
-
+            <div id="map" class="map" style="height: 60vh; width: 100%;">
+            </div>   
+        </div>
         <footer>
             <div class="container">
                 <div class="row">

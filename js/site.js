@@ -14,28 +14,48 @@ $(document).ready(function(){
     $('.login').css('top', navHeight + 40 + 'px');
     $(window).load(function(){
         setTimeout(function(){
-            $('.aboveslider--red').slideDown('slow');
+            $('.aboveslider--red').addClass('on');
             setTimeout(function(){
-                $('.aboveslider__text p').fadeIn('slow');    
+                $('.aboveslider__text p').addClass('active');    
             }, 500);
         }, 2500);
     });
-    $('.aboveslider--red > button.close').click(function(){
-        $('.aboveslider--red').css('display','none');
-    })
     $(window).scroll(function() {
         if($(window).scrollTop() >= 44){
             $('nav').addClass('navbar-fixed-top');
             $('nav').removeClass('navbar-static-top');
-            $('.aboveslider--red').addClass('bottom');
-            $('body').css({'padding-top': navHeight + 44 + 'px'});
+            $('body').css({'padding-top': navHeight + 'px'});
+            $('.login').css('top', '75px');
         }
         else if($(window).scrollTop() <= 43) {
             $('nav').removeClass('navbar-fixed-top');
             $('nav').addClass('navbar-static-top');
-            $('.aboveslider--red').removeClass('bottom');
             $('body').css({'padding-top': '0px'});
+            $('.login').css('top', navHeight + 40 + 'px');
         }
     });
-    
+    $('.aboveslider--red > button.close').click(function(){
+        $('.aboveslider--red').removeClass('on');
+    });
+    $('.comic-book-cover > img').click(function(){
+        $(this).parent().addClass('display');
+        $('.comic-overlay').css('display' , 'table');
+        var dispImg = $('.comic-book-cover.display > img').attr('src');
+        var dispTitle = $('.comic-book-cover.display + .info .title').text();
+        var dispGrade = $('.comic-book-cover.display + .info .grade').text();
+        var dispPrice = $('.comic-book-cover.display + .info .price').text();
+        var dispText = $('.comic-book-cover.display + .info .description').text();
+        $('.comic-overlay #comic-image img').attr('src',dispImg);
+        $('.comic-overlay #comic-title').text(dispTitle);
+        $('.comic-overlay #comic-grade').text(dispGrade);
+        $('.comic-overlay #comic-price').text(dispPrice);
+        $('.comic-overlay #comic-desc').text(dispText);
+    });
+    $('.comic-overlay .close').click(function(){
+        $(this).parent().removeClass('display');
+        $('.comic-overlay').css('display' , 'none');
+    });
+    $('.map-overlay').click(function(){
+        $(this).addClass('deactive');
+    })
 });
