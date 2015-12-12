@@ -17,31 +17,21 @@
     
 	<div class="container">
 		<h1 style="text-align: center">Administration Page</h1>
-    <!--</div>-->
-    
-    <!--<div id="AdminPage">-->
             
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1">
                 <!--Form for New Releases-->
-                <form class="form-horizontal bottom-spacer" method="post" action="admin.php">				
-	
+                <form class="bottom-spacer" method="post" action="admin.php">				
 				        <div id="ReleaseFormFields">
-                            
                             <div class="form-group">
                                 <label for="txtComicTitle" class="control-label">Comic Title</label>
-                                
-                                    <input type="text" name="txtComicTitle" id="txtComicTitle" class="form-control" />
-                                
+                                <input type="text" name="txtComicTitle" id="txtComicTitle" class="form-control" />
                             </div>
                             
                             <div class="form-group">
                                 <label for="dtReleaseDate" class="control-label">Release Date</label>
-                                
-                                    <input type="date" name="dtReleaseDate" id="dtReleaseDate" class="form-control"/>
-                                
+                                <input type="date" name="dtReleaseDate" id="dtReleaseDate" class="form-control"/>
                             </div>
-
                             
                             <div class="form-group">
                                 <div>
@@ -62,28 +52,22 @@
                 
             <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
                 <!--Form for Box Numbers-->			
-                <form class="form-horizontal bottom-spacer" method="post" action="admin.php">				
+                <form class="bottom-spacer" method="post" action="admin.php">				
 	
                     <div id="BoxFormFields">
                         <div class="form-group">
                             <label class="control-label" for="txtEmail">Email</label>
-                            
-                                <input class="form-control" type="email" name="txtEmail" id="txtEmail" />
-                            
+                            <input class="form-control" type="email" name="txtEmail" id="txtEmail" />
                         </div>
                         
                         <div class="form-group">
                             <label class="control-label" for="txtConfirmEmail">Confirm Email</label>
-                            
-                                <input class="form-control" type="email" name="txtConfirmEmail" id="txtConfirmEmail" />
-                            
+                            <input class="form-control" type="email" name="txtConfirmEmail" id="txtConfirmEmail" />
                         </div>
                         
                         <div class="form-group">
                             <label class="control-label" for="txtBoxNumber">Box Number</label>
-                            
-                                <input class="form-control" type="number" name="txtBoxNumber" id="txtBoxNumber" />
-                            
+                            <input class="form-control" type="number" name="txtBoxNumber" id="txtBoxNumber" />
                         </div>
                     </div> <!--End of FormFields-->				
 				

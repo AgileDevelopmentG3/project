@@ -76,63 +76,67 @@ function getComicByPublisher($PublisherID)
 
 <html>
 <head>
-<link href="../Styles/FormLayout.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-	
-	#caption{
-		text-align:center;
-		font-family:Arial, Helvetica, sans-serif;
-		font-weight:bold;
-		font-size:14px;
-	}
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>POWER HOUSE COMICS</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 	<div id="Container">
 		<h1 style="text-align: center">Subscribe to Comics</h1>		
-		<div id="OrderForm">			
+		<div class="row">
+            <div class="col-md-4 col-md-offset-4">
 			<form name="SubForm" id="SubForm" method="get" action="">					
 				<div id="FormFields">
-					<div>
+                    
+					<div class="form-group">
 						<label for="cboPublisher">Publisher</label>
 						<select id="cboPublisher" name="cboPublisher">
-							
-<?php 
-	if (count($Publishers) > 0)
-	{
-		foreach ($Publishers as $Publisher)
-		{
-			//$ValueReplace = str_replace(" ", " ",  $Publisher['PublisherName']);
-			echo('<option value='.$Publisher['PublisherID'].'>'.$Publisher['PublisherName'].'</option>');
-		}
-	}
-?>		
-</select>
-
+                            <?php 
+                                if (count($Publishers) > 0)
+                                {
+                                    foreach ($Publishers as $Publisher)
+                                    {
+                                        //$ValueReplace = str_replace(" ", " ",  $Publisher['PublisherName']);
+                                        echo('<option value='.$Publisher['PublisherID'].'>'.$Publisher['PublisherName'].'</option>');
+                                    }
+                                }
+                            ?>		
+                        </select>
 						<input type="submit" value="Filter"></input>
-
 					</div>
-						<label for="chkMature">Include Mature Titles</label>
-						<input type="checkbox" name="chkMature" id="chkMature">
+                
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="checkbox" name="chkMature" id="chkMature" /> Include Mature Titles</label>
+                        </div>
+                    </div>
+                
 					<div>
-<?php					
-	if ($Comics != null && count($Comics) > 0)
-	{		
-		echo ('<select  size="15" multiple="multiple" >');
-	
-		foreach ($Comics as $Comic)
-		{
-			echo('<option value='.$Comic['ComicID'].'>'.$Comic['Description'].'</option>');	
-			//echo('<input type="checkbox" name="'.$Comic['Description']. '" id="'.$Comic['Description'].'" />');			
-			//echo('<input type="checkbox" value="'.$Comic['Description'].'">'.$Comic['Description'].'</input>');
-			//echo "<br>";
-		}		
-		
-		echo("</select>");
-	}				
-?>
+                        <?php					
+                            if ($Comics != null && count($Comics) > 0)
+                            {		
+                                echo ('<select  size="15" multiple="multiple" >');
 
-						</div>
+                                foreach ($Comics as $Comic)
+                                {
+                                    echo('<option value='.$Comic['ComicID'].'>'.$Comic['Description'].'</option>');	
+                                    //echo('<input type="checkbox" name="'.$Comic['Description']. '" id="'.$Comic['Description'].'" />');			
+                                    //echo('<input type="checkbox" value="'.$Comic['Description'].'">'.$Comic['Description'].'</input>');
+                                    //echo "<br>";
+                                }		
+
+                                echo("</select>");
+                            }				
+                        ?>
+
+				    </div>
 				</div> <!--End of FormFields-->	
 				
 				<div id="FormButtons">
@@ -141,6 +145,7 @@ function getComicByPublisher($PublisherID)
 				</div> <!--End of FormButtons-->
 			</form>	
 		</div>
+        </div>
 	</div>	
 </body>
 </html>	
