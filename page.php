@@ -22,56 +22,74 @@
     <!--<div id="AdminPage">-->
             
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1">
                 <!--Form for New Releases-->
-                <form class="form-horizontal" method="post" action="admin.php">				
-								
-                    <div id="ReleaseCaption"><?=$msg?></div>		
+                <form class="form-horizontal bottom-spacer" method="post" action="admin.php">				
+	
 				        <div id="ReleaseFormFields">
+                            
                             <div class="form-group">
-                                <label for="txtComicTitle">Comic Title</label>
-                                <input type="text" name="txtComicTitle" id="txtComicTitle" />			
+                                <label for="txtComicTitle" class="control-label">Comic Title</label>
+                                
+                                    <input type="text" name="txtComicTitle" id="txtComicTitle" class="form-control" />
+                                
                             </div>
+                            
                             <div class="form-group">
-                                <label for="dtReleaseDate">Release Date</label>
-                                <input type="date" name="dtReleaseDate" id="dtReleaseDate"/>
+                                <label for="dtReleaseDate" class="control-label">Release Date</label>
+                                
+                                    <input type="date" name="dtReleaseDate" id="dtReleaseDate" class="form-control"/>
+                                
                             </div>
+
+                            
                             <div class="form-group">
-                                <label for="cbxMature">Mature</label>
-                                <input type="checkbox" name="cbxMature" id="cbxMature"/>
+                                <div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" class="checkbox" name="cbxMature" id="cbxMature" /> Mature</label>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div> <!--End of FormFields-->				
 				
-                        <div id="ReleaseFormButtons">
-                            <input type="submit" value="Submit"/>
+                        <div class="pull-right" id="ReleaseFormButtons">
                             <input type="reset"/>
+                            <input type="submit" value="Submit"/>
                         </div> <!--End of FormButtons-->				
                 </form>	
             </div>
                 
-            <div class="col-md-6">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
                 <!--Form for Box Numbers-->			
-                <form method="post" action="admin.php">				
-								
-                    <div id="BoxCaption"><?=$msg?></div>		
+                <form class="form-horizontal bottom-spacer" method="post" action="admin.php">				
+	
                     <div id="BoxFormFields">
-                        <div>
-                            <label for="txtEmail">Email</label>
-                            <input type="email" name="txtEmail" id="txtEmail" />
+                        <div class="form-group">
+                            <label class="control-label" for="txtEmail">Email</label>
+                            
+                                <input class="form-control" type="email" name="txtEmail" id="txtEmail" />
+                            
                         </div>
-                        <div>
-                            <label for="txtConfirmEmail">Confirm Email</label>
-                            <input type="email" name="txtConfirmEmail" id="txtConfirmEmail" />
+                        
+                        <div class="form-group">
+                            <label class="control-label" for="txtConfirmEmail">Confirm Email</label>
+                            
+                                <input class="form-control" type="email" name="txtConfirmEmail" id="txtConfirmEmail" />
+                            
                         </div>
-                        <div>
-                            <label for="txtBoxNumber">Box Number</label>
-                            <input type="number" name="txtBoxNumber" id="txtBoxNumber" />
+                        
+                        <div class="form-group">
+                            <label class="control-label" for="txtBoxNumber">Box Number</label>
+                            
+                                <input class="form-control" type="number" name="txtBoxNumber" id="txtBoxNumber" />
+                            
                         </div>
                     </div> <!--End of FormFields-->				
 				
-                    <div id="BoxFormButtons">
-                        <input type="submit" value="Submit"/>
+                    <div class="pull-right" id="BoxFormButtons">
                         <input type="reset"/>
+                        <input type="submit" value="Submit"/>
                     </div> <!--End of FormButtons-->				
                 </form>
             </div>
