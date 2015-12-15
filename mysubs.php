@@ -20,7 +20,7 @@ session_start();
 </head>
 <body>
 	<div id="Container">
-		<h1 style="text-align: center">Subscribe to Comics</h1>		
+		<h1 style="text-align: center">Your Subscriptions</h1>		
 		
             
 			<form name="SubForm" id="SubForm" method="get" action="">					
