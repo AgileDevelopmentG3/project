@@ -59,6 +59,7 @@ try
 			$_SESSION['FirstName'] = $FirstName;
 			$_SESSION['CustomerID'] = $User['CustomerID'];
 			$_SESSION['SubBoxID'] = $User['subboxID'];
+			$_SESSION['Username'] = $User['Email'];
 			
 			//$_SESSION['BoxID'] = ;
 			header( "refresh:3;url=index.php");
