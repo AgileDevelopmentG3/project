@@ -97,7 +97,7 @@ function getComicByPublisher($PublisherID)
                     
 					<div class="form-group">
 						<label for="cboPublisher">Publisher</label>
-						<select id="cboPublisher" name="cboPublisher">
+						<select class="form-control" id="cboPublisher" name="cboPublisher">
                             <?php 
                                 if (count($Publishers) > 0)
                                 {
@@ -109,7 +109,7 @@ function getComicByPublisher($PublisherID)
                                 }
                             ?>		
                         </select>
-						<input type="submit" value="Filter"></input>
+                        <input class="" type="submit" value="Filter"></input>
 					</div>
                 
                     <div class="form-group">
