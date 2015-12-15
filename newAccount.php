@@ -1,6 +1,9 @@
 <?php
 //$email = $_POST['inputEmail'];
 //$userPass = $_POST['inputPassword'];
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start();     
 
 
 $PhonePattern = "/^\(\d\d\d\)\d\d\d-\d\d\d\d$/";

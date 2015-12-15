@@ -1,3 +1,9 @@
+<?php
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start();     
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,8 +37,18 @@
                             <li><a href="index.php">Home</a></li>
                             <li><a href="subscriptions.php">Subscriptions</a></li>
                             <li><a href="catalog.php">Catalog</a></li>
-                            <li><a href="contact.php">Contact</a></li>
-                            <li class="login__button"><a>Login</a></li>
+                            <li><a href="contact.php">Contact</a></li>                                    
+                            <?php
+							        if (!isset($_SESSION['FirstName']))
+									{
+										echo('<li class="login__button"><a>Login</a></li>');
+									}
+									else 
+									{										
+										echo('<li ><a href="Logout.php">Log out</a></li>');
+									}
+							        
+							        ?>   
                         </ul>
                     </div>
                 </div>

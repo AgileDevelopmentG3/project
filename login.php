@@ -2,8 +2,10 @@
 <?php
 GLOBAL $Email;
 GLOBAL $Userpassword;
-                                        //if(isset($_GET['FirstName'])){echo $_GET['FirstName'];}
-										//else {echo("Login");} Used to pull first name into HTML (on other forms)
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start();           
+
 
    if(isset($_POST['txtEmail'])) 
    	$Email=$_POST['txtEmail'];
@@ -54,7 +56,14 @@ try
 		{
 			$FirstName = $User['FirstName'];
 			echo 'Welcome, ' .  $FirstName . '!';
-			header( "refresh:5;url=index.php?FirstName=$FirstName" );
+			$_SESSION['FirstName'] = $FirstName;
+			$_SESSION['CustomerID'] = $User['CustomerID'];
+			$_SESSION['SubBoxID'] = $User['subboxID'];
+			$_SESSION['Username'] = $User['Email'];
+			
+			//$_SESSION['BoxID'] = ;
+			header( "refresh:3;url=index.php");
+			$db=null;
 		}
 	}
 	else 
@@ -63,9 +72,11 @@ try
 		echo('<a href="index.php">Return to home page</a> or <a href="createprofile.php">Sign Up</a>');
 		//header( "refresh:1;url=createprofile.php" );
 	}
+			$db=null;
 }
 catch(PDOException $e)
 {
 	echo 'ERROR: ' . $e->getMessage();
+			$db=null;
 }
 ?>

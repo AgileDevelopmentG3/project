@@ -1,3 +1,10 @@
+<?php
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start();     
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,8 +38,18 @@
                             <li><a href="index.php">Home</a></li>
                             <li class="active"><a href="subscriptions.php">Subscriptions</a></li>
                             <li><a href="catalog.php">Premium Titles</a></li>
-                            <li><a href="contact.php">Contact</a></li>
-                            <li class="login__button"><a>Login</a></li>
+                            <li><a href="contact.php">Contact</a></li>                                    
+                            <?php
+							        if (!isset($_SESSION['FirstName']))
+									{
+										echo('<li class="login__button"><a>Login</a></li>');
+									}
+									else 
+									{										
+										echo('<li ><a href="Logout.php">Log out</a></li>');
+									}
+							        
+							        ?>   
                         </ul>
                     </div>
                 </div>
@@ -66,7 +83,16 @@
             <div class="row">
                 <div class="col-xs-12 bottom-spacer">
                     <p>Tired of trying to get to the comic shop before anybody else, just so you can get a particular title&#63; Take the hassle out of comic collecting and open up a subscription box today&#33; Subscribed to three or more titles a week and get a 10&#37 discount&#46 Subscribe to 20 or more titles and get a 15&#37; discount&#33;</p>
+                    
                     <h3 class="featurette-heading">Current Subscribers</h3>
+                    
+                    <?php
+                    if(isset($_SESSION['FirstName']))
+					{
+                    	echo('<a href="mysubs.php" class="float:right">'.$_SESSION['FirstName']."'".'s Subs</a>');
+					}
+
+                    ?>
                     <p>Forget what titles you&#39;re subscribed to&#63 Just want to check if your subscribed to a upcoming title&#63 Check the titles below&#44; if your number is next to a title you are subscribed&#33; If you need to make changes to your subscriptions call or email us&#46</p>
                 </div>
             </div>
@@ -81,7 +107,36 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                    <div class="col-sm-3">
+                        <div>
+                            <p>&copy; 2015 Power House Comics</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div>
+                            <h3>Location</h3>
+                            <p>807 W College Ave.</p>
+                            <p>Appleton, WI 54914</p>
+                            </br>
+                            <h3>Phone</h3>
+                            <p>920&#45;733&#45;9339</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Tuesday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Wednesday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Thursday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Friday: 12&#58;00 &#45; 7&#58;00 pm</p>
+                            <p>Saturday: 12&#58;00 &#45; 6&#58;00 pm</p>
+                            <p>Sunday: Closed</p>
+                            <p>Monday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div><p>Shop images &#169; 2015 Powerhouse Comics, All other character images property of their respective publishers</p></div>
+                    </div>
                 </div>
             </div>
         </footer>

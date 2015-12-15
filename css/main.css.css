@@ -33,30 +33,15 @@ p {
     margin-top: 25px;
 }
 .bottom-spacer {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 .container-spacer {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.panel-body {
-	background-color:#C6222D;
-	
-}
-.panel-transparent {
-        background: none;
-		margin-top:20px;
-		min-width:100%;
-		border-color:white;
-}
-.panel-transparent .panel-body {
-        background: rgba(46, 51, 56, 0.2)!important;
-}
-
 /* adds vertical space between
 catalog entries - keeps spacing
 uniform as the viewport shrinks */
-
 .catalog-spacer {
     margin-bottom: 20px;
 }
@@ -64,14 +49,11 @@ uniform as the viewport shrinks */
     max-width: 100%;
     height: auto;
 }
-.newrelease-background-image {
+.background-image {
+    /*background-color: #222;*/
     background: url('../img/fadedComics1.jpg') no-repeat;
     background-size: cover;
     color: #fff;
-}
-.contact-background-image {
-    background: url('../img/contact-background.jpg') no-repeat;
-    background-size: cover;
 }
 .background-red {
     background-color: #c6222d;
@@ -89,7 +71,6 @@ uniform as the viewport shrinks */
     background: url('../img/Spiderman-bw.jpg') no-repeat;
     background-size: cover;
     height: 100px;
-    transition: all 0.5s ease-in-out;
     width: 100%;
 }
 .navbar-inverse {
@@ -102,19 +83,15 @@ uniform as the viewport shrinks */
     color: #FFF;
     transition: color 0.3s ease-out;
 }
-.navbar-brand {
-    transition: all 0.5s ease-in-out;
-    width: initial;
-}
 .navbar-brand img {
     max-width: 360px;
     width: 100%;
-    transition: all 0.5s ease-in-out;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #FFF139;
-    transition: color 0.3s ease-in-out;
+/*    opacity: 1;*/
+    transition: color 0.3s ease-in;
 } 
 
 .navbar-inverse .navbar-nav>.active>a,
@@ -123,22 +100,9 @@ uniform as the viewport shrinks */
     background-color: #333;
 }
 .navbar-static-top {
-    font-size: inherit;
-    transition: all 0.5s ease-in-out;
     z-index: 9999;
 }
-.navbar-fixed-top.navbar {
-    font-size: 1.8rem;
-    transition: all 0.5s ease-in-out;
-}
-.navbar-fixed-top .navbar-brand img {
-    transition: all 0.5s ease-in-out;
-    width: 90%;
-}
-.navbar-fixed-top.navbar::before {
-    height: 0px;
-    transition: all 0.5s ease-in-out;
-}
+
 /*------------------------------------
 
                 LOGIN
@@ -189,11 +153,11 @@ uniform as the viewport shrinks */
 
 -------------------------------------*/
 .slider__wrapper {
-    background: #000;
-    border-bottom: 24px solid black;
+    background: #FFF;
+    border-bottom: 50px solid black;
 }
 .slider {
-    height: calc( 75vh - 50px ); 
+    height: calc( 50vh - 50px ); 
 }
 .slider .slick-list, 
 .slider .slick-track {
@@ -218,25 +182,18 @@ uniform as the viewport shrinks */
     line-height: 200px;
     width: 70%;
 }
-
 #s-img-1 {
     background: url('../img/PHCPanoEDIT.jpg') top left no-repeat;
     background-size: cover;
 }
 #s-img-2 {
-    background: url('../img/Pano02.jpg') top left no-repeat;
+    background: url('../img/DSCN0220EDIT.JPG') top left no-repeat;
     background-size: cover;
 }
 #s-img-3 {
-    background: url('../img/Marvel-DC-Indie-Spread.JPG') top left no-repeat;
+    background: url('../img/DSCN0218EDIT.JPG') top left no-repeat;
     background-size: cover;
 }
-#s-img-4 {
-    background: url('../img/DSCN0220-1.JPG') top left no-repeat;
-    background-size: cover;
-}
-
-
 .marketing .img-circle {
     margin: 0 33.333333%;
 }
@@ -254,18 +211,13 @@ uniform as the viewport shrinks */
 -------------------------------------*/
 
 .aboveslider--red {
-    background: #6BA6FC;
+    background: #F00;
     color: #FFF;
-    position: fixed;
-        bottom: -44px;
-    transition: all 0.3s ease-in;
+    display: none;
+    position: static;
+    bottom: -55px;
     width: 100%;
     z-index: 9999;
-}
-.aboveslider--red.on {
-    bottom: 0px;
-    right: 0px;
-    transition: all 0.5s ease-in;
 }
 .aboveslider--red > button.close {
     color: #fff;
@@ -280,6 +232,12 @@ uniform as the viewport shrinks */
     opacity: 1;
     transition: all 0.3s ease-in;
 }
+.aboveslider--red.bottom {
+    position: fixed;
+        bottom: 0;
+    transition: bottom .5s ease-in;
+    z-index: 9999;
+}
 .aboveslider--red .container {
     display: table;
     min-height: 35px;
@@ -289,12 +247,8 @@ uniform as the viewport shrinks */
     vertical-align: middle;
 }
 .aboveslider__text p {
-    opacity: 0;
+    display: none;
     font-size: 14px;
-}
-.aboveslider__text p.active {
-    opacity: 1;
-    transition: all 0.5s ease-in;
 }
 .top__general img {  
     border-radius: 50%;
@@ -308,125 +262,13 @@ uniform as the viewport shrinks */
 .center-row {
     display: table;
     width: 100%;
-
+    background-color: green;
 }
 .center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     float: none;
-}
-
-.feature-outer {
-    width: 231px;
-    height: 275px;
-    margin: 0 auto;
-    position: relative;
-    padding-bottom: 20px;
-}
-.feature-inner {
-    background: rgba(0,0,0,0.5);
-    color: white;
-    cursor: pointer;
-    display: table;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    opacity: 0;
-    transition: all 0.3s ease-in;
-}
-.feature-inner > div {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-.feature-inner > div > span {
-    display: inline-block;
-    width: 90%;
-}
-.feature-inner:hover {
-    opacity: 1;
-    transition: all 0.3s ease-in;
-}
-.home__titles .list-group {
-    border: 5px solid #fff;
-    box-shadow: 5px 5px 10px #000;
-}
-.map-container {
-    position: relative;
-}
-.map-overlay {
-    display: table;
-    height: 60vh;
-    position: absolute;
-        left: 0;
-        top: 0;
-    transition: all 0.3s ease-out;
-    width: 100%;
-    z-index: 100;
-}
-.map-overlay > div {
-    display: table-cell;
-    vertical-align: middle;
-}
-.map-overlay p {
-    color: #fff;
-    font-size: 46px;
-    opacity: 0;
-    text-align: center;
-    transition: all 0.3s ease-out;
-}
-.map-overlay:hover {
-    background: rgba(0,0,0,0.5);
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-}
-.map-overlay:hover p {
-    opacity: 1;
-    transition: all 0.2s ease-in;
-}
-.map-overlay.deactive {
-    opacity: 0;
-    z-index: -1;
-}
-
-.fb-border {
-    border: solid;
-    border-width: 5px;
-    border-color: #6BA6FC;
-}
-/*----------------------
-        PREMIUM*/
-
-.comic-overlay {
-    background: rgba(0,0,0,0.8);
-    color: #fff;
-    display: none;
-    height: 100%;
-    position: fixed;
-        top: 0;
-        left: 0;
-    width: 100%;
-    z-index: 99999;
-}
-.comic-overlay > div {
-    padding: 0 400px;
-}
-.comic-book-cover > img {
-    box-shadow: 1px 1px 5px #000;
-    cursor: pointer;
-    opacity: 0.9;
-    transition: all 0.3s ease-out;
-}
-.comic-book-cover > img:hover {
-    box-shadow: 1px 1px 10px #000;
-    opacity: 1;
-    transition: all 0.3s ease-out;
-}
-.description {
-    display: none;
 }
 
 /*---------------------- 
@@ -437,35 +279,15 @@ to match color scheme */
 .btn-contact {
     color: #fff;
     background-color: #6BA6FC;
-    font-weight: 700;
+    /**border-color: #867072;**/
 }
-.btn-contact:hover {
-    color: #fff;
-    background-color: #c6222d;
-}
-
-
-label {
-    font-weight: normal;
-}
-
-input.form-control:focus, textarea.form-control:focus {
-    border-color: rgba(107,166,252,0.8);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(107,166,252,.6);
-    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(107,166,252,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(107,166,252,.6);
-}
-
-
-
 
 /*--------------------- 
       NEW RELEASES*/
 
 .list-group-item {
-	background-color: black;
-    border: none;
-    color:#FFF;
+	color:#FFF;
+	background-color: #2f2f2f;
 }
 
 /*---------------------
@@ -488,65 +310,3 @@ footer {
     color: #fff;
     min-height: 300px;
 }
-
-
-
-/*--------------------------------
-
-                Form Styles
-
-----------------------------------*/
-
-.shove-down {
-    margin-bottom: 100px;
-}
-
-.button-top-space {
-    margin-top: 15px;
-}
-.button-bottom-space {
-    margin-bottom: 15px;
-}
-
-.btn-reset {
-    color: #fff;
-    background-color: #6BA6FC;
-    font-weight: 700;
-}
-
-.btn-reset:hover {
-    color: #fff;
-    background-color: #c6222d;
-}
-
-.btn-go {
-    color: #fff;
-    background-color: #6BA6FC;
-    font-weight: 700;
-}
-
-.btn-go:hover {
-    color: #fff;
-    background-color: #33cc33;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

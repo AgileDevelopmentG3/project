@@ -1,3 +1,9 @@
+<?php
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start();     
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -73,12 +79,24 @@
                             <li><a href="subscriptions.php">Subscriptions</a></li>
                             <li><a href="catalog.php">Premium Titles</a></li>
                             <li><a href="contact.php">Contact</a></li>
-                            <li class="login__button"><a>Login</a></li>
+                                    <?php
+							        if (!isset($_SESSION['FirstName']))
+									{
+										echo('<li class="login__button"><a>Login</a></li>');
+									}
+									else 
+									{										
+										echo('<li ><a href="Logout.php">Log out</a></li>');
+									}
+							        
+							        ?>                          
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+
+        
         <div class="login">
             <div class="login__innerwrapper">
                 <form role="form" action="login.php" method="post">
@@ -130,7 +148,7 @@
             <div class="container container-spacer">
                 <div class="text-center">
                     <h2 class="featurette-heading bold-heading">About Power House Comics</h2>
-                    <p class="lead">Vestibulum maximus non erat et iaculis. Phasellus ullamcorper euismod felis, non vestibulum lacus consequat at. Praesent at dictum dui. Nam mollis lorem eu lacus suscipit aliquam. Vivamus eu est eros. Praesent ut lorem magna. Etiam elit sapien, semper ut tempor id, pharetra porta libero. Vestibulum pretium a nunc id efficitur.</p>
+                    <p class="lead">Appleton&#39;s only retailer dedicated to everything comics&#33; Your number one destination for new comics&#44; thousands of back issue comics&#44; trade paperbacks&#44; action figures&#44; and more&#33; Your resource for comic lovers of all ages&#44; many Gold&#44; Silver&#44; Bronze and Modern Age titles available&#46</p>
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
@@ -264,12 +282,12 @@
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
-        <div class="newrelease-background-image">
+        <div>
             <div class="container">
                 <div class="row container-spacer home__titles">
-        <div class="col-md-6">
+        <div class="col-md-6 col-md-offset-3">
                     <!--FACEBOOK EMBED BEGIN-->
-                    <div class="fb-page" data-href="https://www.facebook.com/powerhouse.comics/?fref=ts" data-width="500" data-height="350" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics/?fref=ts"><a href="https://www.facebook.com/powerhouse.comics/?fref=ts">Power House Comics</a></blockquote></div></div>
+                    <div class="fb-page fb-border" data-href="https://www.facebook.com/powerhouse.comics/?fref=ts" data-width="500" data-height="350" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics/?fref=ts"><a href="https://www.facebook.com/powerhouse.comics/?fref=ts">Power House Comics</a></blockquote></div></div>
                     <!--FACEBOOK EMBED END-->
                     </div>
                     </div>
@@ -289,7 +307,7 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <div>
-                            <p>&copy; 2015 Power House Comics &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                            <p>&copy; 2015 Power House Comics</p>
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -315,7 +333,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div></div>
+                        <div><p>Shop images &#169; 2015 Powerhouse Comics, All other character images property of their respective publishers</p></div>
                     </div>
                 </div>
             </div>
