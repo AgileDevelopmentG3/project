@@ -391,6 +391,12 @@ uniform as the viewport shrinks */
     opacity: 0;
     z-index: -1;
 }
+
+.fb-border {
+    border: solid;
+    border-width: 5px;
+    border-color: #6BA6FC;
+}
 /*----------------------
         PREMIUM*/
 
@@ -523,7 +529,6 @@ footer {
     color: #fff;
     background-color: #33cc33;
 }
-
 
 
 

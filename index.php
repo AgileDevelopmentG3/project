@@ -282,12 +282,12 @@ session_start();
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
-        <div class="newrelease-background-image">
+        <div>
             <div class="container">
                 <div class="row container-spacer home__titles">
-        <div class="col-md-6">
+        <div class="col-md-6 col-md-offset-3">
                     <!--FACEBOOK EMBED BEGIN-->
-                    <div class="fb-page" data-href="https://www.facebook.com/powerhouse.comics/?fref=ts" data-width="500" data-height="350" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics/?fref=ts"><a href="https://www.facebook.com/powerhouse.comics/?fref=ts">Power House Comics</a></blockquote></div></div>
+                    <div class="fb-page fb-border" data-href="https://www.facebook.com/powerhouse.comics/?fref=ts" data-width="500" data-height="350" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/powerhouse.comics/?fref=ts"><a href="https://www.facebook.com/powerhouse.comics/?fref=ts">Power House Comics</a></blockquote></div></div>
                     <!--FACEBOOK EMBED END-->
                     </div>
                     </div>

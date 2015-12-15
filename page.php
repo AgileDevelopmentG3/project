@@ -19,9 +19,11 @@ session_start();
 </head>
 <body>
     
+    <div class="background-red shove-down">
 	<div class="container">
 		<h1 style="text-align: center">Administration Page</h1>
     </div>
+        </div>
         <div class="container">
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1">
@@ -84,6 +86,7 @@ session_start();
             </div>
         </div>
     </div>
+        
 <!--</div>-->	
 </body>
 </html>
