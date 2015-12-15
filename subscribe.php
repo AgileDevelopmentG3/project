@@ -2,10 +2,10 @@
 
 $Comics = null;
 		
-	if(isset($_GET['cboPublisher']))
+	if(isset($_GET['Publisher']))
 	{			
-		$PublisherID = $_GET['cboPublisher'];
-		$Comics = getComicByPublisher($PublisherID);
+		$PublisherName = rawurldecode($_GET['Publisher']);
+		$Comics = getComicByPublisher($PublisherName);
 	}
 
 	try	
@@ -30,7 +30,7 @@ $Comics = null;
 		exit();
 	}
 	
-function getComicByPublisher($PublisherID)
+function getComicByPublisher($PublisherName)
 {
 	
 	try	
@@ -43,9 +43,9 @@ function getComicByPublisher($PublisherID)
 		if(isset($_GET['chkMature']))
 		{			
 			//$query = "SELECT * FROM `tblSubComic` WHERE PublisherID = :PublisherID and IsMature = 1";	
-			$query = "SELECT * FROM `tblSubComic` WHERE PublisherID = :PublisherID";		
+			$query = "SELECT * FROM `tblSubComic` WHERE PublisherName = :PublisherName";		
 			$statement = $db->prepare($query);
-			$statement -> bindValue(':PublisherID', $PublisherID);
+			$statement -> bindValue(':PublisherName', $PublisherName);
 			$statement->execute();
 			return $statement->fetchAll();
 			$statement->closeCursor();	
@@ -53,9 +53,9 @@ function getComicByPublisher($PublisherID)
 		else 
 		{
 			//$query = "SELECT * FROM `tblSubComic` WHERE PublisherID = :PublisherID and IsMature = 0";		
-			$query = "SELECT * FROM `tblSubComic` WHERE PublisherID = :PublisherID";		
+			$query = "SELECT * FROM `tblSubComic` WHERE PublisherName = :PublisherName";		
 			$statement = $db->prepare($query);
-			$statement -> bindValue(':PublisherID', $PublisherID);
+			$statement -> bindValue(':PublisherName', $PublisherName);
 			$statement->execute();
 			return $statement->fetchAll();
 			$statement->closeCursor();	
@@ -96,25 +96,50 @@ function getComicByPublisher($PublisherID)
 				<div id="FormFields">
                     
 					<div class="form-group">
-						<label for="cboPublisher">Publisher</label>
-						<select id="cboPublisher" name="cboPublisher">
+						<label for="Publisher">Publisher</label>
                             <?php 
-                                if (count($Publishers) > 0)
+                            
+                        	if (count($Publishers) > 0)
+                            {
+                                	$PublishersList = '<select id="Publisher" name="Publisher">';		
+                                foreach ($Publishers as $Publisher)
                                 {
-                                    foreach ($Publishers as $Publisher)
-                                    {
-                                        //$ValueReplace = str_replace(" ", " ",  $Publisher['PublisherName']);
-                                        echo('<option value='.$Publisher['PublisherID'].'>'.$Publisher['PublisherName'].'</option>');
-                                    }
-                                }
+                                	if(isset($_GET['Publisher']))
+                                	{
+                                		if($Publisher['PublisherName'] == rawurldecode($_GET['Publisher']))
+                                		{
+										$PublishersList.='<option value='.rawurlencode($Publisher['PublisherName']).' 										selected>'.$Publisher['PublisherName'].'</option>';      
+                                		}                                	
+										else
+										{
+											$PublishersList.='<option value='.rawurlencode($Publisher['PublisherName']).'>'.$Publisher['PublisherName'].'</option>';	
+										}   
+                                	}                                	
+									else
+									{
+										$PublishersList.='<option value='.rawurlencode($Publisher['PublisherName']).'>'.$Publisher['PublisherName'].'</option>';	
+									}                                    	
+                                }		
+									$PublishersList.="</select>";								
+                                    echo("$PublishersList");
+                            }
                             ?>		
-                        </select>
 						<input type="submit" value="Filter"></input>
 					</div>
                 
                     <div class="form-group">
                         <div class="checkbox">
-                            <label><input type="checkbox" class="checkbox" name="chkMature" id="chkMature" /> Include Mature Titles</label>
+                        	<?php
+                                	if(isset($_GET['Mature']))
+									{
+										echo ('<label><input type="checkbox" class="checkbox" name="Mature" id="Mature" checked="checked"/> Include Mature 												Titles</label>');
+									}
+									else
+									{
+										echo ('<label><input type="checkbox" class="checkbox" name="Mature" id="Mature" /> Include Mature Titles</label>');
+									}
+                            
+                        	?>
                         </div>
                     </div>
                 

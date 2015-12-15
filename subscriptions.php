@@ -1,3 +1,7 @@
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start();     
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

@@ -1,4 +1,8 @@
-<?php $msg = "Here's A Message"?>
+<?php $msg = "";
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start();     
+?>
 
 <html>
 <head>

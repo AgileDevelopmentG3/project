@@ -2,8 +2,10 @@
 <?php
 GLOBAL $Email;
 GLOBAL $Userpassword;
-                                        //if(isset($_GET['FirstName'])){echo $_GET['FirstName'];}
-										//else {echo("Login");} Used to pull first name into HTML (on other forms)
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start();           
+
 
    if(isset($_POST['txtEmail'])) 
    	$Email=$_POST['txtEmail'];
@@ -54,6 +56,9 @@ try
 		{
 			$FirstName = $User['FirstName'];
 			echo 'Welcome, ' .  $FirstName . '!';
+			$_SESSION['FirstName'] = $FirstName;
+			
+			//$_SESSION['BoxID'] = ;
 			header( "refresh:5;url=index.php?FirstName=$FirstName" );
 		}
 	}
