@@ -88,9 +88,12 @@ function getComicByPublisher($PublisherName)
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-	<div id="Container">
+    <div class="background-red shove-down">
+	<div class="container">
 		<h1 style="text-align: center">Subscribe to Comics</h1>		
-		
+    </div>
+        </div>
+    <div class="container">
             
 			<form name="SubForm" id="SubForm" method="get" action="">					
 				<div id="FormFields">
@@ -151,7 +154,7 @@ function getComicByPublisher($PublisherName)
                         <?php					
                             if ($Comics != null && count($Comics) > 0)
                             {		
-                                echo ('<select  size="15" multiple="multiple" >');
+                                echo ('<select class="form-control button-bottom-space" size="15" multiple="multiple" >');
 
                                 foreach ($Comics as $Comic)
                                 {

@@ -491,8 +491,15 @@ footer {
 
 ----------------------------------*/
 
+.shove-down {
+    margin-bottom: 100px;
+}
+
 .button-top-space {
     margin-top: 15px;
+}
+.button-bottom-space {
+    margin-bottom: 15px;
 }
 
 .btn-reset {
