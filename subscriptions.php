@@ -38,8 +38,18 @@ session_start();
                             <li><a href="index.php">Home</a></li>
                             <li class="active"><a href="subscriptions.php">Subscriptions</a></li>
                             <li><a href="catalog.php">Premium Titles</a></li>
-                            <li><a href="contact.php">Contact</a></li>
-                            <li class="login__button"><a>Login</a></li>
+                            <li><a href="contact.php">Contact</a></li>                                    
+                            <?php
+							        if (!isset($_SESSION['FirstName']))
+									{
+										echo('<li class="login__button"><a>Login</a></li>');
+									}
+									else 
+									{										
+										echo('<li ><a href="Logout.php">Log out</a></li>');
+									}
+							        
+							        ?>   
                         </ul>
                     </div>
                 </div>
