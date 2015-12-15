@@ -4,6 +4,12 @@ session_set_cookie_params($OneHour);
 session_start(); 
 $Comics = null;
 		
+		if(!isset($_SESSION['CustomerID']))
+		{
+			echo "Please Log In to access your subscriptions";	
+			exit();
+		}
+		
 	if(isset($_GET['Publisher']))
 	{			
 		$PublisherName = rawurldecode($_GET['Publisher']);
@@ -62,6 +68,7 @@ function getComicByPublisher($PublisherName)
 			return $statement->fetchAll();
 			$statement->closeCursor();	
 		}
+		$db = null;
 		
 	}
 	catch(PDOException $e)
@@ -192,7 +199,3 @@ function getComicByPublisher($PublisherName)
 	</div>	
 </body>
 </html>	
-
-<?php
-$db = null;
-?>

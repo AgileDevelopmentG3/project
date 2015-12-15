@@ -85,7 +85,10 @@ if(isset($_SESSION['SubBoxID']))
 		$db = null;
 	}
 }
-
+else 
+{
+	echo "Please Log In to access your subscriptions";	
+}
 ?>
 
 
