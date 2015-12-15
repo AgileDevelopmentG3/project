@@ -79,12 +79,24 @@ session_start();
                             <li><a href="subscriptions.php">Subscriptions</a></li>
                             <li><a href="catalog.php">Premium Titles</a></li>
                             <li><a href="contact.php">Contact</a></li>
-                            <li class="login__button"><a>Login</a></li>
+                                    <?php
+							        if (!isset($_SESSION['FirstName']))
+									{
+										echo('<li class="login__button"><a>Login</a></li>');
+									}
+									else 
+									{										
+										echo('<li ><a href="Logout.php">Log out</a></li>');
+									}
+							        
+							        ?>                          
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+
+        
         <div class="login">
             <div class="login__innerwrapper">
                 <form role="form" action="login.php" method="post">

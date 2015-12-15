@@ -57,9 +57,11 @@ try
 			$FirstName = $User['FirstName'];
 			echo 'Welcome, ' .  $FirstName . '!';
 			$_SESSION['FirstName'] = $FirstName;
+			$_SESSION['CustomerID'] = $User['CustomerID'];
+			$_SESSION['SubBoxID'] = $User['subboxID'];
 			
 			//$_SESSION['BoxID'] = ;
-			header( "refresh:5;url=index.php?FirstName=$FirstName" );
+			header( "refresh:3;url=index.php");
 		}
 	}
 	else 

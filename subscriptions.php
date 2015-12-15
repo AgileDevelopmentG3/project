@@ -1,6 +1,9 @@
+<?php
 $OneHour = 60*60;
 session_set_cookie_params($OneHour);
 session_start();     
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +73,16 @@ session_start();
             <div class="row">
                 <div class="col-xs-12 bottom-spacer">
                     <p>Tired of trying to get to the comic shop before anybody else, just so you can get a particular title&#63; Take the hassle out of comic collecting and open up a subscription box today&#33; Subscribed to three or more titles a week and get a 10&#37 discount&#46 Subscribe to 20 or more titles and get a 15&#37; discount&#33;</p>
+                    
                     <h3 class="featurette-heading">Current Subscribers</h3>
+                    
+                    <?php
+                    if(isset($_SESSION['FirstName']))
+					{
+                    	echo('<a href="mysubs.php" class="float:right">'.$_SESSION['FirstName']."'".'s Subs</a>');
+					}
+
+                    ?>
                     <p>Forget what titles you&#39;re subscribed to&#63 Just want to check if your subscribed to a upcoming title&#63 Check the titles below&#44; if your number is next to a title you are subscribed&#33; If you need to make changes to your subscriptions call or email us&#46</p>
                 </div>
             </div>
