@@ -23,6 +23,7 @@ if(isset($_POST['txtEmail']) && isset($_POST['txtBoxNumber']))
 			$statement -> bindvalue(':BoxNumber' , $BoxNumber);
 			$statement -> execute();
 			
+			 header( "refresh:0;url=page.php");
 			$db=null;
 	}
 	catch(PDOException $e)
@@ -64,7 +65,7 @@ if(isset($_POST['txtComicTitle']) && isset($_POST['dtReleaseDate']))
 			
 			//$statement -> closeCursor();
 			//echo "$Mature";
-			 header( "refresh:3;url=page.php");
+			 header( "refresh:0;url=page.php");
 			$db=null;
 	}
 	catch(PDOException $e)
