@@ -2,6 +2,25 @@
 $OneHour = 60*60;
 session_set_cookie_params($OneHour);
 session_start();     
+
+
+
+
+if(isset($_SESSION['Username']))
+{
+	if ($_SESSION['Username'] != "DrStrange@phcomics.com")
+	{
+			 header( "refresh:0;url=index.php");
+			 exit();
+	}
+}
+else 
+{
+				 header( "refresh:0;url=index.php");
+			 exit();
+}
+
+
 ?>
 
 <html>
