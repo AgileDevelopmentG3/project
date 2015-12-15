@@ -7,12 +7,15 @@ global $Email;
 global $BoxNumber;
 
 
+
    if(isset($_POST['txtComicTitle'])) 
    	$Title=$_POST['txtComicTitle'];
    
    
    if(isset($_POST['dtReleaseDate'])) 
    	$ReleaseDate=$_POST['dtReleaseDate'];
+   
+   //echo "$ReleaseDate";
    
 if(isset($_POST['cbxMature']))
 									{
@@ -51,10 +54,10 @@ try
 		$statement -> bindvalue(':Mature' , $Mature);
 		$statement -> execute();
 		
-		$statement -> closeCursor();
-		
-		( "refresh:3;url=page.php");
-
+		//$statement -> closeCursor();
+		//echo "$Mature";
+		 header( "refresh:3;url=page.php");
+		$db=null;
 }
 catch(PDOException $e)
 {
