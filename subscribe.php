@@ -90,18 +90,19 @@ function getComicByPublisher($PublisherName)
 <body>
 	<div id="Container">
 		<h1 style="text-align: center">Subscribe to Comics</h1>		
-		<div class="row">
-            <div class="col-md-4 col-md-offset-4">
+		
+            
 			<form name="SubForm" id="SubForm" method="get" action="">					
 				<div id="FormFields">
-                    
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
 					<div class="form-group">
 						<label for="Publisher">Publisher</label>
                             <?php 
                             
                         	if (count($Publishers) > 0)
                             {
-                                	$PublishersList = '<select id="Publisher" name="Publisher">';		
+                                	$PublishersList = '<select class="form-control" id="Publisher" name="Publisher">';		
                                 foreach ($Publishers as $Publisher)
                                 {
                                 	if(isset($_GET['Publisher']))
@@ -123,11 +124,13 @@ function getComicByPublisher($PublisherName)
 									$PublishersList.="</select>";								
                                     echo("$PublishersList");
                             }
-                            ?>		
-						<input type="submit" value="Filter"></input>
-                        <input class="" type="submit" value="Filter"></input>
+                            ?>
+                        <div class="pull-right button-top-space"><input class="btn btn-go" type="submit" value="Filter"></input></div>
 					</div>
-                
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
                     <div class="form-group">
                         <div class="checkbox">
                         	<?php
@@ -163,15 +166,20 @@ function getComicByPublisher($PublisherName)
                         ?>
 
 				    </div>
+                </div>
+                </div>
 				</div> <!--End of FormFields-->	
-				
-				<div id="FormButtons">
-					<input type="button" value="Subscribe"/>
-					<input type="reset"/>
+				<div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+				<div class="pull-right" id="FormButtons">
+					<input class="btn btn-reset" type="reset"/>
+                    <input class="btn btn-go" type="button" value="Subscribe"/>
 				</div> <!--End of FormButtons-->
-			</form>	
-		</div>
+                    </div>
         </div>
+			</form>	
+		
+        
 	</div>	
 </body>
 </html>	

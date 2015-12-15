@@ -491,7 +491,31 @@ footer {
 
 ----------------------------------*/
 
+.button-top-space {
+    margin-top: 15px;
+}
 
+.btn-reset {
+    color: #fff;
+    background-color: #6BA6FC;
+    font-weight: 700;
+}
+
+.btn-reset:hover {
+    color: #fff;
+    background-color: #c6222d;
+}
+
+.btn-go {
+    color: #fff;
+    background-color: #6BA6FC;
+    font-weight: 700;
+}
+
+.btn-go:hover {
+    color: #fff;
+    background-color: #33cc33;
+}
 
 
 
