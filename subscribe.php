@@ -125,6 +125,7 @@ function getComicByPublisher($PublisherName)
                             }
                             ?>		
 						<input type="submit" value="Filter"></input>
+                        <input class="" type="submit" value="Filter"></input>
 					</div>
                 
                     <div class="form-group">
