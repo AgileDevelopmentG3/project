@@ -52,7 +52,7 @@ session_start();
 <!--FACEBOOK EMBED JAVASCRIPT END-->
         <div class="aboveslider--red">
             <div class="container">
-                <div class="row aboveslider__text bottom-spacer">
+                <div class="row aboveslider__text">
                     <div class="col-xs-12 text-center">
 <!--                            Place eye catchers in p tag below, such as sales, promos, dates                  -->
                         <p>!! DC Sale 10/25 !!</p>
