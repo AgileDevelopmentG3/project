@@ -39,21 +39,27 @@ $(document).ready(function(){
     });
     $('.comic-book-cover > img').click(function(){
         $(this).parent().addClass('display');
+        var thisClicked = $(this).parent().attr('id');
+        var dispImg = $('.comic-book-cover#' + thisClicked + ' img').attr('src');
+        var dispTitle = $('comic-book-cover#' + thisClicked + ' .info .title').text();
+        var dispGrade = $('comic-book-cover#' + thisClicked + ' + .info .grade').text();
+        var dispPrice = $('comic-book-cover#' + thisClicked + ' + .info .price').text();
+        var dispText = $('comic-book-cover#' + thisClicked + ' + .info .description').text();
         $('.comic-overlay').css('display' , 'table');
-        var dispImg = $('.comic-book-cover.display > img').attr('src');
-        var dispTitle = $('.comic-book-cover.display + .info .title').text();
-        var dispGrade = $('.comic-book-cover.display + .info .grade').text();
-        var dispPrice = $('.comic-book-cover.display + .info .price').text();
-        var dispText = $('.comic-book-cover.display + .info .description').text();
         $('.comic-overlay #comic-image img').attr('src',dispImg);
         $('.comic-overlay #comic-title').text(dispTitle);
         $('.comic-overlay #comic-grade').text(dispGrade);
         $('.comic-overlay #comic-price').text(dispPrice);
         $('.comic-overlay #comic-desc').text(dispText);
     });
-    $('.comic-overlay .close').click(function(){
+    $('.comic-overlay > .close').click(function(){
         $(this).parent().removeClass('display');
         $('.comic-overlay').css('display' , 'none');
+//        $('.comic-overlay #comic-image img').attr('src', "#");
+//        $('.comic-overlay #comic-title').text(" ");
+//        $('.comic-overlay #comic-grade').text(" ");
+//        $('.comic-overlay #comic-price').text(" ");
+//        $('.comic-overlay #comic-desc').text(" ");
     });
     $('.map-overlay').click(function(){
         $(this).addClass('deactive');

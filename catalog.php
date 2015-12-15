@@ -76,7 +76,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/batman163.jpg"></div>
+                    <div class="comic-book-cover center-block" id="a1"><img src="img/comicBookIMages/batman163.jpg">
                     <div class="info">
                         <span class="title">Batman #163</span><br>
                         <span class="grade">Estimated Grade: VG</span><br>
@@ -92,8 +92,9 @@
                         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                     </form>
                 </div>
+                </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/amazingAdventures1.jpg"></div>
+                    <div class="comic-book-cover center-block" id="a2"><img src="img/comicBookIMages/amazingAdventures1.jpg"></div>
                     <div class="info">
                         <span class="title">Amazing Adventures #1</span><br>
                         <span class="grade">Estimated Grade: VF</span><br>
@@ -110,7 +111,7 @@
                     </form>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/superman.jpg"></div>
+                    <div class="comic-book-cover center-block" id="a3"><img src="img/comicBookIMages/superman.jpg"></div>
                     <div class="info">
                         <span class="title">Superman #42</span><br>
                         <span class="grade">Estimated Grade: VG+</span><br>
@@ -127,7 +128,7 @@
                     </form>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/challengers.jpg"></div>
+                    <div class="comic-book-cover center-block" id="a4"><img src="img/comicBookIMages/challengers.jpg"></div>
                     <div class="info">
                         <span class="title">Challengers of the Unknown #3</span><br>
                         <span class="grade">Estimated Grade: GD+</span><br>
@@ -146,7 +147,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/daredevil4.jpg"></div>
+                    <div class="comic-book-cover center-block" id="a5"><img src="img/comicBookIMages/daredevil4.jpg"></div>
                     <div class="info">
                         <span class="title">Daredevil #4</span><br>
                         <span class="grade">Estimated Grade: VG</span><br>
@@ -163,7 +164,7 @@
                     </form>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/strange209.jpg"></div>
+                    <div class="comic-book-cover center-block" id="a6"><img src="img/comicBookIMages/strange209.jpg"></div>
                     <div class="info">
                         <span class="title">Strange Adventures #209</span><br>
                         <span class="grade">Estimated Grade: VG</span><br>
@@ -180,7 +181,7 @@
                     </form>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/disney9.jpg"></div>
+                    <div class="comic-book-cover center-block" id="a7"><img src="img/comicBookIMages/disney9.jpg"></div>
                     <div class="info">
                         <span class="title">Walt Disney's Comics and Stories #9</span><br>
                         <span class="grade">Estimated Grade: FN-</span><br>
@@ -197,7 +198,7 @@
                     </form>
                 </div>
                 <div class="col-xs-6 col-sm-3 catalog-spacer">
-                    <div class="comic-book-cover center-block"><img src="img/comicBookIMages/journey84.jpg"></div>
+                    <div class="comic-book-cover center-block" id="a8"><img src="img/comicBookIMages/journey84.jpg"></div>
                     <div class="info">
                         <span class="title">Journey Into Mystery #84</span><br>
                         <span class="grade">Estimated Grade: VG+</span><br>
