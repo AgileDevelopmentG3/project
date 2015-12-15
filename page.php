@@ -48,8 +48,8 @@ session_start();
                         </div> <!--End of FormFields-->				
 				
                         <div class="pull-right" id="ReleaseFormButtons">
-                            <input type="reset"/>
-                            <input type="submit" value="Submit"/>
+                            <input class="btn btn-reset" type="reset"/>
+                            <input class="btn btn-go" type="submit" value="Submit"/>
                         </div> <!--End of FormButtons-->				
                 </form>	
             </div>
@@ -76,8 +76,8 @@ session_start();
                     </div> <!--End of FormFields-->				
 				
                     <div class="pull-right" id="BoxFormButtons">
-                        <input type="reset"/>
-                        <input type="submit" value="Submit"/>
+                        <input class="btn btn-reset" type="reset"/>
+                        <input class="btn btn-go" type="submit" value="Submit"/>
                     </div> <!--End of FormButtons-->				
                 </form>
             </div>
