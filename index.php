@@ -87,8 +87,11 @@ session_start();
 									else 
 									{										
 										echo('<li ><a href="Logout.php">Log out</a></li>');
+										if ($_SESSION['Username'] == "DrStrange@phcomics.com")
+										{											
+                            				echo('<li><a href="page.php">Admin</a></li>');
+										}
 									}
-							        
 							        ?>                          
                         </ul>
                     </div>
