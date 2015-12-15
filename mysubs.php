@@ -63,6 +63,7 @@ if(isset($_SESSION['SubBoxID']))
 		echo ('<ol>');
 		if (count($Comics) > 0)
 		{
+			sort($Comics);
 			foreach ($Comics as $Comic)
 			{				
 				echo ('<li class="list-group-item">');
@@ -75,10 +76,13 @@ if(isset($_SESSION['SubBoxID']))
 			echo ("You have no subscriptions!");
 		}
 		echo ('</ol>');
+	
+		$db = null;
 	}
 	catch(PDOException $e)
 	{
 		echo 'ERROR: ' . $e->getMessage();
+		$db = null;
 	}
 }
 

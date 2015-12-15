@@ -1,45 +1,42 @@
 <?php
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start(); 
 
-if(isset($_SESSION['CustomerID']) && isset($_SESSION['SubBoxID']))
+if(isset($_POST['subs']))
 {
 	$dsn = "mysql:host=us-cdbr-azure-central-a.cloudapp.net;dbname=as_bf1259e0fe71a2a";
 	$username = "bfdbdc3c11a396";
 	$password = "1c82948e";
-
+	
+	$NewSubs = $_POST['subs'];
 	$BoxID = $_SESSION['SubBoxID'];
+	
 	
 	try	
 	{
 		$db = new PDO($dsn, $username, $password);
 		
-		$query = "INSERT INTO tblComicBoxItems  (BoxNumber, ComicTitle) VALUES (:BoxID,:ComicTitle)";		
+		foreach($NewSubs as $ComicTitle)
+		{
+			echo($ComicTitle);
+								
+			$query = "INSERT INTO tblComicBoxItems (ComicTitle, BoxNumber ) VALUES (:ComicTitle,:BoxID)";		
+			
+			$statement = $db->prepare($query);
+			$statement -> bindValue(':BoxID', $BoxID);
+			$statement -> bindValue(':ComicTitle', rawurldecode($ComicTitle));
+			$statement->execute();
+		}
 		
-		$statement = $db->prepare($query);
-		$statement -> bindValue(':BoxID', $BoxID);
-		$statement -> bindValue(':ComicTitle', $ComicTitle);
-		$statement->execute();
-		$Comics = $statement->fetchAll();
-		$statement->closeCursor();
-	
-		echo ('<ol>');
-		if (count($Comics) > 0)
-		{
-			foreach ($Comics as $Comic)
-			{				
-				echo ('<li class="list-group-item">');
-				echo ($Comic['ComicTitle']);
-				echo ('</li>');
-			}
-		}
-		else 
-		{
-			echo ("You have no subscriptions!");
-		}
-		echo ('</ol>');
+		$db = null;
+
 	}
 	catch(PDOException $e)
 	{
 		echo 'ERROR: ' . $e->getMessage();
+		$db = null;
 	}
 }
+	//header( "refresh:0;url=mysubs.php");
 ?>

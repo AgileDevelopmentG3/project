@@ -1,5 +1,7 @@
 <?php	
-
+$OneHour = 60*60;
+session_set_cookie_params($OneHour);
+session_start(); 
 $Comics = null;
 		
 	if(isset($_GET['Publisher']))
@@ -150,15 +152,21 @@ function getComicByPublisher($PublisherName)
                         </div>
                     </div>
                 
-					<div>
+			</form>	
+
+                </div>
+                </div>
+				</div> <!--End of FormFields-->	
+			<form name="SubmitSubForm" id="SubmitSubForm" method="post" action="addsubs.php">						
+				<div>
                         <?php					
                             if ($Comics != null && count($Comics) > 0)
                             {		
-                                echo ('<select class="form-control button-bottom-space" size="15" multiple="multiple" >');
+                                echo ('<select class="form-control button-bottom-space" name="subs[]" size="15" multiple="multiple" >');
 
                                 foreach ($Comics as $Comic)
                                 {
-                                    echo('<option value='.$Comic['ComicID'].'>'.$Comic['Description'].'</option>');	
+                                    echo('<option value='.rawurlencode($Comic['Description']).'>'.$Comic['Description'].'</option>');	
                                     //echo('<input type="checkbox" name="'.$Comic['Description']. '" id="'.$Comic['Description'].'" />');			
                                     //echo('<input type="checkbox" value="'.$Comic['Description'].'">'.$Comic['Description'].'</input>');
                                     //echo "<br>";
@@ -169,20 +177,22 @@ function getComicByPublisher($PublisherName)
                         ?>
 
 				    </div>
-                </div>
-                </div>
-				</div> <!--End of FormFields-->	
-				<div class="row">
+								<div class="row">
                     <div class="col-md-4 col-md-offset-4">
 				<div class="pull-right" id="FormButtons">
 					<input class="btn btn-reset" type="reset"/>
-                    <input class="btn btn-go" type="button" value="Subscribe"/>
+                    <input class="btn btn-go" type="submit" value="Subscribe"/>
 				</div> <!--End of FormButtons-->
                     </div>
+			</form>
+
         </div>
-			</form>	
 		
         
 	</div>	
 </body>
 </html>	
+
+<?php
+$db = null;
+?>
