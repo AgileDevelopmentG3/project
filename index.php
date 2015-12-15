@@ -148,7 +148,7 @@ session_start();
             <div class="container container-spacer">
                 <div class="text-center">
                     <h2 class="featurette-heading bold-heading">About Power House Comics</h2>
-                    <p class="lead">Vestibulum maximus non erat et iaculis. Phasellus ullamcorper euismod felis, non vestibulum lacus consequat at. Praesent at dictum dui. Nam mollis lorem eu lacus suscipit aliquam. Vivamus eu est eros. Praesent ut lorem magna. Etiam elit sapien, semper ut tempor id, pharetra porta libero. Vestibulum pretium a nunc id efficitur.</p>
+                    <p class="lead">Appleton&#39;s only retailer dedicated to everything comics&#33; Your number one destination for new comics&#44; thousands of back issue comics&#44; trade paperbacks&#44; action figures&#44; and more&#33; Your resource for comic lovers of all ages&#44; many Gold&#44; Silver&#44; Bronze and Modern Age titles available&#46</p>
                 </div>
             </div>
         </div> <!-- END FLUID CONTAINER -->
@@ -307,7 +307,7 @@ session_start();
                 <div class="row">
                     <div class="col-sm-3">
                         <div>
-                            <p>&copy; 2015 Power House Comics &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                            <p>&copy; 2015 Power House Comics</p>
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -333,7 +333,7 @@ session_start();
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div></div>
+                        <div><p>Shop images &#169; 2015 Powerhouse Comics, All other character images property of their respective publishers</p></div>
                     </div>
                 </div>
             </div>
