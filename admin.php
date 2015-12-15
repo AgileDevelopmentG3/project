@@ -14,10 +14,14 @@ global $BoxNumber;
    if(isset($_POST['dtReleaseDate'])) 
    	$ReleaseDate=$_POST['dtReleaseDate'];
    
-   
-   if(isset($_POST['cbxMature'])) 
-   	$Mature=$_POST['cbxMature'];
-   
+if(isset($_POST['cbxMature']))
+									{
+										$Mature = 1;
+									}
+									else
+									{
+										$Mature = 0;
+									}
    
    if(isset($_POST['txtEmail'])) 
    	$Email=$_POST['txtEmail'];
@@ -34,11 +38,12 @@ $password = "1c82948e";
 try	
 {
 		$db = new PDO($dsn, $username, $password);
-		$query = "INSERT INTO `tblnewreleases` VALUES (0, :Title, :ReleaseDate, :Mature)";
+		$query = "INSERT INTO `tblnewreleases` (newReleaseID, Description, releaseDate, mature) 
+		VALUES (0, :Title, :ReleaseDate, :Mature)";
 		
 		$Title = $_POST['txtComicTitle'];
 		$ReleaseDate = $_POST['dtReleaseDate'];
-		$Mature = $_POST['cbxMature'];
+		//$Mature = $_POST['cbxMature'];
 		
 		$statement = $db->prepare($query);
 		$statement -> bindvalue(':Title' , $Title);
@@ -47,6 +52,8 @@ try
 		$statement -> execute();
 		
 		$statement -> closeCursor();
+		
+		( "refresh:3;url=page.php");
 
 }
 catch(PDOException $e)
