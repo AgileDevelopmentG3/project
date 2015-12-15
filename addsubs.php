@@ -27,7 +27,9 @@ if(isset($_POST['subs']))
 			$statement -> bindValue(':BoxID', $BoxID);
 			$statement -> bindValue(':ComicTitle', rawurldecode($ComicTitle));
 			$statement->execute();
-		}
+		}		
+		
+			header( "refresh:0;url=mysubs.php");
 		
 		$db = null;
 
